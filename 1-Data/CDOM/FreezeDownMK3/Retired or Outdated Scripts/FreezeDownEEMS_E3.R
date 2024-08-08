@@ -1,0 +1,186 @@
+#Freeze Down E3 EEM Plot Generation
+
+#Load necessary packages/View raw files
+library(eemR)
+library(dplyr)
+install.packages('shiny')
+library(shiny)
+install.packages('DT')
+library(DT)
+install.packages('parcma')
+library(parcma)
+
+
+
+q = read.csv('Compiled_Absorbance_19_Dec_23.csv')
+View(q)
+####################
+####################
+####################
+?`eemR-package`
+
+#Time - 0 Blank
+
+eems <- eem_read("//cloud/project/FDE3_19DEC23/EEMSCombined", import_function = "aqualog")
+summary(eems)
+plot(eems, which = 1)
+
+#Read in and subtract Blank
+blank <- eem_read("//cloud/project/FDE3_19DEC23/Blank", import_function = "aqualog")
+eems <- eem_remove_blank(eems, blank)
+summary(eems)
+
+#remove Rayleigh scattering
+##order 1 scattering, 10 nm width
+eems <- eem_remove_scattering(eems, "rayleigh", 1, 20) 
+##order 2 scattering
+eems <- eem_remove_scattering(eems, "rayleigh", 2, 20) #%>%
+#eem_remove_scattering("raman", 2, 10)
+plot(eems, which = 1)
+
+#remove Raman scattering
+##order 1 scattering
+eems <- eem_remove_scattering(eems, "raman", 1, 20)
+##order 1 scattering
+eems <- eem_remove_scattering(eems, "raman", 2, 20)
+plot(eems, which = 1)
+
+#read in absorbance data
+absorbance <- read.csv("Compiled_Absorbance_19_Dec_23.csv",header=TRUE)
+head(absorbance)
+
+#run inner filter effect correction
+eems <- eem_inner_filter_effect(
+  eem = eems,
+  absorbance = absorbance,
+  pathlength = 1
+)
+plot(eems, xlab = "Excitation", which = 1, horizontal = TRUE)
+
+
+eems <- eem_raman_normalisation(eems, blank)
+summary(eems)
+
+#coblepeaks
+eem_coble_peaks(eems, verbose = TRUE)
+
+#calculate fluorescence indices #will get warning messages that data was interpolated
+eem_biological_index(eems, verbose = TRUE)
+FreezeDown_eems_bio_index <- eem_biological_index(eems, verbose = TRUE)
+FreezeDown_eems_fluor_index <- eem_fluorescence_index(eems, verbose = TRUE)
+FreezeDown_eems_humi_index <- eem_humification_index(eems, scale = FALSE, verbose = TRUE)
+
+
+View(FreezeDown_eems_bio_index)
+View(FreezeDown_eems_fluor_index)
+View(FreezeDown_eems_humi_index)
+
+#export fluorescence indices as .csv file
+write.table(FreezeDown_eems_bio_index, file = "FreezeDown_eems_bio_index.csv", append = FALSE, quote = TRUE, sep = ",")
+write.table(FreezeDown_eems_fluor_index, file = "FreezeDown_eems_fluor_index.csv", append = FALSE, quote = TRUE, sep = ",")
+write.table(FreezeDown_eems_humi_index, file = "FreezeDown_eems_humi_index.csv", append = FALSE, quote = TRUE, sep = ",")
+
+#export corrected eems into matlab
+eem_export_matlab("FD_E3_19DEC23.mat", eems)
+
+
+#Plots of each series
+
+plot(eems, which = 1)
+plot(eems, which = 2)
+plot(eems, which = 3)
+plot(eems, which = 4)
+plot(eems, which = 5)
+plot(eems, which = 6)
+
+####################################
+####################################
+####################################
+
+#This section acts as preparation for cleaning and 
+#sending EEM data to MATLAB for further plotting.
+
+library(eemR)
+library(dplyr)
+
+eems <- eem_read("//cloud/project/FDE3_19DEC23/EEMSCombined", import_function = "aqualog")
+
+#Read in and subtract Blank
+blank <- eem_read("//cloud/project/FDE3_19DEC23/Blank", import_function = "aqualog")
+eems <- eem_remove_blank(eems, blank)
+summary(eems)
+
+#remove Rayleigh scattering
+##order 1 scattering, 10 nm width
+eems <- eem_remove_scattering(eems, "rayleigh", 1, 20) 
+##order 2 scattering
+eems <- eem_remove_scattering(eems, "rayleigh", 2, 20) #%>%
+#eem_remove_scattering("raman", 2, 10)
+plot(eems, which = 1)
+
+#remove Raman scattering
+##order 1 scattering
+eems <- eem_remove_scattering(eems, "raman", 1, 20)
+##order 1 scattering
+eems <- eem_remove_scattering(eems, "raman", 2, 20)
+plot(eems, which = 1)
+
+#read in absorbance data
+absorbance <- read.csv("Compiled_Absorbance_19_Dec_23.csv",header=TRUE)
+head(absorbance)
+
+#run inner filter effect correction
+eems <- eem_inner_filter_effect(
+  eem = eems,
+  absorbance = absorbance,
+  pathlength = 1
+)
+
+plot(eems, xlab = "Excitation", which = 1, horizontal = TRUE)
+plot(eems, xlab = "Excitation", which = 2, horizontal = TRUE)
+plot(eems, xlab = "Excitation", which = 3, horizontal = TRUE)
+
+plot(eems, xlab = "Excitation", which = 4, horizontal = TRUE)
+plot(eems, xlab = "Excitation", which = 5, horizontal = TRUE)
+plot(eems, xlab = "Excitation", which = 6, horizontal = TRUE)
+
+#Keeping 1 and 4, attempt to reformat to fit poster
+plotPNG(eems, xlab = "Excitation", which = 1, horizontal = TRUE)
+plot(eems, xlab = "Excitation", which = 4, horizontal = TRUE)
+
+
+eems <- eem_raman_normalisation(eems, blank)
+summary(eems)
+
+#coblepeaks
+eem_coble_peaks(eems, verbose = TRUE)
+
+#calculate fluorescence indices #will get warning messages that data was interpolated
+eem_biological_index(eems, verbose = TRUE)
+FreezeDown_eems_bio_index <- eem_biological_index(eems, verbose = TRUE)
+FreezeDown_eems_fluor_index <- eem_fluorescence_index(eems, verbose = TRUE)
+FreezeDown_eems_humi_index <- eem_humification_index(eems, scale = FALSE, verbose = TRUE)
+
+View(FreezeDown_eems_bio_index)
+View(FreezeDown_eems_fluor_index)
+View(FreezeDown_eems_humi_index)
+
+#export fluroescence indices as .csv file
+write.table(FreezeDown_eems_bio_index, file = "FreezeDown_eems_bio_index.csv", append = FALSE, quote = TRUE, sep = ",")
+write.table(FreezeDown_eems_fluor_index, file = "FreezeDown_eems_fluor_index.csv", append = FALSE, quote = TRUE, sep = ",")
+
+#NOTE: Humic index calculation can be interrupted by above code.  
+write.table(FreezeDown_eems_humi_index, file = "FreezeDown_eems_humi_index.csv", append = FALSE, quote = TRUE, sep = ",")
+
+
+#export corrected eems into matlab
+eem_export_matlab("Attempt2.mat", eems)
+
+
+
+
+
+
+
+
+
