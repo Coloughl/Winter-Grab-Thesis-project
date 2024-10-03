@@ -1,0 +1,2636 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.01929/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1664-302X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lindivat</foaf:surname>
+                        <foaf:givenName>Mathilde</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Larsen</foaf:surname>
+                        <foaf:givenName>Aud</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hess-Erga</foaf:surname>
+                        <foaf:givenName>Ole Kristian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bratbak</foaf:surname>
+                        <foaf:givenName>Gunnar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hoell</foaf:surname>
+                        <foaf:givenName>Ingunn Alne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>BONCAT</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Flow Cytometry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Marine microbes</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>protein synthesis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Single cell activity</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Bioorthogonal Non-canonical Amino Acid Tagging Combined With Flow Cytometry for Determination of Activity in Aquatic Microorganisms</dc:title>
+        <dcterms:abstract>&lt;p&gt;In this study, we have combined bioorthogonal non-canonical amino acid tagging (BONCAT) and flow cytometry (FCM) analysis, and we demonstrate the applicability of the method for marine prokaryotes. Enumeration of active marine bacteria was performed by combining the DNA stain SYBR Green with detection of protein production with BONCAT. After optimization of incubation condition and substrate concentration on monoculture of &lt;italic&gt;Escherichia coli&lt;/italic&gt;, we applied and modified the method to natural marine samples. We found that between 10 and 30% of prokaryotes in natural communities were active. The method is replicable, fast, and allow high sample throughput when using FCM. We conclude that the combination of BONCAT and FCM is an alternative to current methods for quantifying active populations in aquatic environments.&lt;/p&gt;</dcterms:abstract>
+        <dc:date>2020-08-18</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.01929/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:42:51</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1664-302X">
+        <prism:volume>11</prism:volume>
+        <dc:title>Frontiers in Microbiology</dc:title>
+        <dc:identifier>DOI 10.3389/fmicb.2020.01929</dc:identifier>
+        <dcterms:alternative>Front. Microbiol.</dcterms:alternative>
+        <dc:identifier>ISSN 1664-302X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/2/Lindivat et al. - 2020 - Bioorthogonal Non-canonical Amino Acid Tagging Com.pdf"/>
+        <dc:title>Full Text</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2020.01929/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:42:55</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02360/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>8</prism:volume>
+                <dc:title>Frontiers in Microbiology</dc:title>
+                <dc:identifier>DOI 10.3389/fmicb.2017.02360</dc:identifier>
+                <dcterms:alternative>Front. Microbiol.</dcterms:alternative>
+                <dc:identifier>ISSN 1664-302X</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leizeaga</foaf:surname>
+                        <foaf:givenName>Ainara</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Estrany</foaf:surname>
+                        <foaf:givenName>Margarita</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Forn</foaf:surname>
+                        <foaf:givenName>Irene</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sebastián</foaf:surname>
+                        <foaf:givenName>Marta</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_4"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>BONCAT</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Click Chemistry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>marine bacteria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>marine ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>single-cell microbiology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Using Click-Chemistry for Visualizing in Situ Changes of Translational Activity in Planktonic Marine Bacteria</dc:title>
+        <dcterms:abstract>&lt;p&gt;A major challenge in microbial ecology is linking diversity and function to determine which microbes are actively contributing to processes occurring &lt;italic&gt;in situ&lt;/italic&gt;. Bioorthogonal non-canonical amino acid tagging (BONCAT) is a promising technique for detecting and quantifying translationally active bacteria in the environment. This technique consists of incubating a bacterial sample with an analog of methionine and using click-chemistry to identify the cells that have incorporated the substrate. Here, we established an optimized protocol for the visualization of protein-synthesizing cells in oligotrophic waters that can be coupled with taxonomic identification using Catalyzed Reporter Deposition Fluorescent &lt;italic&gt;in Situ&lt;/italic&gt; Hybridization. We also evaluated the use of this technique to track shifts in translational activity by comparing it with leucine incorporation, and used it to monitor temporal changes in both cultures and natural samples. Finally, we determined the optimal concentration and incubation time for substrate incorporation during BONCAT incubations at an oligotrophic site. Our results demonstrate that BONCAT is a fast and powerful semi-quantitative approach to explore the physiological status of marine bacteria.&lt;/p&gt;</dcterms:abstract>
+        <dc:date>2017-12-01</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02360/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:43:31</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_4">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/4/Leizeaga et al. - 2017 - Using Click-Chemistry for Visualizing in Situ Chan.pdf"/>
+        <dc:title>Full Text</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2017.02360/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:43:34</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1111/1462-2920.12436">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1462-2920"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scheller</foaf:surname>
+                        <foaf:givenName>Silvan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tavormina</foaf:surname>
+                        <foaf:givenName>Patricia L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Babin</foaf:surname>
+                        <foaf:givenName>Brett M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tirrell</foaf:surname>
+                        <foaf:givenName>David A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Orphan</foaf:surname>
+                        <foaf:givenName>Victoria J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_6"/>
+        <dc:title>In situ visualization of newly synthesized proteins in environmental microbes using amino acid tagging and click chemistry</dc:title>
+        <dcterms:abstract>Here we describe the application of a new click chemistry method for fluorescent tracking of protein synthesis in individual microorganisms within environmental samples. This technique, termed bioorthogonal non-canonical amino acid tagging (BONCAT), is based on the in vivo incorporation of the non-canonical amino acid L-azidohomoalanine (AHA), a surrogate for l-methionine, followed by fluorescent labelling of AHA-containing cellular proteins by azide-alkyne click chemistry. BONCAT was evaluated with a range of phylogenetically and physiologically diverse archaeal and bacterial pure cultures and enrichments, and used to visualize translationally active cells within complex environmental samples including an oral biofilm, freshwater and anoxic sediment. We also developed combined assays that couple BONCAT with ribosomal RNA (rRNA)-targeted fluorescence in situ hybridization (FISH), enabling a direct link between taxonomic identity and translational activity. Using a methanotrophic enrichment culture incubated under different conditions, we demonstrate the potential of BONCAT-FISH to study microbial physiology in situ. A direct comparison of anabolic activity using BONCAT and stable isotope labelling by nano-scale secondary ion mass spectrometry (15NH3 assimilation) for individual cells within a sediment-sourced enrichment culture showed concordance between AHA-positive cells and 15N enrichment. BONCAT-FISH offers a fast, inexpensive and straightforward fluorescence microscopy method for studying the in situ activity of environmental microbes on a single-cell level.</dcterms:abstract>
+        <dc:date>2014</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:46:15</dcterms:dateSubmitted>
+        <dc:rights>© 2014 The Authors. Environmental Microbiology published by Society for Applied Microbiology and John Wiley &amp; Sons Ltd.</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/1462-2920.12436</dc:description>
+        <bib:pages>2568-2590</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1462-2920">
+        <prism:volume>16</prism:volume>
+        <dc:title>Environmental Microbiology</dc:title>
+        <dc:identifier>DOI 10.1111/1462-2920.12436</dc:identifier>
+        <prism:number>8</prism:number>
+        <dc:identifier>ISSN 1462-2920</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/6/Hatzenpichler et al. - 2014 - In situ visualization of newly synthesized protein.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:46:17</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0045653517318465">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0045-6535"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Park</foaf:surname>
+                        <foaf:givenName>Minkyu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Snyder</foaf:surname>
+                        <foaf:givenName>Shane A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_8"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Chromophoric dissolved organic matter</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Excitation-emission matrix (EEM)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Fluorescence spectroscopy</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Nanofiltration (NF)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Sodium bisulfite</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Sample handling and data processing for fluorescent excitation-emission matrix (EEM) of dissolved organic matter (DOM)</dc:title>
+        <dcterms:abstract>In environmental engineering and science, fluorescent excitation-emission matrix (EEM) has increasingly been utilized to characterize chromophoric dissolved organic matter (CDOM). This study aims to delineate EEM data processing, including calculation of total fluorescence (TF) which is an emerging water quality parameter often used as a surrogate for micropollutant removal by advanced water treatment processes. In addition, sample handling procedures such as storage, use of preservatives, and oxidant quenching agents were evaluated. In this study, three antimicrobial preservatives were tested: sodium azide, sodium omadine, and thymol. All the tested preservatives altered optical properties of samples, and were therefore not suitable for the preservation of EEM samples. Without preservative, storage of samples at 4 °C maintained TF within 7.5% of its original value for 21 days, while TF of samples stored at the room temperature more drastically changed (up to 15%). The impacts of three oxidant quenching agents including ascorbic acid, sodium bisulfite, and sodium thiosulfate on EEM were also tested. Among the quenching agents, sodium bisulfite was found to be suitable since it little influenced optical properties of samples while the other two were not favorable due to interference. We also scrutinized the use of TF as surrogate to monitor micropollutant rejection by nanofiltration membrane.</dcterms:abstract>
+        <dc:date>2018-02-01</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0045653517318465</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-19 15:50:37</dcterms:dateSubmitted>
+        <bib:pages>530-537</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0045-6535">
+        <prism:volume>193</prism:volume>
+        <dc:title>Chemosphere</dc:title>
+        <dc:identifier>DOI 10.1016/j.chemosphere.2017.11.069</dc:identifier>
+        <dcterms:alternative>Chemosphere</dcterms:alternative>
+        <dc:identifier>ISSN 0045-6535</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/8/S0045653517318465.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0045653517318465</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-19 15:50:45</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.mdpi.com/2073-4441/13/12/1703">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2073-4441"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wilske</foaf:surname>
+                        <foaf:givenName>Christin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Herzsprung</foaf:surname>
+                        <foaf:givenName>Peter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lechtenfeld</foaf:surname>
+                        <foaf:givenName>Oliver J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kamjunke</foaf:surname>
+                        <foaf:givenName>Norbert</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Einax</foaf:surname>
+                        <foaf:givenName>Jürgen W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>von Tümpling</foaf:surname>
+                        <foaf:givenName>Wolf</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_10"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>2D fluorescence</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>DOM</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>EEM</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>FTICR MS</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>humic substances</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>PARAFAC</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>New Insights into the Seasonal Variation of DOM Quality of a Humic-Rich Drinking-Water Reservoir—Coupling 2D-Fluorescence and FTICR MS Measurements</dc:title>
+        <dcterms:abstract>Long-term changes in dissolved organic matter (DOM) quality, especially in humic-rich raw waters, may lead to intensive adaptions in drinking-water processing. However, seasonal DOM quality changes in standing waters are poorly understood. To fill this gap, the DOM quality of a German drinking water reservoir was investigated on a monthly basis by Fourier-transform ion cyclotron resonance mass spectrometry (FTICR MS) measurements and 2D fluorescence for 18 months. FTICR MS results showed seasonal changes of molecular formula (MF) intensities, indicating photochemical transformation of DOM as a significant process for DOM quality variation. For an assessment of the two humic-like components, identified by parallel factor analysis (PARAFAC) of excitation–emission matrices (EEM), their loadings were Spearman’s rank-correlated with the intensities of the FTICR MS-derived MF. One of the two PARAFAC components correlated to oxygen-rich and relatively unsaturated MF identified as easily photo-degradable, also known as coagulants in flocculation processes. The other PARAFAC component showed opposite seasonal fluctuations and correlated with more saturated MF identified as photo-products with some of them being potential precursors of disinfection byproducts. Our study indicated the importance of elucidating both the chemical background and seasonal behavior of DOM if raw water-quality control is implemented by bulk optical parameters.</dcterms:abstract>
+        <dc:date>2021/1</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.mdpi.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.mdpi.com/2073-4441/13/12/1703</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-19 15:52:21</dcterms:dateSubmitted>
+        <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <dc:description>Number: 12
+Publisher: Multidisciplinary Digital Publishing Institute</dc:description>
+        <bib:pages>1703</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2073-4441">
+        <prism:volume>13</prism:volume>
+        <dc:title>Water</dc:title>
+        <dc:identifier>DOI 10.3390/w13121703</dc:identifier>
+        <prism:number>12</prism:number>
+        <dc:identifier>ISSN 2073-4441</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_10">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/10/Wilske et al. - 2021 - New Insights into the Seasonal Variation of DOM Qu.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.mdpi.com/2073-4441/13/12/1703/pdf?version=1624326510</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-19 15:52:23</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2014.00048/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2296-7745"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Samo</foaf:surname>
+                        <foaf:givenName>Ty J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Smriga</foaf:surname>
+                        <foaf:givenName>Steven</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Malfatti</foaf:surname>
+                        <foaf:givenName>Francesca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sherwood</foaf:surname>
+                        <foaf:givenName>Byron P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Azam</foaf:surname>
+                        <foaf:givenName>Farooq</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Click Chemistry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>marine bacteria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>biogeochemistry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>HPG</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Microscopy</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Oceanography</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>single-cell protein synthesis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Broad distribution and high proportion of protein synthesis active marine bacteria revealed by click chemistry at the single cell level</dc:title>
+        <dcterms:abstract>&lt;p&gt;Marine bacterial and archaeal communities control global biogeochemical cycles through nutrient acquisition processes that are ultimately dictated by the metabolic requirements of individual cells. Currently lacking, however, is a sensitive, quick, and quantitative measurement of activity in these single cells. We tested the applicability of copper (I)-catalyzed cycloaddition, or “click,” chemistry to observe and estimate single-cell protein synthesis activity in natural assemblages and isolates of heterotrophic marine bacteria. Incorporation rates of the non-canonical methionine bioortholog L-homopropargylglycine (HPG) were quantified within individual cells by measuring fluorescence of alkyne-conjugated Alexa Fluor®488 using epifluorescence microscopy. The method's high sensitivity, along with a conversion factor derived from two &lt;italic&gt;Alteromonas spp&lt;/italic&gt;. isolates, revealed a broad range of cell-specific protein synthesis within natural microbial populations. Comparison with &lt;sup&gt;35&lt;/sup&gt;S-methionine microautoradiography showed that a large fraction of the natural marine bacterial assemblage (15–100%), previously considered inactive by autoradiography, were actively synthesizing protein. Data pooled from 21 samples showed that cell-specific activity scaled logarithmically with cell volume. Activity distributions of each sample were fit to power-law functions, providing an illustrative and quantitative comparison of assemblages that demonstrate individual protein synthesis rates were commonly partitioned between cells in low- and high-metabolic states in our samples. The HPG method offers a simple approach to link individual cell physiology to the ecology and biogeochemistry of bacterial (micro)environments in the ocean.&lt;/p&gt;</dcterms:abstract>
+        <dc:date>2014-10-10</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2014.00048/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 14:52:58</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2296-7745">
+        <prism:volume>1</prism:volume>
+        <dc:title>Frontiers in Marine Science</dc:title>
+        <dc:identifier>DOI 10.3389/fmars.2014.00048</dc:identifier>
+        <dcterms:alternative>Front. Mar. Sci.</dcterms:alternative>
+        <dc:identifier>ISSN 2296-7745</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/12/Samo et al. - 2014 - Broad distribution and high proportion of protein .pdf"/>
+        <dc:title>Full Text</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmars.2014.00048/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 14:53:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.pnas.org/doi/full/10.1073/pnas.1603757113">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>113</prism:volume>
+                <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+                <dc:identifier>DOI 10.1073/pnas.1603757113</dc:identifier>
+                <prism:number>28</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Connon</foaf:surname>
+                        <foaf:givenName>Stephanie A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goudeau</foaf:surname>
+                        <foaf:givenName>Danielle</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Malmstrom</foaf:surname>
+                        <foaf:givenName>Rex R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Woyke</foaf:surname>
+                        <foaf:givenName>Tanja</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Orphan</foaf:surname>
+                        <foaf:givenName>Victoria J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_14"/>
+        <dc:title>Visualizing in situ translational activity for identifying and sorting slow-growing archaeal−bacterial consortia</dc:title>
+        <dcterms:abstract>To understand the biogeochemical roles of microorganisms in the environment, it is important to determine when and under which conditions they are metabolically active. Bioorthogonal noncanonical amino acid tagging (BONCAT) can reveal active cells by tracking the incorporation of synthetic amino acids into newly synthesized proteins. The phylogenetic identity of translationally active cells can be determined by combining BONCAT with rRNA-targeted fluorescence in situ hybridization (BONCAT-FISH). In theory, BONCAT-labeled cells could be isolated with fluorescence-activated cell sorting (BONCAT-FACS) for subsequent genetic analyses. Here, in the first application, to our knowledge, of BONCAT-FISH and BONCAT-FACS within an environmental context, we probe the translational activity of microbial consortia catalyzing the anaerobic oxidation of methane (AOM), a dominant sink of methane in the ocean. These consortia, which typically are composed of anaerobic methane-oxidizing archaea (ANME) and sulfate-reducing bacteria, have been difficult to study due to their slow in situ growth rates, and fundamental questions remain about their ecology and diversity of interactions occurring between ANME and associated partners. Our activity-correlated analyses of &gt;16,400 microbial aggregates provide the first evidence, to our knowledge, that AOM consortia affiliated with all five major ANME clades are concurrently active under controlled conditions. Surprisingly, sorting of individual BONCAT-labeled consortia followed by whole-genome amplification and 16S rRNA gene sequencing revealed previously unrecognized interactions of ANME with members of the poorly understood phylum Verrucomicrobia. This finding, together with our observation that ANME-associated Verrucomicrobia are found in a variety of geographically distinct methane seep environments, suggests a broader range of symbiotic relationships within AOM consortia than previously thought.</dcterms:abstract>
+        <dc:date>2016-07-12</dc:date>
+        <z:libraryCatalog>pnas.org (Atypon)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.pnas.org/doi/full/10.1073/pnas.1603757113</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:57:21</dcterms:dateSubmitted>
+        <dc:description>Publisher: Proceedings of the National Academy of Sciences</dc:description>
+        <bib:pages>E4069-E4078</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/14/Hatzenpichler et al. - 2016 - Visualizing in situ translational activity for ide.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.pnas.org/doi/pdf/10.1073/pnas.1603757113</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:57:23</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/s41579-020-0323-1">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1740-1534"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Krukenberg</foaf:surname>
+                        <foaf:givenName>Viola</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Spietz</foaf:surname>
+                        <foaf:givenName>Rachel L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jay</foaf:surname>
+                        <foaf:givenName>Zackary J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_16"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Bacterial techniques and applications</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cellular microbiology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>High-throughput screening</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Microbiome</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Next-generation physiology approaches to study microbiome function at single cell level</dc:title>
+        <dcterms:abstract>The function of cells in their native habitat often cannot be reliably predicted from genomic data or from physiology studies of isolates. Traditional experimental approaches to study the function of taxonomically and metabolically diverse microbiomes are limited by their destructive nature, low spatial resolution or low throughput. Recently developed technologies can offer new insights into cellular function in natural and human-made systems and how microorganisms interact with and shape the environments that they inhabit. In this Review, we provide an overview of these next-generation physiology approaches and discuss how the non-destructive analysis of cellular phenotypes, in combination with the separation of the target cells for downstream analyses, provide powerful new, complementary ways to study microbiome function. We anticipate that the widespread application of next-generation physiology approaches will transform the field of microbial ecology and dramatically improve our understanding of how microorganisms function in their native environment.</dcterms:abstract>
+        <dc:date>2020-04</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41579-020-0323-1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:35</dcterms:dateSubmitted>
+        <dc:rights>2020 Springer Nature Limited</dc:rights>
+        <dc:description>Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>241-256</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1740-1534">
+        <prism:volume>18</prism:volume>
+        <dc:title>Nature Reviews Microbiology</dc:title>
+        <dc:identifier>DOI 10.1038/s41579-020-0323-1</dc:identifier>
+        <prism:number>4</prism:number>
+        <dcterms:alternative>Nat Rev Microbiol</dcterms:alternative>
+        <dc:identifier>ISSN 1740-1534</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_16">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/16/Hatzenpichler et al. - 2020 - Next-generation physiology approaches to study mic.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41579-020-0323-1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:37</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_17">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>16</prism:volume>
+                <dc:title>Environmental Microbiology</dc:title>
+                <dc:identifier>DOI 10.1111/1462-2920.12436</dc:identifier>
+                <prism:number>8</prism:number>
+                <dc:identifier>ISSN 1462-2920</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scheller</foaf:surname>
+                        <foaf:givenName>Silvan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tavormina</foaf:surname>
+                        <foaf:givenName>Patricia L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Babin</foaf:surname>
+                        <foaf:givenName>Brett M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tirrell</foaf:surname>
+                        <foaf:givenName>David A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Orphan</foaf:surname>
+                        <foaf:givenName>Victoria J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_18"/>
+        <link:link rdf:resource="#item_21"/>
+        <dc:title>visualization of newly synthesized proteins in environmental microbes using amino acid tagging and click chemistry</dc:title>
+        <dcterms:abstract>Here we describe the application of a new click chemistry method for fluorescent tracking of protein synthesis in individual microorganisms within environmental samples. This technique, termed bioorthogonal non-canonical amino acid tagging (BONCAT), is based on the in vivo incorporation of the non-canonical amino acid L-azidohomoalanine (AHA), a surrogate for l-methionine, followed by fluorescent labelling of AHA-containing cellular proteins by azide-alkyne click chemistry. BONCAT was evaluated with a range of phylogenetically and physiologically diverse archaeal and bacterial pure cultures and enrichments, and used to visualize translationally active cells within complex environmental samples including an oral biofilm, freshwater and anoxic sediment. We also developed combined assays that couple BONCAT with ribosomal RNA (rRNA)-targeted fluorescence in situ hybridization (FISH), enabling a direct link between taxonomic identity and translational activity. Using a methanotrophic enrichment culture incubated under different conditions, we demonstrate the potential of BONCAT-FISH to study microbial physiology in situ. A direct comparison of anabolic activity using BONCAT and stable isotope labelling by nano-scale secondary ion mass spectrometry (15NH3 assimilation) for individual cells within a sediment-sourced enrichment culture showed concordance between AHA-positive cells and 15N enrichment. BONCAT-FISH offers a fast, inexpensive and straightforward fluorescence microscopy method for studying the in situ activity of environmental microbes on a single-cell level.</dcterms:abstract>
+        <dc:date>2014</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:41</dcterms:dateSubmitted>
+        <dc:rights>© 2014 The Authors. Environmental Microbiology published by Society for Applied Microbiology and John Wiley &amp; Sons Ltd.</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/1462-2920.12436</dc:description>
+        <bib:pages>2568-2590</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_18">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/18/Hatzenpichler et al. - 2014 - visualization of newly synthesized proteins in env.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:43</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_21">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/21/1462-2920.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://enviromicro-journals.onlinelibrary.wiley.com/doi/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:51</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://experiments.springernature.com/articles/10.1007/8623_2015_61">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_20"/>
+        <dc:title>Detection of Protein-Synthesizing Microorganisms in the Environment via Bioorthogonal Noncanonical Amino Acid Tagging (BONCAT) | Springer Nature Experiments</dc:title>
+        <dcterms:abstract>Bioorthogonal noncanonical amino acid tagging (BONCAT) is a recently developed method for studying microbial in situ activity. This technique is based on the in ...</dcterms:abstract>
+        <z:language>en</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://experiments.springernature.com/articles/10.1007/8623_2015_61</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:43</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_20">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/20/8623_2015_61.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://experiments.springernature.com/articles/10.1007/8623_2015_61</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:50</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1038/ismej.2008.32">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1751-7362"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kalyuzhnaya</foaf:surname>
+                        <foaf:givenName>Marina G</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lidstrom</foaf:surname>
+                        <foaf:givenName>Mary E</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chistoserdova</foaf:surname>
+                        <foaf:givenName>Ludmila</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_23"/>
+        <link:link rdf:resource="#item_24"/>
+        <dc:title>Real-time detection of actively metabolizing microbes by redox sensing as applied to methylotroph populations in Lake Washington</dc:title>
+        <dcterms:abstract>Redox sensor green (RSG), a novel fluorescent dye from Invitrogen was employed as a tool for real-time detection of microbes metabolically active in situ, in combination with flow cytometry and cell sorting. Lake Washington sediment, an environment known for high rates of methane oxidation, was used as a model, and methylotrophs were targeted as a functional group. We first tested and optimized the performance of the dye with pure methylotroph cultures. Most cells in actively growing cultures were positive for staining, whereas in starved cultures, few cells fluoresced. However, starved cells could be activated by addition of substrate. High numbers of fluorescing cells were observed in a Lake Washington sediment sample, and activation of subpopulations of cells was demonstrated in response to methane, methanol, methylamine and formaldehyde. The fraction of the population activated by methane was investigated in more detail, by phylogenetic profiling. This approach showed that the major responding species were the Methylomonas species, previously isolated from the site, and Methylobacter species that have not yet been cultivated from Lake Washington. In addition, from the methane-stimulated fraction, uncultivated bacterial sequences were obtained that belonged to unclassified Deltaproteobacteria, unclassified Verrucomicrobiles and unclassified Acidobacteria, suggesting that these microbes may also be involved in methane metabolism. The approach was further tested for its utility in facilitating enrichment for functional types that possess specific metabolic activities but resist cultivation. It was demonstrated that in enrichment cultures inoculated with cells that were sorted after stimulation with methane, Methylobacter sequences could be detected, whereas in enrichment cultures inoculated by randomly sorted cells, Methylomonas species quickly outcompeted all other types.</dcterms:abstract>
+        <dc:date>2008-07-01</dc:date>
+        <z:libraryCatalog>Silverchair</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1038/ismej.2008.32</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-08 14:10:34</dcterms:dateSubmitted>
+        <bib:pages>696-706</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1751-7362">
+        <prism:volume>2</prism:volume>
+        <dc:title>The ISME Journal</dc:title>
+        <dc:identifier>DOI 10.1038/ismej.2008.32</dc:identifier>
+        <prism:number>7</prism:number>
+        <dcterms:alternative>The ISME Journal</dcterms:alternative>
+        <dc:identifier>ISSN 1751-7362</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_23">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/23/Kalyuzhnaya et al. - 2008 - Real-time detection of actively metabolizing micro.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/ismej/article-pdf/2/7/696/56442269/41396_2008_article_bfismej200832.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-08 14:10:37</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_24">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/24/7588499.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/ismej/article/2/7/696/7588499</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-08 14:10:44</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/s41396-020-00749-1">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1751-7370"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reichart</foaf:surname>
+                        <foaf:givenName>Nicholas J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jay</foaf:surname>
+                        <foaf:givenName>Zackary J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Krukenberg</foaf:surname>
+                        <foaf:givenName>Viola</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Parker</foaf:surname>
+                        <foaf:givenName>Albert E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Spietz</foaf:surname>
+                        <foaf:givenName>Rachel L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_26"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Archaea</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Environmental microbiology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial communities</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial ecology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Activity-based cell sorting reveals responses of uncultured archaea and bacteria to substrate amendment</dc:title>
+        <dcterms:abstract>Metagenomic studies have revolutionized our understanding of the metabolic potential of uncultured microorganisms in various ecosystems. However, many of these genomic predictions have yet to be experimentally tested, and the functional expression of genomic potential often remains unaddressed. In order to obtain a more thorough understanding of cell physiology, novel techniques capable of testing microbial metabolism under close to in situ conditions must be developed. Here, we provide a benchmark study to demonstrate that bioorthogonal non-canonical amino acid tagging (BONCAT) in combination with fluorescence-activated cell sorting (FACS) and 16S rRNA gene sequencing can be used to identify anabolically active members of a microbial community incubated in the presence of various growth substrates or under changing physicochemical conditions. We applied this approach to a hot spring sediment microbiome from Yellowstone National Park (Wyoming, USA) and identified several microbes that changed their activity levels in response to substrate addition, including uncultured members of the phyla Thaumarchaeota, Acidobacteria, and Fervidibacteria. Because shifts in activity in response to substrate amendment or headspace changes are indicative of microbial preferences for particular growth conditions, results from this and future BONCAT-FACS studies could inform the development of cultivation media to specifically enrich uncultured microbes. Most importantly, BONCAT-FACS is capable of providing information on the physiology of uncultured organisms at as close to in situ conditions as experimentally possible.</dcterms:abstract>
+        <dc:date>2020-11</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41396-020-00749-1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 19:13:34</dcterms:dateSubmitted>
+        <dc:rights>2020 The Author(s)</dc:rights>
+        <dc:description>Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>2851-2861</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1751-7370">
+        <prism:volume>14</prism:volume>
+        <dc:title>The ISME Journal</dc:title>
+        <dc:identifier>DOI 10.1038/s41396-020-00749-1</dc:identifier>
+        <prism:number>11</prism:number>
+        <dcterms:alternative>ISME J</dcterms:alternative>
+        <dc:identifier>ISSN 1751-7370</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_26">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/26/Reichart et al. - 2020 - Activity-based cell sorting reveals responses of u.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41396-020-00749-1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 19:13:36</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0043135421008903">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0043-1354"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Du</foaf:surname>
+                        <foaf:givenName>Zhe</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Behrens</foaf:surname>
+                        <foaf:givenName>Sebastian F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_28"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Activated sludge</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Bioorthogonal non-canonical amino acid tagging (BONCAT)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Fluorescence-activated cell sorting (FACS)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial activity</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Sequencing batch reactor</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Wastewater</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Tracking &lt;i&gt;de novo&lt;/i&gt; protein synthesis in the activated sludge microbiome using BONCAT-FACS</dc:title>
+        <dcterms:abstract>In order to ensure stable performance of engineered biotechnologies that rely on mixed microbial community systems, it is important to identify process-specific microbial traits and study their in-situ activity and responses to changing environmental conditions and system operational parameters. We used BioOrthogonal Non-Canonical Amino acid Tagging (BONCAT) in combination with Fluorescence-Activated Cell Sorting (FACS) and 16S rRNA gene amplicon sequencing to identify translationally active cells in activated sludge. We found that only a subset of the activated sludge microbiome is translationally active during the aerobic treatment phase of a full-scale sequencing batch reactor designed to enhance biological phosphorus removal from municipal wastewater. Relative abundance of amplicon sequence variants was not a reliable predictor of species activity. BONCAT-positive and -negative cells revealed a broad range of population-wide and taxa-specific translational heterogeneity. BONCAT-FACS in combination with amplicon sequencing can provide new insights into the ecophysiology of highly dynamic microbiomes in activated sludge systems.</dcterms:abstract>
+        <dc:date>2021-10-15</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0043135421008903</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 19:21:50</dcterms:dateSubmitted>
+        <bib:pages>117696</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0043-1354">
+        <prism:volume>205</prism:volume>
+        <dc:title>Water Research</dc:title>
+        <dc:identifier>DOI 10.1016/j.watres.2021.117696</dc:identifier>
+        <dcterms:alternative>Water Research</dcterms:alternative>
+        <dc:identifier>ISSN 0043-1354</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_28">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/28/S0043135421008903.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0043135421008903</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 19:22:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1029/2021JG006247">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2169-8961"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ozersky</foaf:surname>
+                        <foaf:givenName>Ted</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bramburger</foaf:surname>
+                        <foaf:givenName>Andrew J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Elgin</foaf:surname>
+                        <foaf:givenName>Ashley K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vanderploeg</foaf:surname>
+                        <foaf:givenName>Henry A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Jia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Austin</foaf:surname>
+                        <foaf:givenName>Jay A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Carrick</foaf:surname>
+                        <foaf:givenName>Hunter J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chavarie</foaf:surname>
+                        <foaf:givenName>Louise</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Depew</foaf:surname>
+                        <foaf:givenName>David C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fisk</foaf:surname>
+                        <foaf:givenName>Aaron T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hampton</foaf:surname>
+                        <foaf:givenName>Stephanie E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hinchey</foaf:surname>
+                        <foaf:givenName>Elizabeth K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>North</foaf:surname>
+                        <foaf:givenName>Rebecca L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wells</foaf:surname>
+                        <foaf:givenName>Mathew G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xenopoulos</foaf:surname>
+                        <foaf:givenName>Marguerite A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Coleman</foaf:surname>
+                        <foaf:givenName>Maureen L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Duhaime</foaf:surname>
+                        <foaf:givenName>Melissa B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fujisaki-Manome</foaf:surname>
+                        <foaf:givenName>Ayumi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McKay</foaf:surname>
+                        <foaf:givenName>R. Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Meadows</foaf:surname>
+                        <foaf:givenName>Guy A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rowe</foaf:surname>
+                        <foaf:givenName>Mark D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sharma</foaf:surname>
+                        <foaf:givenName>Sapna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Twiss</foaf:surname>
+                        <foaf:givenName>Michael R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zastepa</foaf:surname>
+                        <foaf:givenName>Arthur</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_30"/>
+        <link:link rdf:resource="#item_31"/>
+        <link:link rdf:resource="#item_36"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>climate change</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Laurentian Great Lakes</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>seasonality</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>winter limnology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>The Changing Face of Winter: Lessons and Questions From the Laurentian Great Lakes</dc:title>
+        <dcterms:abstract>Among its many impacts, climate warming is leading to increasing winter air temperatures, decreasing ice cover extent, and changing winter precipitation patterns over the Laurentian Great Lakes and their watershed. Understanding and predicting the consequences of these changes is impeded by a shortage of winter-period studies on most aspects of Great Lake limnology. In this review, we summarize what is known about the Great Lakes during their 3–6 months of winter and identify key open questions about the physics, chemistry, and biology of the Laurentian Great Lakes and other large, seasonally frozen lakes. Existing studies show that winter conditions have important effects on physical, biogeochemical, and biological processes, not only during winter but in subsequent seasons as well. Ice cover, the extent of which fluctuates dramatically among years and the five lakes, emerges as a key variable that controls many aspects of the functioning of the Great Lakes ecosystem. Studies on the properties and formation of Great Lakes ice, its effect on vertical and horizontal mixing, light conditions, and biota, along with winter measurements of fundamental state and rate parameters in the lakes and their watersheds are needed to close the winter knowledge gap. Overcoming the formidable logistical challenges of winter research on these large and dynamic ecosystems may require investment in new, specialized research infrastructure. Perhaps more importantly, it will demand broader recognition of the value of such work and collaboration between physicists, geochemists, and biologists working on the world's seasonally freezing lakes and seas.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>The Changing Face of Winter</z:shortTitle>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1029/2021JG006247</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:07:48</dcterms:dateSubmitted>
+        <dc:rights>© 2021. The Authors.</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1029/2021JG006247</dc:description>
+        <bib:pages>e2021JG006247</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2169-8961">
+        <prism:volume>126</prism:volume>
+        <dc:title>Journal of Geophysical Research: Biogeosciences</dc:title>
+        <dc:identifier>DOI 10.1029/2021JG006247</dc:identifier>
+        <prism:number>6</prism:number>
+        <dc:identifier>ISSN 2169-8961</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_30">
+       <rdf:value>&lt;p&gt;e2021JG006247 2021JG006247&lt;/p&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_31">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/31/Ozersky et al. - 2021 - The Changing Face of Winter Lessons and Questions.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021JG006247</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:07:50</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_36">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/36/2021JG006247.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JG006247</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:00</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0380133007701429">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0380-1330"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Trebitz</foaf:surname>
+                        <foaf:givenName>Anett S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Brazner</foaf:surname>
+                        <foaf:givenName>John C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cotter</foaf:surname>
+                        <foaf:givenName>Anne M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Knuth</foaf:surname>
+                        <foaf:givenName>Michael L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Morrice</foaf:surname>
+                        <foaf:givenName>John A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Peterson</foaf:surname>
+                        <foaf:givenName>Gregory S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sierszen</foaf:surname>
+                        <foaf:givenName>Michael E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thompson</foaf:surname>
+                        <foaf:givenName>Jo A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kelly</foaf:surname>
+                        <foaf:givenName>John R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_37"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>agriculture impacts</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>coastal wetlands</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Great Lakes</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>nutrients</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>water quality</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Water Quality in Great Lakes Coastal Wetlands: Basin-wide Patterns and Responses to an Anthropogenic Disturbance Gradient</dc:title>
+        <dcterms:abstract>We present water quality data from 58 coastal wetlands, sampled as part of a larger effort investigating effects of nutrient enrichment and habitat disruption in the Laurentian Great Lakes. Our sampling design selected sites from across a gradient of agricultural intensity within combinations of biogeographic ecoprovince and wetland hydromorphic type and captured a large range in water quality. Levels of total nutrients (N and P), and various measures of particulate concentration, water clarity, and ionic strength were strongly associated with agricultural intensity in the watershed, and could be effectively aggregated into an overall principal component-based water quality descriptor. Lake Erie wetlands had the highest nutrient levels and lowest water clarity, while wetlands in Lakes Superior and Huron had the lowest nutrient levels and clearest water. Lake Ontario wetlands had clearer water than would be expected from their nutrient levels and position on the agricultural intensity gradient. Dissolved oxygen, silica, pH, and dissolved organic carbon (DOC) were independent of agricultural intensity but DOC was responsible for low water clarity in some Lake Superior wetlands. Simple classification by hydromorphic type (riverine or protected) did not explain water quality differences among wetlands exposed to similar agricultural intensity levels, so finer hydrologic classification may be desirable. Results are used as a basis for discussing research and information needs underlying development of water quality criteria and monitoring programs for coastal wetlands of the Great Lakes.</dcterms:abstract>
+        <dc:date>2007-01-01</dc:date>
+        <z:shortTitle>Water Quality in Great Lakes Coastal Wetlands</z:shortTitle>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133007701429</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:07:52</dcterms:dateSubmitted>
+        <bib:pages>67-85</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0380-1330">
+        <dcterms:isPartOf>
+           <bib:Series><dc:title>Coastal Indicators</dc:title></bib:Series>
+        </dcterms:isPartOf>
+        <prism:volume>33</prism:volume>
+        <dc:title>Journal of Great Lakes Research</dc:title>
+        <dc:identifier>DOI 10.3394/0380-1330(2007)33[67:WQIGLC]2.0.CO;2</dc:identifier>
+        <dcterms:alternative>Journal of Great Lakes Research</dcterms:alternative>
+        <dc:identifier>ISSN 0380-1330</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_37">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/37/S0380133007701429.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133007701429</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:02</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1002/lno.11600">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1939-5590"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mahdiyan</foaf:surname>
+                        <foaf:givenName>Octavia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Filazzola</foaf:surname>
+                        <foaf:givenName>Alessandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Molot</foaf:surname>
+                        <foaf:givenName>Lewis A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gray</foaf:surname>
+                        <foaf:givenName>Derek</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sharma</foaf:surname>
+                        <foaf:givenName>Sapna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_34"/>
+        <link:link rdf:resource="#item_41"/>
+        <dc:title>Drivers of water quality changes within the Laurentian Great Lakes region over the past 40 years</dc:title>
+        <dcterms:abstract>Water quality of freshwater lakes within the Laurentian Great Lakes region is vulnerable to degradation owing to multiple environmental stressors including climate change, alterations in land use, and the introduction of invasive species. Our research questions were two-fold: (1) What are the temporal patterns and trends in water quality? (2) Are climate, invasive species and lake morphology associated with changes in water quality? Our study incorporated timeseries data for at least 20 years from 36 lakes in Ontario and Wisconsin sampled between 1976 and 2016. We evaluated patterns in water quality (total phosphorus [TP], total nitrogen, dissolved organic carbon [DOC], and chlorophyll a [Chl a]) using segmented regression analysis which identified significant breakpoints in Chl a and TP in the 1900s to mid-2000s after which Chl a and TP began to increase, whereas breakpoints in DOC exhibited increasing trends prior to the year 2000 with levels declining afterward. Next, we examined linear trends in water quality and climate (temperature and precipitation) using Sen slope analysis where, generally, over the past 40 years, lake TP and Chl a have significantly declined, whereas DOC has increased. Lastly, we conducted a redundancy analysis (RDA) to identify how climate, lake morphology, and the presence of invasive dreissenid mussels contributed to changes in water quality. The RDA revealed that precipitation, air temperature, and morphology explained 73.1% of the variation in water quality trends for the Great Lakes whereas precipitation, temperature, morphology, and occurrence of mussels explained 45.6% of the variation for smaller inland lakes.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1002/lno.11600</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:07:55</dcterms:dateSubmitted>
+        <dc:rights>© 2020 Association for the Sciences of Limnology and Oceanography</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/lno.11600</dc:description>
+        <bib:pages>237-254</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1939-5590">
+        <prism:volume>66</prism:volume>
+        <dc:title>Limnology and Oceanography</dc:title>
+        <dc:identifier>DOI 10.1002/lno.11600</dc:identifier>
+        <prism:number>1</prism:number>
+        <dc:identifier>ISSN 1939-5590</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_34">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/34/Mahdiyan et al. - 2021 - Drivers of water quality changes within the Lauren.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lno.11600</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:07:57</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_41">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/41/lno.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://aslopubs.onlinelibrary.wiley.com/doi/full/10.1002/lno.11600</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:07</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0380133015001276">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>41</prism:volume>
+                <dc:title>Journal of Great Lakes Research</dc:title>
+                <dc:identifier>DOI 10.1016/j.jglr.2015.05.015</dc:identifier>
+                <prism:number>3</prism:number>
+                <dcterms:alternative>Journal of Great Lakes Research</dcterms:alternative>
+                <dc:identifier>ISSN 0380-1330</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Coble</foaf:surname>
+                        <foaf:givenName>Ashley A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Marcarelli</foaf:surname>
+                        <foaf:givenName>Amy M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kane</foaf:surname>
+                        <foaf:givenName>Evan S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_43"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Biodegradable dissolved organic carbon</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lake Superior</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Nutrient limitation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Temporal variability</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Tributary stream</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Ammonium and glucose amendments stimulate dissolved organic matter mineralization in a Lake Superior tributary</dc:title>
+        <dcterms:abstract>Dissolved organic matter (DOM) plays an integral role in the biogeochemical cycles of aquatic ecosystems, and rates of DOM mineralization can be affected by nitrogen (N) and carbon (C) availability in the water column. To determine if DOM mineralization rates were limited by availability of N or C in a small tributary of Lake Superior, we conducted 28-day laboratory experiments where we amended stream water with a microbial inoculum and ammonium (NH4+) and/or glucose in a full factorial design. We repeated these experiments on four dates (July, October, January, April) because we expected nutrient limitation to vary with temporal changes in sources of DOM and nutrients. DOM mineralization rates were stimulated by additions of NH4+ in three of the four experiments and by glucose in all four experiments, even in October when carbon inputs to the stream via leaf litter were greatest. Mean biodegradable dissolved organic C was greater in July (40.6%±5.4) than October (10.2%±0.9) or January (9.6%±10.9) but did not differ from April (18.4%±0.7), which suggests the composition of DOM varies temporally. Our results suggest that biodegradable DOM is exported from this forested stream to nearshore Lake Superior throughout the year, but DOM mineralization can be stimulated by additions of both carbon and nitrogen. Nutrient enrichment may alter in-stream processing of DOM in small forested tributary streams, in turn reducing export of biodegradable DOM to nearshore regions of the Great Lakes where it fuels microbial production.</dcterms:abstract>
+        <dc:date>2015-09-01</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133015001276</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:07:58</dcterms:dateSubmitted>
+        <bib:pages>801-807</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_43">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/43/S0380133015001276.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133015001276</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:08</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.jstor.org/stable/20112943">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0346-6868"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Persson</foaf:surname>
+                        <foaf:givenName>Gunnar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Broberg</foaf:surname>
+                        <foaf:givenName>Ola</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_39"/>
+        <dc:title>Nutrient Concentrations in the Acidified Lake Gårdsjön: The Role of Transport and Retention of Phosphorus, Nitrogen and DOC in Watershed and Lake</dc:title>
+        <dcterms:abstract>Nutrient supply &quot;bulk deposition&quot; and &quot;throughfall deposition&quot; to open areas and the forest floor, respectively, was monitored in the Lake Gårdsjön watershed. Deposition rates were 0.08 kg P $\text{ha}^{-1}\text{yr}^{-1}$ and 12.8 kg N $\text{ha}^{-1}\text{yr}^{-1}$ for &quot;bulk&quot; and 0.25 kg P $\text{ha}^{-1}\text{yr}^{-1}$ and 12.3 kg N $\text{ha}^{-1}\text{yr}^{-1}$ for &quot;throughfall&quot; deposition. Monitoring of nutrient and DOC (dissolved organic carbon) losses from the land catchment showed low losses (0.03 kg P $\text{ha}^{-1}\text{yr}^{-1}$, 1.9 kg N $\text{ha}^{-1}\text{yr}^{-1}$ and 61 kg DOC-C $\text{ha}^{-1}\text{yr}^{-1}$). Phosphorus retention upon water passage through podzol soil profiles was followed in field lysimeters. An adjustment to the low catchment effluent concentrations was found in the B-horizon, where the raised aluminium concentrations would tend to precipitate phosphate. The low trophic status of the lake (phosphorus-regulated) was not due to excessive retention of phosphorus in the lake basin. Retention was normal or low (20-25% of input) compared to circumneutral lakes of similar water renewal time (1 yr). Lake denitrification was high and DOC behaved independently of phosphorus in several ways, which did not support the idea of DOC as a phosphorus carrier. Within-lake processes of phosphorus retention, including storage in benthic flora and detritus, and sudden benthic releases of phosphorus are discussed. The low external supply was considered the most probable main regulator of ambient lake phosphorus level.</dcterms:abstract>
+        <dc:date>1985</dc:date>
+        <z:shortTitle>Nutrient Concentrations in the Acidified Lake Gårdsjön</z:shortTitle>
+        <z:libraryCatalog>JSTOR</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.jstor.org/stable/20112943</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:02</dcterms:dateSubmitted>
+        <dc:description>Publisher: Oikos Editorial Office</dc:description>
+        <bib:pages>158-175</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0346-6868">
+        <dc:title>Ecological Bulletins</dc:title>
+        <prism:number>37</prism:number>
+        <dc:identifier>ISSN 0346-6868</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_39">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/39/Persson and Broberg - 1985 - Nutrient Concentrations in the Acidified Lake Gård.pdf"/>
+        <dc:title>JSTOR Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.jstor.org/stable/pdfplus/10.2307/20112943.pdf?acceptTC=true</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:04</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0380133020300940">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>46</prism:volume>
+                <dc:title>Journal of Great Lakes Research</dc:title>
+                <dc:identifier>DOI 10.1016/j.jglr.2020.05.002</dc:identifier>
+                <prism:number>4</prism:number>
+                <dcterms:alternative>Journal of Great Lakes Research</dcterms:alternative>
+                <dc:identifier>ISSN 0380-1330</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pearce</foaf:surname>
+                        <foaf:givenName>Nolan J. T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yates</foaf:surname>
+                        <foaf:givenName>Adam G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_48"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Carbon</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Eutrophication</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Limitation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Nitrogen</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Phosphorus</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Streams</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Spatial and temporal patterns in macronutrient concentrations and stoichiometry of tributaries draining the lower Great Lakes-St. Lawrence basin</dc:title>
+        <dcterms:abstract>Nutrient management in the Great Lakes-St. Lawrence basin has focused on the reduction of tributary phosphorus inputs to control lake eutrophication. However, the regional implications of nutrient enrichment on stream eutrophication and management remain understudied. We compared nutrient concentrations and stoichiometric ratios of carbon, nitrogen, and phosphorus to evaluate spatial and temporal patterns in the potential for nutrient limitation in streams of the lower Great Lakes-St. Lawrence basin in Ontario, Canada. Monitoring data from 127 streams was used to describe macronutrient concentrations and stoichiometry over a 10-year period (2007–2016). Nutrient enrichment was widespread as 65% and 68% of studied streams had nitrogen and phosphorus concentrations above regional guidelines, respectively. Macronutrient stoichiometry indicated that 35% of streams were depleted for phosphorus and 65% were co-depleted for nitrogen and phosphorus relative to the Redfield ratio. However, algal production in most streams was likely nutrient saturated such that only 2% of streams showed the potential for phosphorus limitation and 21% for nitrogen and phosphorus co-limitation. Temporal assessment of individual nutrients that were depleted indicated minimal variation within most streams. In contrast, macronutrient stoichiometry was associated with spatial patterns in catchment land-cover whereby a shift from nitrogen and phosphorus co-depletion to phosphorus depletion occurred with increasing agriculture and decreasing natural and wetland cover. Our results suggest that phosphorus reductions alone may be insufficient to manage stream eutrophication in the Great Lakes-St. Lawrence basin and that dual nutrient reductions needed to improve stream conditions may be achievable through land-cover management.</dcterms:abstract>
+        <dc:date>2020-08-01</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133020300940</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:05</dcterms:dateSubmitted>
+        <bib:pages>989-1000</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_48">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/48/S0380133020300940.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133020300940</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:14</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1007/s10750-013-1569-7">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1573-5117"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Small</foaf:surname>
+                        <foaf:givenName>Gaston E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cotner</foaf:surname>
+                        <foaf:givenName>James B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Finlay</foaf:surname>
+                        <foaf:givenName>Jacques C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stark</foaf:surname>
+                        <foaf:givenName>Rebecca A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sterner</foaf:surname>
+                        <foaf:givenName>Robert W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_44"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Laurentian Great Lakes</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Nitrogen</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Denitrification</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Environmental Chemistry</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Sediment</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Nitrogen transformations at the sediment–water interface across redox gradients in the Laurentian Great Lakes</dc:title>
+        <dcterms:abstract>The capacity of a lake to remove reactive nitrogen (N) through denitrification has important implications both for the lake and for downstream ecosystems. In large oligotropic lakes such as Lake Superior, where nitrate (NO3−) concentrations have increased steadily over the past century, deep oxygen penetration into sediments may limit the denitrification rates. We tested the hypothesis that the position of the redox gradient in lake sediments affects denitrification by measuring net N-fluxes across the sediment–water interface for intact sediment cores collected across a range of sediment oxycline values from nearshore and offshore sites in Lake Superior, as well as sites in Lake Huron and Lake Erie. Across this redox gradient, as the thickness of the oxygenated sediment layer increased from Lake Erie to Lake Superior, fluxes of NH4+ and N2 out of the sediment decreased, and sediments shifted from a net sink to a net source of NO3−. Denitrification of NO3− from overlying water decreased with thickness of the oxygenated sediment layer. Our results indicate that, unlike sediments from Lake Erie and Lake Huron, Lake Superior sediments do not remove significant amounts of water column NO3− through denitrification, likely as a result of the thick oxygenated sediment layer.</dcterms:abstract>
+        <dc:date>2014-06-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Springer Link</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1007/s10750-013-1569-7</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:07</dcterms:dateSubmitted>
+        <bib:pages>95-108</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1573-5117">
+        <prism:volume>731</prism:volume>
+        <dc:title>Hydrobiologia</dc:title>
+        <dc:identifier>DOI 10.1007/s10750-013-1569-7</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Hydrobiologia</dcterms:alternative>
+        <dc:identifier>ISSN 1573-5117</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_44">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/44/Small et al. - 2014 - Nitrogen transformations at the sediment–water int.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/content/pdf/10.1007%2Fs10750-013-1569-7.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:10</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1029/2023WR034839">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1944-7973"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fasching</foaf:surname>
+                        <foaf:givenName>Christina</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Boodoo</foaf:surname>
+                        <foaf:givenName>Kyle S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yao</foaf:surname>
+                        <foaf:givenName>Huaxia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rusak</foaf:surname>
+                        <foaf:givenName>James A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xenopoulos</foaf:surname>
+                        <foaf:givenName>Marguerite A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_46"/>
+        <link:link rdf:resource="#item_47"/>
+        <link:link rdf:resource="#item_49"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>nutrients</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>dissolved organic carbon</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>flood</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>lake</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>stoichiometry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>stream</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Role of Lakes, Flood, and Low Flow Events in Modifying Catchment-Scale DOC:TN:TP Stoichiometry and Export</dc:title>
+        <dcterms:abstract>The balance of organic carbon (OC), nitrogen (N) and phosphorus (P) plays a crucial role in determining the processing, retention, and movement of these solutes across the aquatic continuum. Floods and droughts can significantly alter the quantity and ratios of OC:N:P export within inland waters, but how these ratios change, and are coupled within watersheds that integrate rivers and lakes, is not well known. We investigated the stoichiometry and export of dissolved organic carbon (DOC), total N (TN) and total P (TP) in two lake watersheds (10 inflows, 2 outflows) in the southern Boreal Shield over a 37-year period. Although DOC, TN, and TP concentration behaved similarly, DOC:TN:TP ratios varied seasonally, strongly modulated by stream discharge. DOC:TN, DOC:TP and TN:TP export initially increased rapidly with increasing discharge, peaking at 10%–20% exceedance of the annual discharge for DOC:TP and TN:TP ratios, indicating a rapid depletion of catchment OC sources. Both flood and low flow events resulted in lower DOC:TN and lower DOC:TP export—thereby increasing the relative contributions of stream TN and TP. Consequently, elevated annual discharge coupled with infrequent but high floods and periods of low flow events increased the contributions of TN and TP relative to DOC. Overall, the lakes retained DOC, while increasing TN relative to TP. Nonetheless, the flow regime played a role in modulating nutrient retention in the lakes, likely due to changes in residence time, and the interplay of physical, photochemical, and biological degradation processes.</dcterms:abstract>
+        <dc:date>2024</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Role of Lakes, Flood, and Low Flow Events in Modifying Catchment-Scale DOC</z:shortTitle>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1029/2023WR034839</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:11</dcterms:dateSubmitted>
+        <dc:rights>© 2024. The Authors.</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1029/2023WR034839</dc:description>
+        <bib:pages>e2023WR034839</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1944-7973">
+        <prism:volume>60</prism:volume>
+        <dc:title>Water Resources Research</dc:title>
+        <dc:identifier>DOI 10.1029/2023WR034839</dc:identifier>
+        <prism:number>3</prism:number>
+        <dc:identifier>ISSN 1944-7973</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_46">
+       <rdf:value>&lt;p&gt;e2023WR034839 2023WR034839&lt;/p&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_47">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/47/Fasching et al. - 2024 - Role of Lakes, Flood, and Low Flow Events in Modif.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023WR034839</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:12</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_49">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/49/2023WR034839.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023WR034839</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:19</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0301479720312640">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0301-4797"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wen</foaf:surname>
+                        <foaf:givenName>Zhidan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Song</foaf:surname>
+                        <foaf:givenName>Kaishan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shang</foaf:surname>
+                        <foaf:givenName>Yingxin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lyu</foaf:surname>
+                        <foaf:givenName>Lili</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenName>Qian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fang</foaf:surname>
+                        <foaf:givenName>Chong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Du</foaf:surname>
+                        <foaf:givenName>Jia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Sijia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liu</foaf:surname>
+                        <foaf:givenName>Ge</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Baohua</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cheng</foaf:surname>
+                        <foaf:givenName>Shuai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Chlorophyll</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lake</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Phytoplankton</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Winter ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Winter severity</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Variability of chlorophyll and the influence factors during winter in seasonally ice-covered lakes</dc:title>
+        <dcterms:abstract>Lake ice is an essential and integral part of the cryosphere and freshwater systems. The formation of lake ice affects the physical, hydrological, and biological conditions of ecological systems. Global warming may contribute to even shorter periods of ice cover in the lakes of the Frigid Zone, which adversely affects the growth of phytoplankton and primary productivity. This study was conducted for the purpose of evaluating the growth of phytoplankton and factors involved, in 28 ice-covered lakes across the Songnen Plain, in the Northeast of China, to understand how they take part in the whole-ecosystem functioning. A total of 1026 water samples were collected in April, September, and January during the period 2014–2018. In the frozen period, the concentration levels of dissolved organic carbon (DOC), total nitrogen (TN), and total phosphorus (TP) were all comparable with the spring and autumn. Despite the limited light availability and low temperature, the phytoplankton survived in sub-ice waters during winter with a low concentration of chlorophyll a (Chla). Its average concentration was positively correlated with the concentration observed in the previous autumn (rp = 0.563, p &lt; 0.01). According to the regression tree analysis, during the winter period, Chla was mainly related to the concentration of TN in sub-ice water (TNwater) and with the difference of concentration of TP between water and ice (TPcd). Furthermore, either in ice or in sub-ice water, the concentration of Chla was also significantly affected by total suspended matter (TSM) (p &lt; 0.05). The levels of TNwater, TPcd, and TSM could explain the 77.8% of the variance in the concentration of Chla during winter with contributions in the ranges of 25.5%–35.0%, 9.2%–11.3%, and 21.5%–34.0%, respectively (p &lt; 0.05). This research substantially contributes to comprehending how the existing conditions under-ice affect the whole ecosystem when the ice cover is reduced lakes or rivers.</dcterms:abstract>
+        <dc:date>2020-12-15</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0301479720312640</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:08:56</dcterms:dateSubmitted>
+        <bib:pages>111338</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0301-4797">
+        <prism:volume>276</prism:volume>
+        <dc:title>Journal of Environmental Management</dc:title>
+        <dc:identifier>DOI 10.1016/j.jenvman.2020.111338</dc:identifier>
+        <dcterms:alternative>Journal of Environmental Management</dcterms:alternative>
+        <dc:identifier>ISSN 0301-4797</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="https://bg.copernicus.org/articles/7/2901/2010/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1726-4170"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ågren</foaf:surname>
+                        <foaf:givenName>A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Haei</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Köhler</foaf:surname>
+                        <foaf:givenName>S. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bishop</foaf:surname>
+                        <foaf:givenName>K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Laudon</foaf:surname>
+                        <foaf:givenName>H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_52"/>
+        <dc:title>Regulation of stream water dissolved organic carbon (DOC) concentrations during snowmelt; the role of discharge, winter climate and memory effects</dc:title>
+        <dcterms:abstract>Using a 15 year stream record from a northern boreal catchment, we demonstrate that the inter-annual variation in dissolved organic carbon (DOC) concentrations during snowmelt was related to discharge, winter climate and previous DOC export. A short and intense snowmelt gave higher stream water DOC concentrations, as did long winters, while a high previous DOC export during the antecedent summer and autumn resulted in lower concentrations during the following spring. By removing the effect of discharge we could detect that the length of winter affected the modeled soil water DOC concentrations during the following snowmelt period, which in turn affected the concentrations in the stream. Winter climate explained more of the stream water DOC variations than previous DOC export during the antecedent summer and autumn.</dcterms:abstract>
+        <dc:date>2010-09-23</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Copernicus Online Journals</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://bg.copernicus.org/articles/7/2901/2010/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:15:44</dcterms:dateSubmitted>
+        <dc:description>Publisher: Copernicus GmbH</dc:description>
+        <bib:pages>2901-2913</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1726-4170">
+        <prism:volume>7</prism:volume>
+        <dc:title>Biogeosciences</dc:title>
+        <dc:identifier>DOI 10.5194/bg-7-2901-2010</dc:identifier>
+        <prism:number>9</prism:number>
+        <dc:identifier>ISSN 1726-4170</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_52">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/52/Ågren et al. - 2010 - Regulation of stream water dissolved organic carbo.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://bg.copernicus.org/articles/7/2901/2010/bg-7-2901-2010.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:15:48</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.4319/lo.2009.54.6_part_2.2513">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>54</prism:volume>
+                <dc:title>Limnology and Oceanography</dc:title>
+                <dc:identifier>DOI 10.4319/lo.2009.54.6_part_2.2513</dc:identifier>
+                <prism:number>6part2</prism:number>
+                <dc:identifier>ISSN 1939-5590</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weyhenmeyer</foaf:surname>
+                        <foaf:givenName>Gesa A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Karlsson</foaf:surname>
+                        <foaf:givenName>Jan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_54"/>
+        <link:link rdf:resource="#item_56"/>
+        <dc:title>Nonlinear response of dissolved organic carbon concentrations in boreal lakes to increasing temperatures</dc:title>
+        <dcterms:abstract>Recent increases in concentrations of dissolved organic carbon (DOC) in lakes and rivers over large regions have been related to both changes in the climate and in atmospheric deposition chemistry. Using a data set of 1041 boreal lakes along a 13° latitudinal gradient, sampled in 1995, 2000, and 2005, and an additional data set of 90 lakes along a 1000-m altitudinal gradient at 68°N, we show that DOC concentrations increase in a nonlinear way along a latitudinal and altitudinal temperature gradient. The nonlinear relation of DOC to increasing temperatures was consistent over space and time. Out of 14 meteorological, catchment, morphometric, and atmospheric deposition variables tested, the variable best explaining this kind of nonlinear pattern was the number of days when air temperatures exceeded 0°C, i.e., the duration of the main growing and runoff season (DT&gt;0). Using DT&gt;0 as an input variable, we were able to predict the nonlinear temperature response of DOC concentrations, both spatially (R2 = 0.90, p &lt; 0.0001) and temporally (R2 = 0.90, p &lt; 0.0001). DT&gt;0 has an advantage over other variables because it includes the time factor, which is decisive for the duration that biogeochemical processes can take place. We suggest that DOC concentrations in lakes are influenced by climate change and that present temperature increases over Sweden result in an accelerated DOC increase toward warmer geographical regions.</dcterms:abstract>
+        <dc:date>2009</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.4319/lo.2009.54.6_part_2.2513</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:15:50</dcterms:dateSubmitted>
+        <dc:rights>© 2009, by the Association for the Sciences of Limnology and Oceanography, Inc.</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.4319/lo.2009.54.6_part_2.2513</dc:description>
+        <bib:pages>2513-2519</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_54">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/54/Weyhenmeyer and Karlsson - 2009 - Nonlinear response of dissolved organic carbon con.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.4319/lo.2009.54.6_part_2.2513</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:15:51</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_56">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/56/lo.2009.54.6_part_2.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.4319/lo.2009.54.6_part_2.2513</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:15:57</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S038013301830090X">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>44</prism:volume>
+                <dc:title>Journal of Great Lakes Research</dc:title>
+                <dc:identifier>DOI 10.1016/j.jglr.2018.05.018</dc:identifier>
+                <prism:number>4</prism:number>
+                <dcterms:alternative>Journal of Great Lakes Research</dcterms:alternative>
+                <dc:identifier>ISSN 0380-1330</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kovalenko</foaf:surname>
+                        <foaf:givenName>Katya E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reavie</foaf:surname>
+                        <foaf:givenName>Euan D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Barbiero</foaf:surname>
+                        <foaf:givenName>Richard P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Burlakova</foaf:surname>
+                        <foaf:givenName>Lyubov E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Karatayev</foaf:surname>
+                        <foaf:givenName>Alexander Y.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rudstam</foaf:surname>
+                        <foaf:givenName>Lars G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Watkins</foaf:surname>
+                        <foaf:givenName>James M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Community thresholds</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Multi-assemblage breakpoints</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Random Forests</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Water quality</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Zebra mussels</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Patterns of long-term dynamics of aquatic communities and water quality parameters in the Great Lakes: Are they synchronized?</dc:title>
+        <dcterms:abstract>Long time series data can provide insights into dynamics of large lakes. We use the USEPA-GLNPO biological monitoring dataset (phytoplankton, benthos, zooplankton and water quality), collected from 1996 through 2016, to identify whether there is evidence of concordant linear or non-linear trends in community composition, density/biomass/biovolume and major environmental parameters. We show changes in biotic assemblages and water quality variables, particularly in Lakes Michigan and Huron. These include changes in phytoplankton biovolume and zooplankton biomass, increasing invasive Dreissena abundance and decreasing densities of other benthos. Biotic changes are accompanied by pronounced changes in water quality and nutrient ratios. Species change-points, identified using threshold indicator taxon analysis, are often less abrupt, but there are clear shifts in a large proportion of species in each assemblage. The concordance of breakpoints among assemblages or lack thereof provides valuable insight into potential drivers of ecosystem change.</dcterms:abstract>
+        <dc:date>2018-08-01</dc:date>
+        <z:shortTitle>Patterns of long-term dynamics of aquatic communities and water quality parameters in the Great Lakes</z:shortTitle>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S038013301830090X</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:15:54</dcterms:dateSubmitted>
+        <bib:pages>660-669</bib:pages>
+    </bib:Article>
+    <bib:Article rdf:about="https://doi.org/10.1093/plankt/fbab050">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0142-7873"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shchapov</foaf:surname>
+                        <foaf:givenName>K</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wilburn</foaf:surname>
+                        <foaf:givenName>P</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bramburger</foaf:surname>
+                        <foaf:givenName>A J</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Silsbe</foaf:surname>
+                        <foaf:givenName>G M</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Olmanson</foaf:surname>
+                        <foaf:givenName>L</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Crawford</foaf:surname>
+                        <foaf:givenName>C J</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Litchman</foaf:surname>
+                        <foaf:givenName>E</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ozersky</foaf:surname>
+                        <foaf:givenName>T</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_58"/>
+        <dc:title>Taxonomic and functional differences between winter and summer crustacean zooplankton communities in lakes across a trophic gradient</dc:title>
+        <dcterms:abstract>Despite increasing interest in winter limnology, few studies have examined under-ice zooplankton communities and the factors shaping them in different types of temperate lakes. To better understand drivers of zooplankton community structure in winter and summer, we sampled 13 lakes across a large trophic status gradient for crustacean zooplankton abundance, taxonomic and functional community composition and C/N stable isotopes. Average winter zooplankton densities were one-third of summer densities across the study lakes. Proportionally, cladocerans were more abundant in summer than winter, with the opposite pattern for calanoids and cyclopoids. In green (eutrophic) lakes, zooplankton densities were higher under the ice than in brown (dystrophic) and blue (oligotrophic) lakes, suggesting better conditions for zooplankton in productive lakes during winter. Overall, zooplankton communities were more similar across lakes under the ice than during the open water season. Feeding group classification showed a decrease in herbivore abundance and an increase in predators from summer to winter. C/N stable isotope results suggested higher lipid content in overwintering zooplankton and potentially increased reliance on the microbial loop by winter zooplankton. Our results show substantial variation in the seasonality of zooplankton communities in different lake types and identify some of the factors responsible for this variation.</dcterms:abstract>
+        <dc:date>2021-09-01</dc:date>
+        <z:libraryCatalog>Silverchair</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1093/plankt/fbab050</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:40:50</dcterms:dateSubmitted>
+        <bib:pages>732-750</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0142-7873">
+        <prism:volume>43</prism:volume>
+        <dc:title>Journal of Plankton Research</dc:title>
+        <dc:identifier>DOI 10.1093/plankt/fbab050</dc:identifier>
+        <prism:number>5</prism:number>
+        <dcterms:alternative>Journal of Plankton Research</dcterms:alternative>
+        <dc:identifier>ISSN 0142-7873</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_58">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/58/Shchapov et al. - 2021 - Taxonomic and functional differences between winte.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/plankt/article-pdf/43/5/732/40419967/fbab050.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:40:52</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0304377012001349">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0304-3770"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Johnston</foaf:surname>
+                        <foaf:givenName>Carol A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Brown</foaf:surname>
+                        <foaf:givenName>Terry N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Phosphorus</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Chloride</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Conductivity</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Great Lakes coast</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>pH</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Plant community</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Water chemistry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Wetland</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Water chemistry distinguishes wetland plant communities of the Great Lakes coast</dc:title>
+        <dcterms:abstract>U.S. coastal wetlands of the Laurentian Great Lakes span a north-to-south gradient (latitude 47–41° N) of increasing human population and agricultural intensity that alters their water chemistry and vegetation. We related field-measured water chemistry to vegetation condition and composition using data from 48 freshwater coastal wetlands along this sub-continental gradient, building upon previous findings that GIS-derived landscape descriptors could adequately predict vegetation condition in Great Lakes coastal wetlands. Our aim was to determine (1) whether plant communities could be differentiated by their surface water chemistry, and (2) if water chemistry could better predict wetland vegetation condition than GIS-derived variables. Seven distinct plant communities were identified by agglomerative hierarchical clustering and non-metric multidimensional scaling of vegetation cover data: Sphagnum-carpeted poor fens, Sparganium eurycarpum marshes, Calamagrostis canadensis wetlands, Schoenoplectus pungens marshes, Phragmites australis marshes, and two floristically distinct Typha-dominated marshes. There were significant differences (ANOVA) among the seven plant assemblages identified for most water chemistry metrics (Cl−, chlorophyll a, conductivity, NO3-N, pH, total N, total P, total suspended solids), but dissolved oxygen, dissolved organic carbon, and NH4-N did not vary significantly across the assemblages. The two different Typha-dominated plant communities were chemically distinct from each other in chlorophyll a, conductivity, NO3-N, pH and total suspended solids concentrations, and we recommend that they be separated into distinct associations: Typha spp. – Thelypteris palustris – Hydrocharis morsus-ranae and Typha spp. – C. canadensis – Leersia oryzoides. Plant communities tended to be geographically clustered, but wetlands that were geographic outliers of their floristic type were chemically similar to other wetlands in their plant community grouping despite being on different lakes. When offered both GIS-derived and field-measured potential predictor variables, a regression tree model of wetland condition chose only GIS-derived variables. However, a classification tree model derived solely from field-measured water chemistry variables correctly classified 79% of the sites into four plant community groupings based on total N, conductivity, and pH. Grouping wetlands by plant communities could provide a scientifically-defensible basis for stricter water quality standards to protect sensitive wetland types.</dcterms:abstract>
+        <dc:date>2013-01-01</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0304377012001349</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:40:53</dcterms:dateSubmitted>
+        <bib:pages>111-120</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0304-3770">
+        <prism:volume>104</prism:volume>
+        <dc:title>Aquatic Botany</dc:title>
+        <dc:identifier>DOI 10.1016/j.aquabot.2012.08.005</dc:identifier>
+        <dcterms:alternative>Aquatic Botany</dcterms:alternative>
+        <dc:identifier>ISSN 0304-3770</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="https://iris.unito.it/handle/2318/1734811">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.3897/natureconservation.34.30737</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Freppaz</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Viglietti</foaf:surname>
+                        <foaf:givenName>D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Balestrini</foaf:surname>
+                        <foaf:givenName>R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lonati</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Colombo</foaf:surname>
+                        <foaf:givenName>N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_61"/>
+        <dc:title>Climatic and pedoclimatic factors driving C and N dynamics in soil and surface water in the alpine tundra (NW-Italian Alps)</dc:title>
+        <dcterms:abstract>In alpine tundra the interannual and seasonal variability of C and N forms in soil and lake water during the short snow-free season could be significant and related to climatic and pedoclimatic variables. The hypothesis that not only the climatic and pedoclimatic parameters recorded during the summer season but also the ones measured during the previous snow-covered season could contribute to explaining the C and N dynamics in soil and surface water was tested along 10 snow-free seasons in 3 sites in the alpine tundra in the north-western Italian Alps (LTER site Istituto Mosso). Among the considered parameters, the snow cover duration (SCD) exerted a primary control on soil N-NH 4+ , DOC, C micr , N micr and DOC:DON ratio, with an inverse relationship. A long SCD might cause the consumption of all the subnival substrata by the soil microorganisms, determining a C starvation during the subsequent snow-free season. An opposite trend was observed for the lake water, where a longer SCD corresponded to a higher content of inorganic N forms. Among the pedoclimatic indices, the number of soil freeze/thaw cycles (FTC) recorded during the snow-covered season had a positive relation with most of soil C and N forms and N-NO 3− in lake water. Only the soil DON showed an inverse pattern, and this result is consistent with the hypothesis that FTC released soil DON, subsequently decomposed and mineralized. Only N-NO 3− had a significant intraseasonal variability, reaching the highest values in September both in soil and water, revealing a significant slowdown of the contribution of soil N immobilization processes.</dcterms:abstract>
+        <dc:date>2019</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>iris.unito.it</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://iris.unito.it/handle/2318/1734811</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:40:54</dcterms:dateSubmitted>
+        <dc:description>Accepted: 2020-04-01T22:50:59Z</dc:description>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_61">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/61/Freppaz et al. - 2019 - Climatic and pedoclimatic factors driving C and N .pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://iris.unito.it/bitstream/2318/1734811/1/Freppaz%20et%20al.%2c%202019.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-19 17:40:59</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pubs.acs.org/doi/10.1021/ja0471525">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0002-7863,%201520-5126"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Himo</foaf:surname>
+                        <foaf:givenName>Fahmi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lovell</foaf:surname>
+                        <foaf:givenName>Timothy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hilgraf</foaf:surname>
+                        <foaf:givenName>Robert</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rostovtsev</foaf:surname>
+                        <foaf:givenName>Vsevolod V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Noodleman</foaf:surname>
+                        <foaf:givenName>Louis</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sharpless</foaf:surname>
+                        <foaf:givenName>K. Barry</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fokin</foaf:surname>
+                        <foaf:givenName>Valery V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Copper(I)-Catalyzed Synthesis of Azoles. DFT Study Predicts Unprecedented Reactivity and Intermediates</dc:title>
+        <dc:date>2005-01-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://pubs.acs.org/doi/10.1021/ja0471525</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-10-03 17:41:08</dcterms:dateSubmitted>
+        <bib:pages>210-216</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0002-7863,%201520-5126">
+        <prism:volume>127</prism:volume>
+        <dc:title>Journal of the American Chemical Society</dc:title>
+        <dc:identifier>DOI 10.1021/ja0471525</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>J. Am. Chem. Soc.</dcterms:alternative>
+        <dc:identifier>ISSN 0002-7863, 1520-5126</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="https://www.science.org/doi/10.1126/science.1229506">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>340</prism:volume>
+                <dc:title>Science</dc:title>
+                <dc:identifier>DOI 10.1126/science.1229506</dc:identifier>
+                <prism:number>6131</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Worrell</foaf:surname>
+                        <foaf:givenName>B. T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Malik</foaf:surname>
+                        <foaf:givenName>J. A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fokin</foaf:surname>
+                        <foaf:givenName>V. V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_64"/>
+        <dc:title>Direct Evidence of a Dinuclear Copper Intermediate in Cu(I)-Catalyzed Azide-Alkyne Cycloadditions</dc:title>
+        <dcterms:abstract>Copper(I)-catalyzed azide-alkyne cycloaddition has become a commonly employed method for the synthesis of complex molecular architectures under challenging conditions. Despite the widespread use of copper-catalyzed cycloaddition reactions, the mechanism of these processes has remained difficult to establish due to the involvement of multiple equilibria between several reactive intermediates. Real-time monitoring of a representative cycloaddition process via heat-flow reaction calorimetry revealed that monomeric copper acetylide complexes are not reactive toward organic azides unless an exogenous copper catalyst is added. Furthermore, crossover experiments with an isotopically enriched exogenous copper source illustrated the stepwise nature of the carbon–nitrogen bond-forming events and the equivalence of the two copper atoms within the cycloaddition steps.</dcterms:abstract>
+        <dc:date>2013-04-26</dc:date>
+        <z:libraryCatalog>science.org (Atypon)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.science.org/doi/10.1126/science.1229506</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-10-03 17:41:22</dcterms:dateSubmitted>
+        <dc:description>Publisher: American Association for the Advancement of Science</dc:description>
+        <bib:pages>457-460</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_64">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/64/Worrell et al. - 2013 - Direct Evidence of a Dinuclear Copper Intermediate.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.science.org/doi/pdf/10.1126/science.1229506</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-10-03 17:41:25</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Collection rdf:about="#collection_2">
+        <dc:title>DOM sampling</dc:title>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S0045653517318465"/>
+        <dcterms:hasPart rdf:resource="https://www.mdpi.com/2073-4441/13/12/1703"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_3">
+        <dc:title>WG1-Synthesis paper</dc:title>
+        <dcterms:hasPart rdf:resource="https://onlinelibrary.wiley.com/doi/abs/10.1029/2021JG006247"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S0380133007701429"/>
+        <dcterms:hasPart rdf:resource="https://onlinelibrary.wiley.com/doi/abs/10.1002/lno.11600"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S0380133015001276"/>
+        <dcterms:hasPart rdf:resource="https://www.jstor.org/stable/20112943"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S0380133020300940"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1007/s10750-013-1569-7"/>
+        <dcterms:hasPart rdf:resource="https://onlinelibrary.wiley.com/doi/abs/10.1029/2023WR034839"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S0301479720312640"/>
+        <dcterms:hasPart rdf:resource="https://bg.copernicus.org/articles/7/2901/2010/"/>
+        <dcterms:hasPart rdf:resource="https://onlinelibrary.wiley.com/doi/abs/10.4319/lo.2009.54.6_part_2.2513"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S038013301830090X"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1093/plankt/fbab050"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S0304377012001349"/>
+        <dcterms:hasPart rdf:resource="https://iris.unito.it/handle/2318/1734811"/>
+        <dcterms:hasPart rdf:resource="https://pubs.acs.org/doi/10.1021/ja0471525"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_1">
+        <dc:title>Winter Grab</dc:title>
+        <dcterms:hasPart rdf:resource="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.01929/full"/>
+        <dcterms:hasPart rdf:resource="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02360/full"/>
+        <dcterms:hasPart rdf:resource="https://onlinelibrary.wiley.com/doi/abs/10.1111/1462-2920.12436"/>
+        <dcterms:hasPart rdf:resource="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2014.00048/full"/>
+        <dcterms:hasPart rdf:resource="https://www.pnas.org/doi/full/10.1073/pnas.1603757113"/>
+        <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s41579-020-0323-1"/>
+        <dcterms:hasPart rdf:resource="#item_17"/>
+        <dcterms:hasPart rdf:resource="https://experiments.springernature.com/articles/10.1007/8623_2015_61"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1038/ismej.2008.32"/>
+        <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s41396-020-00749-1"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S0043135421008903"/>
+        <dcterms:hasPart rdf:resource="https://www.science.org/doi/10.1126/science.1229506"/>
+    </z:Collection>
+</rdf:RDF>
