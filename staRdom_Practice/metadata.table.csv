@@ -1,0 +1,4 @@
+Date,Sample_ID,eem_location,eem_blank_location,abs_location,dilution,integration
+26-Jun-24,BQ121Feb241s,BQ121Feb241s (01) - Waterfall Plot Sample.dat,BQ121Feb241s (01) - Waterfall Plot Blank.dat,BQ121Feb241s (01) - Abs Spectra Graphs.dat,0,1
+26-Jun-24,EC95820Feb24,EC95820Feb24 (01) - Waterfall Plot Sample.dat,EC95820Feb24 (01) - Waterfall Plot Blank.dat,EC95820Feb24 (01) - Abs Spectra Graphs.dat,0,0.1
+26-Jun-24,Mart29Feb2401,Mart29Feb2401 (02) - Waterfall Plot Sample.dat,Mart29Feb2401 (02) - Waterfall Plot Blank.dat,Mart29Feb2401 (02) - Abs Spectra Graphs.dat,0,0.1

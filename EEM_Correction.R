@@ -4,6 +4,9 @@
 #Install Packages
 #install.packages('staRdom')
 
+getwd()
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab_Thesis-project/staRdom_Practice")
+
 #Initialize libraries
 library(staRdom)
 library(dplyr)
@@ -24,7 +27,7 @@ eem_overview_plot(eems, spp=9, contour = TRUE)
 #Prepare absorbance values to be read into file
 #NOTE: Absorbance data file must only contain the WAVELENGTH and ABS columns.
 #Extra columns will produce errors on checkdata step
-absorbance_path = ('~/Research/EEMS R Code/FDE3_19DEC23/A_ABS')
+absorbance_path = ('~/')
 absorbance = absorbance_read(absorbance_path, order = TRUE, recursive = TRUE)
 
 #Run check on dataset. Fix errors before proceeding
