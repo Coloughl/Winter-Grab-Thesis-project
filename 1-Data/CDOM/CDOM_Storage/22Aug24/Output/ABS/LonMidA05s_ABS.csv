@@ -1,4 +1,0 @@
-Wavelength,I1,I1 dark,R1,R1dark,XCorrect,I1c,R1c,I1c/R1c,Abs,Percent T
-nm,uA,uA,uA,uA,,uA,uA,uA/uA,OD,T*100
-,Abs Detector Raw,Dark Offset for Abs Detector,Ref Detector Raw,Dark Offset for Ref Detector,Linear interp,Dark subtracted Abs Detector,Corrected Ref Detector,Corrected Intensity ,-Log(T),% Transmittance
-255,0.216583011829889,,0.929328310800748,,0.822186827659607,0.216334780224398,0.76000424008311,0.284649438535686,0.253882644931923,55.733633202628
