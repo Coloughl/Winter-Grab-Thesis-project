@@ -1,0 +1,14 @@
+PROCESSING STEPS ON 2024-11-20
+2024-11-20 11:21:54.078976- blanks were subtracted from samples
+2024-11-20 11:21:54.297117- Second order raman scattering was removed with a 1.5 nm width above and 1.5 nm width below
+2024-11-20 11:21:58.095791- Second order raman scattering filled via interpolation
+2024-11-20 11:21:58.24483- First order raman scattering was removed with a 11.4 nm width above and 4.6 nm width below
+2024-11-20 11:22:02.277737- First order raman scattering filled via interpolation
+2024-11-20 11:22:02.371964- Second order raleigh scattering was removed with a 10 nm width above and 10 nm width below
+2024-11-20 11:22:02.458914- First order raleigh scattering was removed with a 20 nm width above and 10 nm width below
+2024-11-20 11:22:02.472818- EEM's were clipped to just emission wavelengths under 600 nm
+2024-11-20 11:22:02.534072- EEM's were corrected for inner filter effects
+2024-11-20 11:22:02.565742- EEM's were normalized by raman area
+2024-11-20 11:22:02.568211- EEM's were corrected for dilutions
+2024-11-20 11:22:02.570071- Absorbance was corrected for dilutions
+2024-11-20 11:22:02.579717- DOC Normalized EEM's were clipped to Excitation:247 to 450 nm and Emission:247 to 600 nm
