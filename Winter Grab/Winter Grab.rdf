@@ -1,0 +1,1028 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.01929/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1664-302X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lindivat</foaf:surname>
+                        <foaf:givenName>Mathilde</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Larsen</foaf:surname>
+                        <foaf:givenName>Aud</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hess-Erga</foaf:surname>
+                        <foaf:givenName>Ole Kristian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bratbak</foaf:surname>
+                        <foaf:givenName>Gunnar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hoell</foaf:surname>
+                        <foaf:givenName>Ingunn Alne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>BONCAT</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Flow Cytometry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Marine microbes</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>protein synthesis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Single cell activity</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Bioorthogonal Non-canonical Amino Acid Tagging Combined With Flow Cytometry for Determination of Activity in Aquatic Microorganisms</dc:title>
+        <dcterms:abstract>&lt;p&gt;In this study, we have combined bioorthogonal non-canonical amino acid tagging (BONCAT) and flow cytometry (FCM) analysis, and we demonstrate the applicability of the method for marine prokaryotes. Enumeration of active marine bacteria was performed by combining the DNA stain SYBR Green with detection of protein production with BONCAT. After optimization of incubation condition and substrate concentration on monoculture of &lt;italic&gt;Escherichia coli&lt;/italic&gt;, we applied and modified the method to natural marine samples. We found that between 10 and 30% of prokaryotes in natural communities were active. The method is replicable, fast, and allow high sample throughput when using FCM. We conclude that the combination of BONCAT and FCM is an alternative to current methods for quantifying active populations in aquatic environments.&lt;/p&gt;</dcterms:abstract>
+        <dc:date>2020-08-18</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.01929/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:42:51</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1664-302X">
+        <prism:volume>11</prism:volume>
+        <dc:title>Frontiers in Microbiology</dc:title>
+        <dc:identifier>DOI 10.3389/fmicb.2020.01929</dc:identifier>
+        <dcterms:alternative>Front. Microbiol.</dcterms:alternative>
+        <dc:identifier>ISSN 1664-302X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/2/Lindivat et al. - 2020 - Bioorthogonal Non-canonical Amino Acid Tagging Com.pdf"/>
+        <dc:title>Full Text</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2020.01929/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:42:55</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02360/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>8</prism:volume>
+                <dc:title>Frontiers in Microbiology</dc:title>
+                <dc:identifier>DOI 10.3389/fmicb.2017.02360</dc:identifier>
+                <dcterms:alternative>Front. Microbiol.</dcterms:alternative>
+                <dc:identifier>ISSN 1664-302X</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leizeaga</foaf:surname>
+                        <foaf:givenName>Ainara</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Estrany</foaf:surname>
+                        <foaf:givenName>Margarita</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Forn</foaf:surname>
+                        <foaf:givenName>Irene</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sebastián</foaf:surname>
+                        <foaf:givenName>Marta</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_4"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>BONCAT</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Click Chemistry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>marine bacteria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>marine ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>single-cell microbiology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Using Click-Chemistry for Visualizing in Situ Changes of Translational Activity in Planktonic Marine Bacteria</dc:title>
+        <dcterms:abstract>&lt;p&gt;A major challenge in microbial ecology is linking diversity and function to determine which microbes are actively contributing to processes occurring &lt;italic&gt;in situ&lt;/italic&gt;. Bioorthogonal non-canonical amino acid tagging (BONCAT) is a promising technique for detecting and quantifying translationally active bacteria in the environment. This technique consists of incubating a bacterial sample with an analog of methionine and using click-chemistry to identify the cells that have incorporated the substrate. Here, we established an optimized protocol for the visualization of protein-synthesizing cells in oligotrophic waters that can be coupled with taxonomic identification using Catalyzed Reporter Deposition Fluorescent &lt;italic&gt;in Situ&lt;/italic&gt; Hybridization. We also evaluated the use of this technique to track shifts in translational activity by comparing it with leucine incorporation, and used it to monitor temporal changes in both cultures and natural samples. Finally, we determined the optimal concentration and incubation time for substrate incorporation during BONCAT incubations at an oligotrophic site. Our results demonstrate that BONCAT is a fast and powerful semi-quantitative approach to explore the physiological status of marine bacteria.&lt;/p&gt;</dcterms:abstract>
+        <dc:date>2017-12-01</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.02360/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:43:31</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_4">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/4/Leizeaga et al. - 2017 - Using Click-Chemistry for Visualizing in Situ Chan.pdf"/>
+        <dc:title>Full Text</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2017.02360/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:43:34</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1111/1462-2920.12436">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1462-2920"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scheller</foaf:surname>
+                        <foaf:givenName>Silvan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tavormina</foaf:surname>
+                        <foaf:givenName>Patricia L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Babin</foaf:surname>
+                        <foaf:givenName>Brett M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tirrell</foaf:surname>
+                        <foaf:givenName>David A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Orphan</foaf:surname>
+                        <foaf:givenName>Victoria J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_6"/>
+        <dc:title>In situ visualization of newly synthesized proteins in environmental microbes using amino acid tagging and click chemistry</dc:title>
+        <dcterms:abstract>Here we describe the application of a new click chemistry method for fluorescent tracking of protein synthesis in individual microorganisms within environmental samples. This technique, termed bioorthogonal non-canonical amino acid tagging (BONCAT), is based on the in vivo incorporation of the non-canonical amino acid L-azidohomoalanine (AHA), a surrogate for l-methionine, followed by fluorescent labelling of AHA-containing cellular proteins by azide-alkyne click chemistry. BONCAT was evaluated with a range of phylogenetically and physiologically diverse archaeal and bacterial pure cultures and enrichments, and used to visualize translationally active cells within complex environmental samples including an oral biofilm, freshwater and anoxic sediment. We also developed combined assays that couple BONCAT with ribosomal RNA (rRNA)-targeted fluorescence in situ hybridization (FISH), enabling a direct link between taxonomic identity and translational activity. Using a methanotrophic enrichment culture incubated under different conditions, we demonstrate the potential of BONCAT-FISH to study microbial physiology in situ. A direct comparison of anabolic activity using BONCAT and stable isotope labelling by nano-scale secondary ion mass spectrometry (15NH3 assimilation) for individual cells within a sediment-sourced enrichment culture showed concordance between AHA-positive cells and 15N enrichment. BONCAT-FISH offers a fast, inexpensive and straightforward fluorescence microscopy method for studying the in situ activity of environmental microbes on a single-cell level.</dcterms:abstract>
+        <dc:date>2014</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:46:15</dcterms:dateSubmitted>
+        <dc:rights>© 2014 The Authors. Environmental Microbiology published by Society for Applied Microbiology and John Wiley &amp; Sons Ltd.</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/1462-2920.12436</dc:description>
+        <bib:pages>2568-2590</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1462-2920">
+        <prism:volume>16</prism:volume>
+        <dc:title>Environmental Microbiology</dc:title>
+        <dc:identifier>DOI 10.1111/1462-2920.12436</dc:identifier>
+        <prism:number>8</prism:number>
+        <dc:identifier>ISSN 1462-2920</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/6/Hatzenpichler et al. - 2014 - In situ visualization of newly synthesized protein.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-03 16:46:17</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2014.00048/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2296-7745"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Samo</foaf:surname>
+                        <foaf:givenName>Ty J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Smriga</foaf:surname>
+                        <foaf:givenName>Steven</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Malfatti</foaf:surname>
+                        <foaf:givenName>Francesca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sherwood</foaf:surname>
+                        <foaf:givenName>Byron P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Azam</foaf:surname>
+                        <foaf:givenName>Farooq</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Click Chemistry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>marine bacteria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>biogeochemistry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>HPG</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Microscopy</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Oceanography</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>single-cell protein synthesis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Broad distribution and high proportion of protein synthesis active marine bacteria revealed by click chemistry at the single cell level</dc:title>
+        <dcterms:abstract>&lt;p&gt;Marine bacterial and archaeal communities control global biogeochemical cycles through nutrient acquisition processes that are ultimately dictated by the metabolic requirements of individual cells. Currently lacking, however, is a sensitive, quick, and quantitative measurement of activity in these single cells. We tested the applicability of copper (I)-catalyzed cycloaddition, or “click,” chemistry to observe and estimate single-cell protein synthesis activity in natural assemblages and isolates of heterotrophic marine bacteria. Incorporation rates of the non-canonical methionine bioortholog L-homopropargylglycine (HPG) were quantified within individual cells by measuring fluorescence of alkyne-conjugated Alexa Fluor®488 using epifluorescence microscopy. The method's high sensitivity, along with a conversion factor derived from two &lt;italic&gt;Alteromonas spp&lt;/italic&gt;. isolates, revealed a broad range of cell-specific protein synthesis within natural microbial populations. Comparison with &lt;sup&gt;35&lt;/sup&gt;S-methionine microautoradiography showed that a large fraction of the natural marine bacterial assemblage (15–100%), previously considered inactive by autoradiography, were actively synthesizing protein. Data pooled from 21 samples showed that cell-specific activity scaled logarithmically with cell volume. Activity distributions of each sample were fit to power-law functions, providing an illustrative and quantitative comparison of assemblages that demonstrate individual protein synthesis rates were commonly partitioned between cells in low- and high-metabolic states in our samples. The HPG method offers a simple approach to link individual cell physiology to the ecology and biogeochemistry of bacterial (micro)environments in the ocean.&lt;/p&gt;</dcterms:abstract>
+        <dc:date>2014-10-10</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2014.00048/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 14:52:58</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2296-7745">
+        <prism:volume>1</prism:volume>
+        <dc:title>Frontiers in Marine Science</dc:title>
+        <dc:identifier>DOI 10.3389/fmars.2014.00048</dc:identifier>
+        <dcterms:alternative>Front. Mar. Sci.</dcterms:alternative>
+        <dc:identifier>ISSN 2296-7745</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/12/Samo et al. - 2014 - Broad distribution and high proportion of protein .pdf"/>
+        <dc:title>Full Text</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmars.2014.00048/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 14:53:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.pnas.org/doi/full/10.1073/pnas.1603757113">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>113</prism:volume>
+                <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+                <dc:identifier>DOI 10.1073/pnas.1603757113</dc:identifier>
+                <prism:number>28</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Connon</foaf:surname>
+                        <foaf:givenName>Stephanie A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goudeau</foaf:surname>
+                        <foaf:givenName>Danielle</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Malmstrom</foaf:surname>
+                        <foaf:givenName>Rex R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Woyke</foaf:surname>
+                        <foaf:givenName>Tanja</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Orphan</foaf:surname>
+                        <foaf:givenName>Victoria J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_14"/>
+        <dc:title>Visualizing in situ translational activity for identifying and sorting slow-growing archaeal−bacterial consortia</dc:title>
+        <dcterms:abstract>To understand the biogeochemical roles of microorganisms in the environment, it is important to determine when and under which conditions they are metabolically active. Bioorthogonal noncanonical amino acid tagging (BONCAT) can reveal active cells by tracking the incorporation of synthetic amino acids into newly synthesized proteins. The phylogenetic identity of translationally active cells can be determined by combining BONCAT with rRNA-targeted fluorescence in situ hybridization (BONCAT-FISH). In theory, BONCAT-labeled cells could be isolated with fluorescence-activated cell sorting (BONCAT-FACS) for subsequent genetic analyses. Here, in the first application, to our knowledge, of BONCAT-FISH and BONCAT-FACS within an environmental context, we probe the translational activity of microbial consortia catalyzing the anaerobic oxidation of methane (AOM), a dominant sink of methane in the ocean. These consortia, which typically are composed of anaerobic methane-oxidizing archaea (ANME) and sulfate-reducing bacteria, have been difficult to study due to their slow in situ growth rates, and fundamental questions remain about their ecology and diversity of interactions occurring between ANME and associated partners. Our activity-correlated analyses of &gt;16,400 microbial aggregates provide the first evidence, to our knowledge, that AOM consortia affiliated with all five major ANME clades are concurrently active under controlled conditions. Surprisingly, sorting of individual BONCAT-labeled consortia followed by whole-genome amplification and 16S rRNA gene sequencing revealed previously unrecognized interactions of ANME with members of the poorly understood phylum Verrucomicrobia. This finding, together with our observation that ANME-associated Verrucomicrobia are found in a variety of geographically distinct methane seep environments, suggests a broader range of symbiotic relationships within AOM consortia than previously thought.</dcterms:abstract>
+        <dc:date>2016-07-12</dc:date>
+        <z:libraryCatalog>pnas.org (Atypon)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.pnas.org/doi/full/10.1073/pnas.1603757113</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:57:21</dcterms:dateSubmitted>
+        <dc:description>Publisher: Proceedings of the National Academy of Sciences</dc:description>
+        <bib:pages>E4069-E4078</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/14/Hatzenpichler et al. - 2016 - Visualizing in situ translational activity for ide.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.pnas.org/doi/pdf/10.1073/pnas.1603757113</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:57:23</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/s41579-020-0323-1">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1740-1534"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Krukenberg</foaf:surname>
+                        <foaf:givenName>Viola</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Spietz</foaf:surname>
+                        <foaf:givenName>Rachel L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jay</foaf:surname>
+                        <foaf:givenName>Zackary J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_16"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Bacterial techniques and applications</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cellular microbiology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>High-throughput screening</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Microbiome</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Next-generation physiology approaches to study microbiome function at single cell level</dc:title>
+        <dcterms:abstract>The function of cells in their native habitat often cannot be reliably predicted from genomic data or from physiology studies of isolates. Traditional experimental approaches to study the function of taxonomically and metabolically diverse microbiomes are limited by their destructive nature, low spatial resolution or low throughput. Recently developed technologies can offer new insights into cellular function in natural and human-made systems and how microorganisms interact with and shape the environments that they inhabit. In this Review, we provide an overview of these next-generation physiology approaches and discuss how the non-destructive analysis of cellular phenotypes, in combination with the separation of the target cells for downstream analyses, provide powerful new, complementary ways to study microbiome function. We anticipate that the widespread application of next-generation physiology approaches will transform the field of microbial ecology and dramatically improve our understanding of how microorganisms function in their native environment.</dcterms:abstract>
+        <dc:date>2020-04</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41579-020-0323-1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:35</dcterms:dateSubmitted>
+        <dc:rights>2020 Springer Nature Limited</dc:rights>
+        <dc:description>Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>241-256</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1740-1534">
+        <prism:volume>18</prism:volume>
+        <dc:title>Nature Reviews Microbiology</dc:title>
+        <dc:identifier>DOI 10.1038/s41579-020-0323-1</dc:identifier>
+        <prism:number>4</prism:number>
+        <dcterms:alternative>Nat Rev Microbiol</dcterms:alternative>
+        <dc:identifier>ISSN 1740-1534</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_16">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/16/Hatzenpichler et al. - 2020 - Next-generation physiology approaches to study mic.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41579-020-0323-1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:37</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_17">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>16</prism:volume>
+                <dc:title>Environmental Microbiology</dc:title>
+                <dc:identifier>DOI 10.1111/1462-2920.12436</dc:identifier>
+                <prism:number>8</prism:number>
+                <dc:identifier>ISSN 1462-2920</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scheller</foaf:surname>
+                        <foaf:givenName>Silvan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tavormina</foaf:surname>
+                        <foaf:givenName>Patricia L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Babin</foaf:surname>
+                        <foaf:givenName>Brett M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tirrell</foaf:surname>
+                        <foaf:givenName>David A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Orphan</foaf:surname>
+                        <foaf:givenName>Victoria J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_18"/>
+        <link:link rdf:resource="#item_21"/>
+        <dc:title>visualization of newly synthesized proteins in environmental microbes using amino acid tagging and click chemistry</dc:title>
+        <dcterms:abstract>Here we describe the application of a new click chemistry method for fluorescent tracking of protein synthesis in individual microorganisms within environmental samples. This technique, termed bioorthogonal non-canonical amino acid tagging (BONCAT), is based on the in vivo incorporation of the non-canonical amino acid L-azidohomoalanine (AHA), a surrogate for l-methionine, followed by fluorescent labelling of AHA-containing cellular proteins by azide-alkyne click chemistry. BONCAT was evaluated with a range of phylogenetically and physiologically diverse archaeal and bacterial pure cultures and enrichments, and used to visualize translationally active cells within complex environmental samples including an oral biofilm, freshwater and anoxic sediment. We also developed combined assays that couple BONCAT with ribosomal RNA (rRNA)-targeted fluorescence in situ hybridization (FISH), enabling a direct link between taxonomic identity and translational activity. Using a methanotrophic enrichment culture incubated under different conditions, we demonstrate the potential of BONCAT-FISH to study microbial physiology in situ. A direct comparison of anabolic activity using BONCAT and stable isotope labelling by nano-scale secondary ion mass spectrometry (15NH3 assimilation) for individual cells within a sediment-sourced enrichment culture showed concordance between AHA-positive cells and 15N enrichment. BONCAT-FISH offers a fast, inexpensive and straightforward fluorescence microscopy method for studying the in situ activity of environmental microbes on a single-cell level.</dcterms:abstract>
+        <dc:date>2014</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:41</dcterms:dateSubmitted>
+        <dc:rights>© 2014 The Authors. Environmental Microbiology published by Society for Applied Microbiology and John Wiley &amp; Sons Ltd.</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/1462-2920.12436</dc:description>
+        <bib:pages>2568-2590</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_18">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/18/Hatzenpichler et al. - 2014 - visualization of newly synthesized proteins in env.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:43</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_21">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/21/1462-2920.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://enviromicro-journals.onlinelibrary.wiley.com/doi/10.1111/1462-2920.12436</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:51</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://experiments.springernature.com/articles/10.1007/8623_2015_61">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_20"/>
+        <dc:title>Detection of Protein-Synthesizing Microorganisms in the Environment via Bioorthogonal Noncanonical Amino Acid Tagging (BONCAT) | Springer Nature Experiments</dc:title>
+        <dcterms:abstract>Bioorthogonal noncanonical amino acid tagging (BONCAT) is a recently developed method for studying microbial in situ activity. This technique is based on the in ...</dcterms:abstract>
+        <z:language>en</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://experiments.springernature.com/articles/10.1007/8623_2015_61</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:43</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_20">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/20/8623_2015_61.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://experiments.springernature.com/articles/10.1007/8623_2015_61</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-07-22 15:58:50</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1038/ismej.2008.32">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1751-7362"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kalyuzhnaya</foaf:surname>
+                        <foaf:givenName>Marina G</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lidstrom</foaf:surname>
+                        <foaf:givenName>Mary E</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chistoserdova</foaf:surname>
+                        <foaf:givenName>Ludmila</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_23"/>
+        <link:link rdf:resource="#item_24"/>
+        <dc:title>Real-time detection of actively metabolizing microbes by redox sensing as applied to methylotroph populations in Lake Washington</dc:title>
+        <dcterms:abstract>Redox sensor green (RSG), a novel fluorescent dye from Invitrogen was employed as a tool for real-time detection of microbes metabolically active in situ, in combination with flow cytometry and cell sorting. Lake Washington sediment, an environment known for high rates of methane oxidation, was used as a model, and methylotrophs were targeted as a functional group. We first tested and optimized the performance of the dye with pure methylotroph cultures. Most cells in actively growing cultures were positive for staining, whereas in starved cultures, few cells fluoresced. However, starved cells could be activated by addition of substrate. High numbers of fluorescing cells were observed in a Lake Washington sediment sample, and activation of subpopulations of cells was demonstrated in response to methane, methanol, methylamine and formaldehyde. The fraction of the population activated by methane was investigated in more detail, by phylogenetic profiling. This approach showed that the major responding species were the Methylomonas species, previously isolated from the site, and Methylobacter species that have not yet been cultivated from Lake Washington. In addition, from the methane-stimulated fraction, uncultivated bacterial sequences were obtained that belonged to unclassified Deltaproteobacteria, unclassified Verrucomicrobiles and unclassified Acidobacteria, suggesting that these microbes may also be involved in methane metabolism. The approach was further tested for its utility in facilitating enrichment for functional types that possess specific metabolic activities but resist cultivation. It was demonstrated that in enrichment cultures inoculated with cells that were sorted after stimulation with methane, Methylobacter sequences could be detected, whereas in enrichment cultures inoculated by randomly sorted cells, Methylomonas species quickly outcompeted all other types.</dcterms:abstract>
+        <dc:date>2008-07-01</dc:date>
+        <z:libraryCatalog>Silverchair</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1038/ismej.2008.32</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-08 14:10:34</dcterms:dateSubmitted>
+        <bib:pages>696-706</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1751-7362">
+        <prism:volume>2</prism:volume>
+        <dc:title>The ISME Journal</dc:title>
+        <dc:identifier>DOI 10.1038/ismej.2008.32</dc:identifier>
+        <prism:number>7</prism:number>
+        <dcterms:alternative>The ISME Journal</dcterms:alternative>
+        <dc:identifier>ISSN 1751-7362</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_23">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/23/Kalyuzhnaya et al. - 2008 - Real-time detection of actively metabolizing micro.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/ismej/article-pdf/2/7/696/56442269/41396_2008_article_bfismej200832.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-08 14:10:37</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_24">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/24/7588499.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/ismej/article/2/7/696/7588499</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-08 14:10:44</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/s41396-020-00749-1">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1751-7370"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reichart</foaf:surname>
+                        <foaf:givenName>Nicholas J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jay</foaf:surname>
+                        <foaf:givenName>Zackary J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Krukenberg</foaf:surname>
+                        <foaf:givenName>Viola</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Parker</foaf:surname>
+                        <foaf:givenName>Albert E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Spietz</foaf:surname>
+                        <foaf:givenName>Rachel L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzenpichler</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_26"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Archaea</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Environmental microbiology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial communities</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial ecology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Activity-based cell sorting reveals responses of uncultured archaea and bacteria to substrate amendment</dc:title>
+        <dcterms:abstract>Metagenomic studies have revolutionized our understanding of the metabolic potential of uncultured microorganisms in various ecosystems. However, many of these genomic predictions have yet to be experimentally tested, and the functional expression of genomic potential often remains unaddressed. In order to obtain a more thorough understanding of cell physiology, novel techniques capable of testing microbial metabolism under close to in situ conditions must be developed. Here, we provide a benchmark study to demonstrate that bioorthogonal non-canonical amino acid tagging (BONCAT) in combination with fluorescence-activated cell sorting (FACS) and 16S rRNA gene sequencing can be used to identify anabolically active members of a microbial community incubated in the presence of various growth substrates or under changing physicochemical conditions. We applied this approach to a hot spring sediment microbiome from Yellowstone National Park (Wyoming, USA) and identified several microbes that changed their activity levels in response to substrate addition, including uncultured members of the phyla Thaumarchaeota, Acidobacteria, and Fervidibacteria. Because shifts in activity in response to substrate amendment or headspace changes are indicative of microbial preferences for particular growth conditions, results from this and future BONCAT-FACS studies could inform the development of cultivation media to specifically enrich uncultured microbes. Most importantly, BONCAT-FACS is capable of providing information on the physiology of uncultured organisms at as close to in situ conditions as experimentally possible.</dcterms:abstract>
+        <dc:date>2020-11</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41396-020-00749-1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 19:13:34</dcterms:dateSubmitted>
+        <dc:rights>2020 The Author(s)</dc:rights>
+        <dc:description>Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>2851-2861</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1751-7370">
+        <prism:volume>14</prism:volume>
+        <dc:title>The ISME Journal</dc:title>
+        <dc:identifier>DOI 10.1038/s41396-020-00749-1</dc:identifier>
+        <prism:number>11</prism:number>
+        <dcterms:alternative>ISME J</dcterms:alternative>
+        <dc:identifier>ISSN 1751-7370</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_26">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/26/Reichart et al. - 2020 - Activity-based cell sorting reveals responses of u.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41396-020-00749-1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 19:13:36</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0043135421008903">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0043-1354"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Du</foaf:surname>
+                        <foaf:givenName>Zhe</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Behrens</foaf:surname>
+                        <foaf:givenName>Sebastian F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_28"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Activated sludge</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Bioorthogonal non-canonical amino acid tagging (BONCAT)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Fluorescence-activated cell sorting (FACS)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial activity</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Sequencing batch reactor</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Wastewater</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Tracking &lt;i&gt;de novo&lt;/i&gt; protein synthesis in the activated sludge microbiome using BONCAT-FACS</dc:title>
+        <dcterms:abstract>In order to ensure stable performance of engineered biotechnologies that rely on mixed microbial community systems, it is important to identify process-specific microbial traits and study their in-situ activity and responses to changing environmental conditions and system operational parameters. We used BioOrthogonal Non-Canonical Amino acid Tagging (BONCAT) in combination with Fluorescence-Activated Cell Sorting (FACS) and 16S rRNA gene amplicon sequencing to identify translationally active cells in activated sludge. We found that only a subset of the activated sludge microbiome is translationally active during the aerobic treatment phase of a full-scale sequencing batch reactor designed to enhance biological phosphorus removal from municipal wastewater. Relative abundance of amplicon sequence variants was not a reliable predictor of species activity. BONCAT-positive and -negative cells revealed a broad range of population-wide and taxa-specific translational heterogeneity. BONCAT-FACS in combination with amplicon sequencing can provide new insights into the ecophysiology of highly dynamic microbiomes in activated sludge systems.</dcterms:abstract>
+        <dc:date>2021-10-15</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0043135421008903</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 19:21:50</dcterms:dateSubmitted>
+        <bib:pages>117696</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0043-1354">
+        <prism:volume>205</prism:volume>
+        <dc:title>Water Research</dc:title>
+        <dc:identifier>DOI 10.1016/j.watres.2021.117696</dc:identifier>
+        <dcterms:alternative>Water Research</dcterms:alternative>
+        <dc:identifier>ISSN 0043-1354</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_28">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/28/S0043135421008903.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0043135421008903</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 19:22:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.science.org/doi/10.1126/science.1229506">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>340</prism:volume>
+                <dc:title>Science</dc:title>
+                <dc:identifier>DOI 10.1126/science.1229506</dc:identifier>
+                <prism:number>6131</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Worrell</foaf:surname>
+                        <foaf:givenName>B. T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Malik</foaf:surname>
+                        <foaf:givenName>J. A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fokin</foaf:surname>
+                        <foaf:givenName>V. V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_64"/>
+        <dc:title>Direct Evidence of a Dinuclear Copper Intermediate in Cu(I)-Catalyzed Azide-Alkyne Cycloadditions</dc:title>
+        <dcterms:abstract>Copper(I)-catalyzed azide-alkyne cycloaddition has become a commonly employed method for the synthesis of complex molecular architectures under challenging conditions. Despite the widespread use of copper-catalyzed cycloaddition reactions, the mechanism of these processes has remained difficult to establish due to the involvement of multiple equilibria between several reactive intermediates. Real-time monitoring of a representative cycloaddition process via heat-flow reaction calorimetry revealed that monomeric copper acetylide complexes are not reactive toward organic azides unless an exogenous copper catalyst is added. Furthermore, crossover experiments with an isotopically enriched exogenous copper source illustrated the stepwise nature of the carbon–nitrogen bond-forming events and the equivalence of the two copper atoms within the cycloaddition steps.</dcterms:abstract>
+        <dc:date>2013-04-26</dc:date>
+        <z:libraryCatalog>science.org (Atypon)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.science.org/doi/10.1126/science.1229506</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-10-03 17:41:22</dcterms:dateSubmitted>
+        <dc:description>Publisher: American Association for the Advancement of Science</dc:description>
+        <bib:pages>457-460</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_64">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/64/Worrell et al. - 2013 - Direct Evidence of a Dinuclear Copper Intermediate.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.science.org/doi/pdf/10.1126/science.1229506</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-10-03 17:41:25</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://manu56.magtech.com.cn/progchem/EN/10.7536/PC220103">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1005-281X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yiming</foaf:surname>
+                        <foaf:givenName>Liao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baoqi</foaf:surname>
+                        <foaf:givenName>Wu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rongzhi</foaf:surname>
+                        <foaf:givenName>Tang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Feng</foaf:surname>
+                        <foaf:givenName>Lin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yu</foaf:surname>
+                        <foaf:givenName>Tan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_66"/>
+        <dc:title>Strain-Promoted Azide-Alkyne Cycloaddition</dc:title>
+        <dcterms:abstract>&lt;p id=&quot;p00010&quot;&gt;In recent years, strain-promoted azide-alkyne cycloaddition (SPAAC) reaction has been widely used in many fields such as biomedicine and materials science due to its high efficiency, rapidity, high selectivity, and bioorthogonality. SPAAC reaction does not require additional stimuli such as light, heat, ultrasound or catalysts. The driving force of the reaction comes from the active cyclic alkynes with high strain. Therefore, the rational design of the cycloalkynes is the key to the SPAAC reaction. In this review, the stability and reactivity of cycloalkynes with different ring numbers are discussed, and the stable cycloalkynes participating in SPAAC smoothly as well as their second-order reaction rate constants in the SPAAC reaction are summarized. The research progress in the preparation methods of representative cyclic alkynes that are currently widely used is also introduced. Moreover, the application, challenge and future outlook of SPAAC without copper catalysis are discussed and prospected.&lt;/p&gt;</dcterms:abstract>
+        <dc:date>2022/10/24</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>manu56.magtech.com.cn</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://manu56.magtech.com.cn/progchem/EN/10.7536/PC220103</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-10-03 21:14:19</dcterms:dateSubmitted>
+        <dc:description>Number: 10</dc:description>
+        <bib:pages>2134-2145</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1005-281X">
+        <prism:volume>34</prism:volume>
+        <dc:title>Progress in Chemistry</dc:title>
+        <dc:identifier>DOI 10.7536/PC220103</dc:identifier>
+        <prism:number>10</prism:number>
+        <dcterms:alternative>Progress in Chemistry</dcterms:alternative>
+        <dc:identifier>ISSN 1005-281X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_66">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/66/Yiming et al. - 2022 - Strain-Promoted Azide-Alkyne Cycloaddition.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://manu56.magtech.com.cn/progchem/EN/PDF/10.7536/PC220103</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-10-03 21:15:58</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>
