@@ -4,11 +4,11 @@ library("readxl")
 
 
 getwd()
-setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/EEMs_Storage/")
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-Project/9-Presentations/GSC 2025/1-Data/WG2_CDOM/")
 
 run_date <- "Corrected"
-project <- "T0/"
-prjpath <- paste("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/EEMs_Storage/",
+project <- "26Jun24/"
+prjpath <- paste("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/9-Presentations/GSC 2025/1-Data/WG2_CDOM/",
                  project, run_date, sep="")
 
 

@@ -1,51 +1,51 @@
-﻿PI.name,Site.name,Lake,Lat (decimal degree; DDD.DDDDD°),Long  (decimal degree; DDD.DDDDD°),Year
-Bramburger,Ontario _-_St._Catharines,Lake Ontario,43.209574,-79.264113,2022
-Bullerjahn/McKay,Sandusky_Bay,Lake Erie,41.4970068,-82.8323875,2022
-Chaffin,South_Bass_Island,Lake Erie,41.66,-82.83028,2022
-Currie,Bronte_Pier,Lake Ontario,43.39343,-79.70432,2022
-Depew,Parry_Sound_Georgian_Bay,Lake Huron,45.34218,-80.0452,2022
-Doubek,Saint_Martin_Bay_SM-LH,Lake Huron,46.01307,-84.64127,2022
-Doubek,Whitefish_Bay_WB-LS,Lake Superior,46.45445,-84.8302,2022
-Eveleth,Lorain,Lake Erie,41.472778,-82.175,2022
-Godwin,SB1,Lake Huron,43.63973,-83.66061,2022
-Godwin,SB14,Lake Huron,43.73746,-83.64,2022
-Karpovich,Saginaw_River,Lake Huron,43.6135,-83.8707,2022
-Maggie Xenopoulos & Nolan Pearce,BQ1,Lake Ontario,44.15082,-77.3158,2022
-Maggie Xenopoulos & Nolan Pearce,GB1,Lake Huron,44.7726862,-79.8179044,2022
-McGregor(Twiss),RD_Bay_of_Islands_Whitefish_Falls,Lake Huron,46.10389,-81.82444,2022
-McGregor(Twiss),BI_Birch_Island,Lake Huron,46.06583,-81.76889,2022
-McGregor(Twiss),LC_Little_Current,Lake Huron,45.98083,-81.91361,2022
-McKay,EC_1 ,Lake Huron,43.09,-82.39166,2022
-McKay,EC_84,Lake Erie,41.832135,-81.636543,2022
-McKay,ER_91M,Lake Erie,41.8447,-82.9048,2022
-McKay,EC_970,Lake Erie,41.8258,-82.9732,2022
-McKay,EC_1326,Lake Erie,41.73555833,-81.9360233,2022
-McKay,EC_341,Lake Erie,41.7985,-82.2905,2022
-McKay,ER_78M,Lake Erie,42.10568,-81.25279667,2022
+﻿PI.name,Site.name,Lake,Lat (decimal degree; DDD.DDDDD°),Long  (decimal degree; DDD.DDDDD°)
+Bramburger,Ontario _-_St._Catharines,Lake Ontario,43.209574,-79.264113
+Bullerjahn/McKay,Sandusky_Bay,Lake Erie,41.4970068,-82.8323875
+Chaffin,South_Bass_Island,Lake Erie,41.66,-82.83028
+Currie,Bronte_Pier,Lake Ontario,43.39343,-79.70432
+Depew,Parry_Sound_Georgian_Bay,Lake Huron,45.34218,-80.0452
+Doubek,Saint_Martin_Bay_SM-LH,Lake Huron,46.01307,-84.64127
+Doubek,Whitefish_Bay_WB-LS,Lake Superior,46.45445,-84.8302
+Eveleth,Lorain,Lake Erie,41.472778,-82.175
+Godwin,SB1,Lake Huron,43.63973,-83.66061
+Godwin,SB14,Lake Huron,43.73746,-83.64
+Karpovich,Saginaw_River,Lake Huron,43.6135,-83.8707
+Maggie Xenopoulos & Nolan Pearce,BQ1,Lake Ontario,44.15082,-77.3158
+Maggie Xenopoulos & Nolan Pearce,GB1,Lake Huron,44.7726862,-79.8179044
+McGregor(Twiss),RD_Bay_of_Islands_Whitefish_Falls,Lake Huron,46.10389,-81.82444
+McGregor(Twiss),BI_Birch_Island,Lake Huron,46.06583,-81.76889
+McGregor(Twiss),LC_Little_Current,Lake Huron,45.98083,-81.91361
+McKay,EC_1 ,Lake Huron,43.09,-82.39166
+McKay,EC_84,Lake Erie,41.832135,-81.636543
+McKay,ER_91M,Lake Erie,41.8447,-82.9048
+McKay,EC_970,Lake Erie,41.8258,-82.9732
+McKay,EC_1326,Lake Erie,41.73555833,-81.9360233
+McKay,EC_341,Lake Erie,41.7985,-82.2905
+McKay,ER_78M,Lake Erie,42.10568,-81.25279667
 McKay,"	
-EC_1",Lake Huron,43.09,-82.39166,2022
-McKay,EC_3,Lake Huron,43.25416667,-82.03633333,2022
-McKay,EC_9,Lake Huron,43.63333333,-82.21666667,2022
-McKay,EC_12,Lake Huron,43.88733333,-82.054,2022
-McKay,NB22-005,Lake Erie,41.66516667,-82.0775,2022
-McKay,NB22-006,Lake Erie,41.87916667,-82.6395,2022
-McKay,NB22-007,Lake Erie,41.89323333,-82.83225,2022
-McKay,NB22-008,Lake Erie,41.93783333,-83.114,2022
-McKay ,EC 1156,Lake Erie,42.054179,-83.134707,2022
-McKay/Bullerjahn,NB22-002,Lake Erie,41.515,-82.4038,2022
-McKay/Bullerjahn,NB22-003,Lake Erie,41.903,-82.963,2022
-McKay/Bullerjahn,NB22-004,Lake Erie,41.89,-82.7892,2022
-McKay/Drouillard,LSC-MB,Lake St Clair,42.466877,-82.42085,2022
-Ozersky,Green_Bay,Lake Michigan,44.639835,-87.801237,2022
-Ozersky,Apostles,Lake Superior,46.837158,-90.778707,2022
-Rennie,Silver_Harbour_Thunder_Bay,Lake Superior,48.508184,-88.972586,2022
-Twiss,U17,Upper St. Lawrence River,45.00611,-74.79528,2022
-Uzarski,Eagle_Bay_Saginaw_Bay,Lake Huron,43.95239,-83.87749,2022
-Uzarski,Vanderbilt_Park_Saginaw_Bay,Lake Huron,43.61018,-83.66145,2022
-Uzarski,Pinconning_Park_Saginaw_Bay,Lake Huron,43.84981,-83.9166,2022
-Vanderploeg,WE6,Lake Erie,41.705,-83.386,2022
-Vick-Majors,Keweenaw_Waterway_KW,Keweenaw Waterway (Superior),47.121,-88.546,2022
-Vick-Majors,Keweenaw_Bay_KB,Lake Superior,46.787,-88.462,2022
-Warren Currie,CCIW_Hamilton_Harbour,Lake Ontario,43.29709,-79.80156,2022
-Zastepa,RW_Ridgeway_Abino_Bay,Lake Erie,42.84825219,-79.08985552,2022
-Zastepa,WP_Waverly_Beach_Park,Lake Erie,42.88260119,-78.93898286,2022
+EC_1",Lake Huron,43.09,-82.39166
+McKay,EC_3,Lake Huron,43.25416667,-82.03633333
+McKay,EC_9,Lake Huron,43.63333333,-82.21666667
+McKay,EC_12,Lake Huron,43.88733333,-82.054
+McKay,NB22-005,Lake Erie,41.66516667,-82.0775
+McKay,NB22-006,Lake Erie,41.87916667,-82.6395
+McKay,NB22-007,Lake Erie,41.89323333,-82.83225
+McKay,NB22-008,Lake Erie,41.93783333,-83.114
+McKay ,EC 1156,Lake Erie,42.054179,-83.134707
+McKay/Bullerjahn,NB22-002,Lake Erie,41.515,-82.4038
+McKay/Bullerjahn,NB22-003,Lake Erie,41.903,-82.963
+McKay/Bullerjahn,NB22-004,Lake Erie,41.89,-82.7892
+McKay/Drouillard,LSC-MB,Lake St Clair,42.466877,-82.42085
+Ozersky,Green_Bay,Lake Michigan,44.639835,-87.801237
+Ozersky,Apostles,Lake Superior,46.837158,-90.778707
+Rennie,Silver_Harbour_Thunder_Bay,Lake Superior,48.508184,-88.972586
+Twiss,U17,Upper St. Lawrence River,45.00611,-74.79528
+Uzarski,Eagle_Bay_Saginaw_Bay,Lake Huron,43.95239,-83.87749
+Uzarski,Vanderbilt_Park_Saginaw_Bay,Lake Huron,43.61018,-83.66145
+Uzarski,Pinconning_Park_Saginaw_Bay,Lake Huron,43.84981,-83.9166
+Vanderploeg,WE6,Lake Erie,41.705,-83.386
+Vick-Majors,Keweenaw_Waterway_KW,Keweenaw Waterway (Superior),47.121,-88.546
+Vick-Majors,Keweenaw_Bay_KB,Lake Superior,46.787,-88.462
+Warren Currie,CCIW_Hamilton_Harbour,Lake Ontario,43.29709,-79.80156
+Zastepa,RW_Ridgeway_Abino_Bay,Lake Erie,42.84825219,-79.08985552
+Zastepa,WP_Waverly_Beach_Park,Lake Erie,42.88260119,-78.93898286
