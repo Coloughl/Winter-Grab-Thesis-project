@@ -1,5 +1,7 @@
+install.packages("tidyverse")
 library(tidyverse)
 library(dplyr)
+library(readxl)
 
 getwd()
 setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-Project/9-Presentations/GSC 2025/1-Data")
@@ -22,8 +24,8 @@ WG1_DOCF <- WG1_DOC_noice %>%
          Rep = NULL) %>%
   unite(names, Analysis, Unit) %>% 
   pivot_wider(names_from = names, values_from = Value) %>% 
-  mutate(Depth_m = as.factor(Depth_m),
-         Station = as.factor(Station)) 
+  mutate(Station = as.factor(Station)) %>% 
+  filter(Depth_m >= 0 & Depth_m <= 1)
   
   
 DOC_2022 <- WG1_DOCF %>%
@@ -54,8 +56,7 @@ Bact_2022 <- inner_join(WG1_BactF, WG1_sites, by = "Station") %>%
          BP_Thymidine_Incorporation_nmol_thymidine_L_day = NULL,
         Leu = .[[7]],
         TdR = .[[6]])
-        .[[6]] = NULL,
-        .[[7]] = NULL)
+      
 
 
 WG1_Ice <- read.csv("WinterGrab_snow_ice_properties.csv")
@@ -89,29 +90,20 @@ WG2_fDOM <- read_xlsx("WG2_CDOM/WG2_fDOM.xlsx") %>%
   mutate(Year = "2024",
          Year = as.integer(Year))
 
+WG2_fDOM[WG2_fDOM == "na"] <- NA
+str(WG2_fDOM)
 
+WG2_fDOM <- mutate(WG2_fDOM,
+       FI = as.double(FI),
+       BIX = as.double(BIX))
 
 
 WG2_Bact <- read.csv("Feb_24_BP.csv") %>% 
   mutate(Station = Sample)
 
 
-WG2_Ice <- read_xlsx("WG2_Ice_data.xlsx")
-WG2_IceF <- WG2_Ice %>% 
-  mutate(sample_name = NULL,
-         depth_m = NULL,
-         Date = NULL,
-         Month = NULL,
-         Ice_notes = notes,
-         notes = NULL) %>%
-  unite(names, analysis, unit) %>% 
-  pivot_wider(names_from = names, values_from = value) %>% 
-  mutate(station = as.factor(station)) 
-
 
 WG2_Snow <- read_xlsx("WG2_Snow_data.xlsx")
-  mutate(PI_name = pi_name,
-         Station = station)
 
 WG2_Ice <- inner_join(WG2_Snow, WG2_Sites, by = "Station") %>% 
   mutate("Snow+Ice_m" = (snow_cm/100) + Ice_m)
@@ -149,18 +141,31 @@ ggplot(WG_DOC) +
   theme(legend.position = "right") +
   labs(x = "Lake",  # Custom label for x-axis
        y = "DOC Concentration (mg/L)") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))# Place the legend on the right side
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(axis.title.x = element_text(size = 24),  # Set x-axis title size to 24
+        axis.title.y = element_text(size = 24),  # Set y-axis title size to 24
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 20),
+        axis.text.y = element_text(size = 20),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size = 24))# Place the legend on the right side
+
+
 
 
 #Average Ice and Snow thickness on each lake for each year.
 ggplot(mean_thickness, aes(x = Lake, y = mean_ice_thickness, fill = factor(Year))) + 
   geom_bar(stat = "identity", position = "dodge") +  # 'dodge' places bars side by side
-  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink", "2025" = "#C4A3D4" )) +  # Custom colors for years
+  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink", "2025" = "#C4A3D4")) +  # Custom colors for years
   labs(x = "Lake", 
        y = "Average Ice and Snow Thickness (m)", 
        fill = "Year") +  # Labels and title
   theme_minimal() +  # Minimal theme
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  
+  theme(axis.title.x = element_text(size = 24),  # Set x-axis title size to 24
+        axis.title.y = element_text(size = 24),  # Set y-axis title size to 24
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 20),
+        axis.text.y = element_text(size = 20),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size = 24))
 
 
 ggplot(WG_Bact, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year))) +
@@ -168,8 +173,27 @@ ggplot(WG_Bact, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year))) +
   y = "Leu (nmol Leu/L/d)",
   fill = "Year") +
   scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
-  geom_point(size = 10, shape = 22, color = "black", alpha = 0.5) +  # Black outline for points, fill color by Season
+  geom_point(size = 14, shape = 22, color = "black", alpha = 0.6) +  # Black outline for points, fill color by Season
   theme(legend.position = "right",  # Hide legend
+        axis.title.x = element_text(size = 24),
+        axis.title.y = element_text(size = 24),
+        axis.text.y = element_text(size = 20, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
+        axis.text.x = element_text(size = 20, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.ticks.length = unit(-0.25, "cm")) +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 2)
+
+
+ggplot(WG_Bact, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year))) +
+  labs(x = "TdR (nmol TdR/L/d)", 
+       y = "Leu (nmol Leu/L/d)",
+       fill = "Year") +
+  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
+  geom_point(size = 10, shape = 22, color = "black", alpha = 0.6) +  # Black outline for points, fill color by Year
+  theme(legend.position = "right",  # Show legend on the right
         axis.title.x = element_text(size = 18),
         axis.title.y = element_text(size = 18),
         axis.text.y = element_text(size = 16, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
@@ -179,8 +203,47 @@ ggplot(WG_Bact, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year))) +
         panel.background = element_blank(), 
         axis.line = element_line(colour = "black"),
         axis.ticks.length = unit(-0.25, "cm")) +
-  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 2)
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 2) +
+  xlim(0, 0.3) +  # Set x-axis limit to 0.3
+  ylim(0, 5)
 
 
-BPglm <- glm((Leu_nM/TdR_nM) ~ Year, data = WG_Bact)
-summary(BPglm)
+
+ggplot(WG_fDOM) +
+  geom_boxplot(aes(Lake, SUVA254, fill = factor(Year))) +
+  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
+  labs(x = "Lake",
+       y = "Specific Ultra-violet absorbance @ 254 nm (SUVA254)",
+       fill = "Year")
+
+ggplot(WG_fDOM) +
+  geom_boxplot(aes(Lake, BIX, fill = factor(Year))) +
+  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
+  labs(x = "Lake",
+       y = "Biological Index (BIX)")
+
+ggplot(WG_fDOM) +
+  geom_boxplot(aes(Lake, HIX, fill = factor(Year))) +
+  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
+  labs(x = "Lake",
+       y = "Humification Index (HIX)")
+
+ggplot(WG_fDOM) +
+  geom_boxplot(aes(Lake, FI, fill = factor(Year))) +
+  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
+  labs(x = "Lake",
+       y = "Flourescence Index (FI)")
+
+
+
+
+
+
+BPAOV <- aov((Leu_nM/TdR_nM) ~ as.factor(Lake) + as.factor(Year), data = WG_Bact)
+summary(BPAOV)
+
+DOCAOV <- aov(DOC_mg.L ~ as.factor(Lake) * as.factor(Year), data = WG_DOC)
+summary(DOCAOV)
+
+DOC_Tukey <- TukeyHSD(DOCAOV)
+summary(DOC_Tukey)
