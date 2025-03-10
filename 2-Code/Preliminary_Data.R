@@ -2,42 +2,29 @@
 #Connor O'Loughlin
 #Used Chatgpt for help with errors and general coding troubleshooting
 library(dplyr)
+install.packages("ggplot2")
 library(ggplot2)
 library(readxl)
+install.packages("openxlsx")
 library(openxlsx)
 
 
 getwd()
 setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data")
 
-molar_concentration <- function(TN) {
+
+convert_to_molar_concentration <- function(tdn_mg_per_L) {
+  # Molar mass of nitrogen (N) in g/mol
   molar_mass_nitrogen <- 14.01
   
-  tdn_g_per_L <- TN / 1000  # Convert to grams per liter
+  # Convert mg/L to g/L
+  tdn_g_per_L <- tdn_mg_per_L / 1000
   
-  molar <- tdn_g_per_L / molar_mass_nitrogen  # Calculate molar concentration
+  # Calculate molar concentration (mol/L)
+  molar_concentration <- tdn_g_per_L / molar_mass_nitrogen
   
-  return(molar)  # Return the molar concentration
+  return(molar_concentration)
 }
-
-
-TOC_filtered$TDN_M <- molar_concentration(TOC_filtered$TN)  # Apply 
-
-molar_concentration_C <- function(TN) {
-  molar_mass_nitrogen <- 14.01
-  
-  tdn_g_per_L <- TN / 1000  # Convert to grams per liter
-  
-  molar <- tdn_g_per_L / molar_mass_nitrogen  # Calculate molar concentration
-  
-  return(molar)  # Return the molar concentration
-}
-
-
-
-
-TOC_filtered$TN_M <- molar_concentration(TOC_filtered$TN)  # Apply 
-
 
 #Read in data ----
 Aug_BP <- read.csv("Bacterial_Production/Aug_24_BP.csv",
@@ -68,24 +55,24 @@ Nutrients <- read_excel("Winter_Grab_2024_Inventory.xlsx", sheet = "Nutrients")
 DNA <- read.xlsx("Winter_Grab_2024_Inventory.xlsx", sheet = "DNA")
 
 
+
+
+
+
 ##Messing with the data tables to make graphing easier ----
-
-
-get_season <- function(month) {
-  if(month %in% c('February', 'March')) {
-    return('Winter')
-  } else if(month == 'May') {
-    return('Spring')
-  } else if(month %in% c('July', 'August')) {
-    return('Summer')
-  } else {
-    return('Other')  # You can add other seasons as needed
-  }
-}
 
 #Merging the Bacterial Production data
 BP <- bind_rows(Aug_BP, Feb_BP, May_BP)
 
+
+#Setting the factor levels for the variable Month
+##This is so we can display the graphs in chronological order
+TOC$Month <- factor(TOC$Month, 
+                    levels = c("January", "February", "March",
+                               "April", "May", 
+                               "June", "July", 
+                               "August", "September", "October", 
+                               "November", "December"))
 
 #Removing data that exceeds the detection limit
 DOC <- TOC %>% 
@@ -102,44 +89,23 @@ TOC_filtered <- TOC %>%
            `NPOC.LOD.flag` != "<LOD",  # Remove rows where NPOC flag is "<LOD"
            `TN.LOD.flag` != ">RANGE",  # Remove rows where TN flag is ">RANGE"
            `TN.LOD.flag` != "<LOD") %>%  # Remove rows where TN flag is "<LOD"
-  mutate(C_N = `DOC_M` / `TN_M`)  # Create new C:N column by dividing NPOC by TN  
-
-TOC_filtered$C.N <- TOC_filtered$DOC_M / TOC_filtered$TN_M
-
-
-# Apply the function to create the 'Season' column based on the 'Month' column
-DOC$Season <- sapply(DOC$Month, get_season)
-TN$Season <- sapply(TN$Month, get_season)
-TOC_filtered$Season <- sapply(TOC_filtered$Month, get_season)
-BP$Season <- sapply(BP$Month, get_season)  
-
-#Creating data frames for each month so we can display them separately
-DOC_Winter <- DOC %>% filter(Season == "Winter")
-DOC_Spring <- DOC %>% filter(Season == "Spring")
-DOC_Summer <- DOC %>% filter(Season == "Summer")
-
+  mutate(C_N = `NPOC` / `TN`)  # Create new C:N column by dividing NPOC by TN  
   
-TN_Winter <- TN %>% filter(Season == "Winter")
-TN_Spring <- TN %>% filter(Season == "Spring")
-TN_Summer <- TN %>% filter(Season == "Summer")
-
-BP_Winter <- BP %>% filter(Season == "Winter")
-BP_Spring <- BP %>% filter(Season == "Spring")
-BP_Summer <- BP %>% filter(Season == "Summer")
-
-
-#Setting the factor levels for the variable Month
-##This is so we can display the graphs in chronological order
-BP$Season <- factor(BP$Season, 
-                   levels = c("Summer", "Spring", "Winter"))
-DOC$Season <- factor(DOC$Season, 
-                    levels = c("Summer", "Spring", "Winter"))
-TN$Season <- factor(TN$Season, 
-                    levels = c("Summer", "Spring", "Winter"))
-TOC_filtered$Season <- factor(TOC_filtered$Season, 
-                    levels = c("Summer", "Spring", "Winter"))
+#Creating data frames for each month so we can display them separately
+DOC_feb <- DOC %>% filter(Month == "February")
+DOC_mar <- DOC %>% filter(Month == "March")
+DOC_may <- DOC %>% filter(Month == "May")
+DOC_jul <- DOC %>% filter(Month == "July")
+DOC_aug <- DOC %>% filter(Month == "August")
+  
+TN_feb <- TN %>% filter(Month == "February")
+TN_mar <- TN %>% filter(Month == "March")
+TN_may <- TN %>% filter(Month == "May")
+TN_jul <- TN %>% filter(Month == "July")
+TN_aug <- TN %>% filter(Month == "August")
 
 
+TN$TDN_M <- convert_to_molar_concentration(TN$TN)
 
 ##Getting counts for each analyte----
 
@@ -205,49 +171,19 @@ print(Cyano_counts)
 
 
 #Visual Displays----
-##Bar chart of C:N ----
-ggplot(TOC_filtered, aes(x = Sample.ID, y = C_N, fill = Season)) +
-  geom_bar(stat = "identity", position = "Dodge") +           # Create a bar plot
+##Stacked bar chart of C:N ----
+ggplot(TOC_filtered, aes(x = Sample.ID, y = C_N, fill = Month)) +
+  geom_bar(stat = "identity") +           # Create a bar plot
+  facet_grid(~ Lake, scales = "free") +  # Facet by both Month and Lake with independent x and y axes
   theme_minimal() +                       # Use a minimal theme
-  labs(x = "Site",
-       y = "C:N") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6))+
-  geom_hline(yintercept = 6.625, 
-             linetype = "dashed", 
-             color = "red", 
-             size = 1 ,
-             aes(color = "Redfield's Ratio")) +  # Add the line and label it in the legend
-  scale_color_manual(name = "Legend", 
-                     values = c("Redfield's Ratio" = "red"))  # Custom color for the line in the legend
-
-
-ggplot(TOC_filtered, aes(x = TN_M, y = DOC_M, fill = Season)) +
-  xlab("TDN (M)") + 
-  ylab("DOC (M)") +
-  geom_point(size = 10, shape = 22, color = "black") +  # Black outline for points, fill color by Season
-  theme(legend.position = "right",  # Hide legend
-        axis.title.x = element_text(size = 18),
-        axis.title.y = element_text(size = 18),
-        axis.text.y = element_text(size = 16, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        axis.text.x = element_text(size = 16, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank(), 
-        axis.line = element_line(colour = "black"),
-        axis.ticks.length = unit(-0.25, "cm")) +
-  geom_abline(intercept = 0, slope = 6.625, linetype = "dashed", color = "darkgray", linewidth = 2)
-
-#Barcahrt
-ggplot(TOC_filtered, aes(x = Sample.ID, y = C_N, fill = Lake)) +
-  geom_bar(stat = "identity", position = "dodge") +  # Create a side-by-side bar plot
-  facet_wrap(~ Season) +                             # Facet by Season
-  theme_minimal() +                                  # Use a minimal theme
-  labs(title = "Bar plot of C:N by Site, Season, and Lake",
+  labs(title = "Bar plot of C:N by Site, Lake, and Month",
        x = "Site",
        y = "C:N") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6))  # Adjust x-axis text
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6)) 
+
+
 ##DOC plots ----
-##Multi-Facted display of scatterplots showing DOC conc in lakes
+##Multi-Facted displat of scatterplots showing DOC conc in lakes
 ggplot(DOC, aes(x = Sample.ID, y = NPOC, color = Lake)) +
   geom_point() +  # Create scatterplot
   facet_wrap(~ Month, scales = "free", ncol = 3) +  # Facet by Month
@@ -263,14 +199,6 @@ ggplot(DOC, aes(x = Sample.ID, y = NPOC, color = Lake)) +
     strip.text = element_text(size = 10),  # Increase size of facet labels (Month)
     panel.spacing = unit(1, "lines")  # Increase spacing between facets
   )
-
-#Barchart of DOC
-ggplot(DOC, aes(x = Sample.ID, y = NPOC, fill = Season)) +
-  geom_bar(stat = "identity", position = "Dodge", width = 1) +           # Create a bar plot
-  theme_minimal() +                       # Use a minimal theme
-  labs(x = "Site",
-       y = "DOC mg C/L") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6))
 
 ##Scatterplot of all the sites
 ggplot(DOC, aes(x = Sample.ID, y = NPOC, color = Lake, shape = Month)) +  # Map Month to shape
@@ -386,15 +314,16 @@ ggplot(DOC_aug, aes(x = Sample.ID, y = NPOC, color = Lake)) +
     legend.box = "horizontal",  # Arrange legend items horizontally 
   )
 
-##Graphical displays for TDN ----
+##Graphical displays for TN ----
 ##Multi-Facted displat of scatterplots showing N conc in lakes
 ggplot(TN, aes(x = Sample.ID, y = TN, color = Lake)) +
   geom_point() +  # Create scatterplot
   facet_wrap(~ Month, scales = "free", ncol = 3) +  # Facet by Month
   theme_minimal() +
   geom_text(aes(label = Sample.ID), vjust = -1, hjust = .6, size = 3) +# Use a minimal theme
-  labs(x = "Site",
-       y = "TDN (mg N/L)") +  # Label the y-axis as TOC
+  labs(title = "Scatterplot of TN by Site, Lake, and Month",
+       x = "Site",
+       y = "TN (mg N/L)") +  # Label the y-axis as TOC
   theme(
     axis.text.x = element_blank(),  # Remove x-axis labels
     axis.title.x = element_blank(),  # Remove x-axis title
@@ -402,24 +331,6 @@ ggplot(TN, aes(x = Sample.ID, y = TN, color = Lake)) +
     strip.text = element_text(size = 10),  # Increase size of facet labels (Month)
     panel.spacing = unit(1, "lines")  # Increase spacing between facets
   )
-
-#Barchart for TN
-ggplot(TN, aes(x = Sample.ID, y = TN, fill = Season)) +
-  geom_bar(stat = "identity", position = "Dodge") +           # Create a bar plot
-  theme_minimal() +                       # Use a minimal theme
-  labs(x = "Site",
-       y = "TDN mg N/L") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6))
-
-#Stackec Barchart for TN
-ggplot(TN, aes(x = Sample.ID, y = TN, fill = Month)) +
-  geom_bar(stat = "identity") +           # Create a bar plot
-  facet_grid(~ Lake, scales = "free") +  # Facet by both Month and Lake with independent x and y axes
-  theme_minimal() +                       # Use a minimal theme
-  labs(title = "Bar plot of TN by Site, Lake, and Month",
-       x = "Site",
-       y = "TN mg N/L") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6))
 
 ##Scatterplot of all the sites
 ggplot(TN, aes(x = Sample.ID, y = TN, color = Lake, shape = Month)) +  # Map Month to shape
@@ -553,29 +464,17 @@ ggplot(BP, aes(x = Sample, y = Leu.TdR, fill = Month)) +
   labs(title = "Bar plot of Leu:TdR by Site, Lake, and Month",
        x = "Site",
        y = "Leu:TdR") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6))
-
-ggplot(BP, aes(x = Sample, y = Leu.TdR, fill = Season)) +
-  geom_bar(stat = "identity", position = "Dodge") +           # Create a bar plot
-  theme_minimal() +                       # Use a minimal theme
-  labs(x = "Site",
-       y = "Leu:TdR") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6))
-
-
-p11 <- ggplot(BP, aes(x = TdR_nM, y = Leu_nM, fill = Season)) +
-  xlab("TdR (nmol TdR/L/d)") + 
-  ylab("Leu (nmol Leu/L/d)") +
-  geom_point(size = 10, shape = 22, color = "black") +  # Black outline for points, fill color by Season
-  theme(legend.position = "right",  # Hide legend
-        axis.title.x = element_text(size = 18),
-        axis.title.y = element_text(size = 18),
-        axis.text.y = element_text(size = 16, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        axis.text.x = element_text(size = 16, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank(), 
-        axis.line = element_line(colour = "black"),
-        axis.ticks.length = unit(-0.25, "cm")) +
-  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 2)  # Custom color palette for each season
-p11
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6)) 
+#Linear Regression models ----
+##Linear regression of NPOC ----
+ggplot(DOC, aes(x = Sample.ID, y = NPOC, color = Lake)) +
+  geom_point() +  # Scatter plot of DOC values
+  theme_minimal() +  # Use a minimal theme
+  labs(title = "Linear Regression of DOC by Site and Lake",
+       x = "Site",
+       y = "DOC (mg/L)") +  # Label the y-axis as DOC
+  theme(
+    axis.text.x = element_blank(),  # Remove x-axis labels
+    axis.ticks.x = element_blank(),  # Remove x-axis ticks
+    axis.title.x = element_blank()  # Optionally, remove x-axis title
+  )
