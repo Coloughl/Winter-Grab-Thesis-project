@@ -121,100 +121,217 @@ WG_fDOM <- bind_rows(WG2_fDOM, fDOM_2022)
 WG_Ice_Snow <- bind_rows(WG2_Ice, Ice_2022)
 
 
+#Calculating the mean, sd, and sem for ice thickness
 mean_thickness <- WG_Ice_Snow %>%
   group_by(Lake, Year) %>%
   summarise(
     mean_ice_thickness = mean(`Snow+Ice_m`, na.rm = TRUE))
 
+ice_sd <- WG_Ice_Snow %>%
+  group_by(Lake, Year) %>%
+  summarise(sd_ice_thickness = sd(`Snow+Ice_m`, na.rm = TRUE))
+
+# Count the number of observations in each group
+lake_count <- WG_Ice_Snow %>%
+  group_by(Lake, Year) %>%
+  summarise(count = n())
+
+# Merge the mean, standard deviation, and count data together
+sem_thickness <-mean_thickness %>%
+  left_join(ice_sd, by = c("Lake", "Year")) %>%
+  left_join(lake_count, by = c("Lake", "Year")) %>%
+  mutate(sem_ice_thickness = sd_ice_thickness / sqrt(count))
+
+
+
+mean_DOC <- WG_DOC %>%
+  group_by(Lake, Year) %>%
+  summarise(
+    mean_DOC = mean(`DOC_mg.L`, na.rm = TRUE))
+
+DOC_sd <- WG_DOC %>%
+  group_by(Lake, Year) %>%
+  summarise(sd_DOC = sd(`DOC_mg.L`, na.rm = TRUE))
+
+# Count the number of observations in each group
+lake_count_D <- WG_DOC %>%
+  group_by(Lake, Year) %>%
+  summarise(count = n())
+
+# Merge the mean, standard deviation, and count data together
+sem_DOC <-mean_DOC %>%
+  left_join(DOC_sd, by = c("Lake", "Year")) %>%
+  left_join(lake_count_D, by = c("Lake", "Year")) %>%
+  mutate(sem_DOC = sd_DOC / sqrt(count))
+
+
+#Adding a new row for Lake St. Clair to make the DOC bars in the barchart the same size
+new_DOC <- tibble(
+  Lake = "Lake St. Clair",
+  Year = 2022,
+  mean_DOC = NA,
+  sd_DOC = NA,
+  sem_DOC = NA,
+  count = NA
+)
+sem_DOC <- bind_rows(sem_DOC, new_DOC)
+
+
+new_fDOM <- tibble(
+  Lake ="Lake St. Clair",
+  Year = 2022)
+
+WG_fDOM <- bind_rows(WG_fDOM, new_fDOM)
+
+new_Ice <- tibble(
+  Lake ="Lake St Clair",
+  Year = 2022)
+
+sem_thickness <- bind_rows(sem_thickness, new_Ice) %>% 
+  mutate(across(everything(), ~na_if(., 0)))
 
 
 #Plots ----
 
 
-#Boxplot of DOC concentrations in the lakes by year
-ggplot(WG_DOC) + 
-  geom_boxplot(aes(x = Lake, y = DOC_mg.L, fill = factor(Year)),
-               position = position_dodge(width = 0.8)) +  # Map 'Year' to 'fill' and position side by side
-  scale_fill_manual(name = "Year", 
-                    values = c("2022" = "skyblue", 
-                               "2024" = "lightpink")) +  # Colors for each year
-  theme(legend.position = "right") +
-  labs(x = "Lake",  # Custom label for x-axis
-       y = "DOC Concentration (mg/L)") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  theme(axis.title.x = element_text(size = 24),  # Set x-axis title size to 24
-        axis.title.y = element_text(size = 24),  # Set y-axis title size to 24
+#Barchart of DOC concentrations in the lakes by year
+ggplot(sem_DOC, aes(x = Lake, y = mean_DOC, fill = factor(Year))) + 
+  geom_bar(stat = "identity", position = position_dodge2(padding = 0.1), width = .5) +  
+  scale_fill_manual(values = c("2022" = "#87CEDA", "2024" = "#E50245")) + 
+  labs(x = NULL,
+       y = expression(paste("Average DOC Concentration (", "mg L"^-1, ")")), 
+       fill = "Year") + 
+  theme_minimal() +  
+  theme(axis.title.x = element_text(size = 24),  
+        axis.title.y = element_text(size = 24),  
         axis.text.x = element_text(angle = 45, hjust = 1, size = 20),
         axis.text.y = element_text(size = 20),
-        legend.text = element_text(size = 20),
-        legend.title = element_text(size = 24))# Place the legend on the right side
+        legend.text = element_text(size = 24),
+        legend.position = c(0.8, 0.8),
+        legend.title = element_text(size = 28)) +
+  geom_errorbar(aes(ymin = mean_DOC - sem_DOC,
+                    ymax = mean_DOC + sem_DOC), width = 0.1, position = position_dodge(0.5))
+
+ggplot(sem_DOC, aes(x = Lake, y = mean_DOC, fill = factor(Year))) + 
+  geom_bar(stat = "identity", position = position_dodge(width = 0.6), width = .6) +  # Adjust dodge width and bar width
+  scale_fill_manual(values = c("2022" = "#87CEDA", "2024" = "#E50245")) + 
+  labs(x = NULL,
+       y = expression(paste("Average DOC Concentration (", "mg L"^-1, ")")), 
+       fill = "Year") + 
+  theme_minimal() +  
+  theme(axis.title.x = element_text(size = 24),  
+        axis.title.y = element_text(size = 24),  
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 20),
+        axis.text.y = element_text(size = 20),
+        legend.text = element_text(size = 24),
+        legend.position = c(0.8, 0.8),
+        legend.title = element_text(size = 28)) +
+  geom_errorbar(aes(ymin = mean_DOC - sem_DOC,
+                    ymax = mean_DOC + sem_DOC), 
+                width = 0.4, size = 1,position = position_dodge(0.6))   # Same dodge width for error bars
+  geom_text(aes(label = paste("n = ", count)), vjust = -3, size = 6, position = position_dodge(0.6))
 
 
 
 
 #Average Ice and Snow thickness on each lake for each year.
-ggplot(mean_thickness, aes(x = Lake, y = mean_ice_thickness, fill = factor(Year))) + 
-  geom_bar(stat = "identity", position = "dodge") +  # 'dodge' places bars side by side
-  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink", "2025" = "#C4A3D4")) +  # Custom colors for years
-  labs(x = "Lake", 
+ggplot(sem_thickness, aes(x = Lake, y = mean_ice_thickness, fill = factor(Year))) + 
+  geom_bar(stat = "identity", position = position_dodge(width = 0.6), width = .6) +  # Adjust dodge width and bar width
+  scale_fill_manual(values = c("2022" = "#87CEDA", "2024" = "#E50245", "2025" = "#6D8EAA")) + 
+  labs(x = NULL,
        y = "Average Ice and Snow Thickness (m)", 
-       fill = "Year") +  # Labels and title
-  theme_minimal() +  # Minimal theme
-  theme(axis.title.x = element_text(size = 24),  # Set x-axis title size to 24
-        axis.title.y = element_text(size = 24),  # Set y-axis title size to 24
+       fill = "Year") + 
+  theme_minimal() +  
+  theme(axis.title.x = element_text(size = 24),  
+        axis.title.y = element_text(size = 24),  
         axis.text.x = element_text(angle = 45, hjust = 1, size = 20),
         axis.text.y = element_text(size = 20),
-        legend.text = element_text(size = 20),
-        legend.title = element_text(size = 24))
+        legend.text = element_text(size = 24),
+        legend.position = c(0.8, 0.8),
+        legend.title = element_text(size = 28)) +
+  geom_errorbar(aes(ymin = mean_ice_thickness - sem_ice_thickness,
+                    ymax = mean_ice_thickness + sem_ice_thickness), 
+                width = 0.4, size = 1,position = position_dodge(0.6))   # Same dodge width for error bars
+  geom_text(aes(label = paste("n = ", count)), vjust = -3, size = 6, position = position_dodge(0.6))  # Add 'n = ' text
 
 
+
+
+#BP Scatterplot
 ggplot(WG_Bact, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year))) +
-  labs(x = "TdR (nmol TdR/L/d)", 
-  y = "Leu (nmol Leu/L/d)",
+  labs(x = expression(paste(, "nmol Thymidine L"^-1, "d"^-1,)), 
+  y = expression(paste(, "nmol Leucine L"^-1, "d"^-1,)),
   fill = "Year") +
-  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
-  geom_point(size = 14, shape = 22, color = "black", alpha = 0.6) +  # Black outline for points, fill color by Season
-  theme(legend.position = "right",  # Hide legend
-        axis.title.x = element_text(size = 24),
+  scale_fill_manual(values = c("2022" = "#87CEDA",  # Lighter, vibrant blue
+                               "2024" = "#E50245")) +
+  geom_point(size = 18, shape = 21, alpha = 0.7) +  # Black outline for points, fill color by Season
+  theme(axis.title.x = element_text(size = 24),
         axis.title.y = element_text(size = 24),
-        axis.text.y = element_text(size = 20, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        axis.text.x = element_text(size = 20, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
+        axis.text.y = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
+        axis.text.x = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank(),
         panel.background = element_blank(), 
         axis.line = element_line(colour = "black"),
-        axis.ticks.length = unit(-0.25, "cm")) +
-  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 2)
-
-
-ggplot(WG_Bact, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year))) +
-  labs(x = "TdR (nmol TdR/L/d)", 
-       y = "Leu (nmol Leu/L/d)",
-       fill = "Year") +
-  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
-  geom_point(size = 10, shape = 22, color = "black", alpha = 0.6) +  # Black outline for points, fill color by Year
-  theme(legend.position = "right",  # Show legend on the right
-        axis.title.x = element_text(size = 18),
-        axis.title.y = element_text(size = 18),
-        axis.text.y = element_text(size = 16, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        axis.text.x = element_text(size = 16, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank(), 
-        axis.line = element_line(colour = "black"),
-        axis.ticks.length = unit(-0.25, "cm")) +
-  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 2) +
-  xlim(0, 0.3) +  # Set x-axis limit to 0.3
-  ylim(0, 5)
+        legend.position = c(0.1, 0.9),
+        axis.ticks.length = unit(-0.35, "cm"),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size = 28)) +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 3) +
+  xlim(0, 0.5) +  # Set x-axis limit to 0.3
+  ylim(0, 15)
 
 
 
+#SUVA Boxplot
 ggplot(WG_fDOM) +
   geom_boxplot(aes(Lake, SUVA254, fill = factor(Year))) +
-  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
-  labs(x = "Lake",
-       y = "Specific Ultra-violet absorbance @ 254 nm (SUVA254)",
-       fill = "Year")
+  scale_fill_manual(values = c("2022" = "#87CEDA","2024" = "#E50245")) +
+  labs(x = NULL,
+       y = "SUVA254",
+       fill = "Year") +
+  theme(axis.title.x = element_text(size = 24),
+        axis.title.y = element_text(size = 24),
+        axis.text.y = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
+        axis.text.x = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm"), angle = 45, hjust = 1,),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        legend.position = c(0.1, 0.9),
+        axis.ticks.length = unit(-0.35, "cm"),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size = 28))
+
+#HIX boxplot
+ggplot(WG_fDOM) +
+  geom_boxplot(aes(Lake, HIX, fill = factor(Year))) +
+  scale_fill_manual(values = c("2022" = "#87CEDA","2024" = "#E50245")) +
+  labs(x = NULL,
+       y = "HIX",
+       fill = "Year") +
+  theme(axis.title.x = element_text(size = 24),
+        axis.title.y = element_text(size = 24),
+        axis.text.y = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
+        axis.text.x = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm"), angle = 45, hjust = 1,),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        legend.position = c(0.1, 0.9),
+        axis.ticks.length = unit(-0.35, "cm"),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size = 28))
+
+
+
+
+
+
+
+
+
+
 
 ggplot(WG_fDOM) +
   geom_boxplot(aes(Lake, BIX, fill = factor(Year))) +
@@ -222,11 +339,6 @@ ggplot(WG_fDOM) +
   labs(x = "Lake",
        y = "Biological Index (BIX)")
 
-ggplot(WG_fDOM) +
-  geom_boxplot(aes(Lake, HIX, fill = factor(Year))) +
-  scale_fill_manual(values = c("2022" = "skyblue", "2024" = "lightpink")) +
-  labs(x = "Lake",
-       y = "Humification Index (HIX)")
 
 ggplot(WG_fDOM) +
   geom_boxplot(aes(Lake, FI, fill = factor(Year))) +
@@ -239,7 +351,7 @@ ggplot(WG_fDOM) +
 
 
 
-BPAOV <- aov((Leu_nM/TdR_nM) ~ as.factor(Lake) + as.factor(Year), data = WG_Bact)
+BPAOV <- aov((Leu_nM/TdR_nM) ~ as.factor(Lake) * as.factor(Year), data = WG_Bact)
 summary(BPAOV)
 
 DOCAOV <- aov(DOC_mg.L ~ as.factor(Lake) * as.factor(Year), data = WG_DOC)
