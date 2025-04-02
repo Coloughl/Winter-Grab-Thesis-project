@@ -301,7 +301,7 @@ ggplot(WG_fDOM) +
         legend.position = c(0.1, 0.9),
         axis.ticks.length = unit(-0.35, "cm"),
         legend.text = element_text(size = 20),
-        legend.title = element_text(size = 28))
+        legend.title = element_text(size = 28)) 
 
 #HIX boxplot
 ggplot(WG_fDOM) +
