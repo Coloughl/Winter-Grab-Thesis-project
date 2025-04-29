@@ -12,15 +12,19 @@ install.packages("svglite")
 
 #Initialize package library/Count CPU Cores.
 #More powerful computers can use more cores to speed up processing.
+
 library("staRdom")
 library("dplyr")
 library("stringr")
 library("svglite")
 
+getwd()
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/19Mar25")
+
 #Read in data and visualize using an overview.
 #Note that import functions are machine-specific (run help("eem_read"), and 
 #file paths Will need to be changed to point at folders containing data. 
-eem_list <- eem_read("\\\\homes.mtu.edu/home/Documents/Research/EEMS R Code/REU/Rework/A_EEM", recursive = TRUE, import_function = 'aqualog') # in case you use your own data, just replace folder by a path. e.g. "C:/folder/another folder" and change import_function according to instrument.
+eem_list <- eem_read("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/19Mar25/EEMs_corrected", recursive = TRUE, import_function = 'aqualog') # in case you use your own data, just replace folder by a path. e.g. "C:/folder/another folder" and change import_function according to instrument.
 View(eem_list)
 eem_overview_plot(eem_list, spp=9, contour = TRUE)
 
@@ -28,7 +32,9 @@ eem_overview_plot(eem_list, spp=9, contour = TRUE)
 #exactly matching names. If import continues to fail in the check data 
 #step, you may need to trim absorbance columns to exclusively wavelenghth
 #and absorbance columns.
-absorbance_path = "\\\\homes.mtu.edu/home/Documents/Research/EEMS R Code/REU/Rework/A_ABS" # load example data, set a path without using system.file to use your own data e.g. "C:/folder/another folder"
+
+absorbance_path = "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/19Mar25/ABS_corrected" # load example data, set a path without using system.file to use your own data e.g. "C:/folder/another folder"
+
 absorbance <- absorbance_read(absorbance_path, recursive = TRUE, order = TRUE) # load csv or txt tables in folder
 
 #Read in a metadata table if present
