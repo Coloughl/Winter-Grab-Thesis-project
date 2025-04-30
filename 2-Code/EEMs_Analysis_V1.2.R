@@ -19,12 +19,12 @@ library("stringr")
 library("svglite")
 
 getwd()
-setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/19Mar25")
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice/")
 
 #Read in data and visualize using an overview.
 #Note that import functions are machine-specific (run help("eem_read"), and 
 #file paths Will need to be changed to point at folders containing data. 
-eem_list <- eem_read("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/19Mar25/EEMs_corrected", recursive = TRUE, import_function = 'aqualog') # in case you use your own data, just replace folder by a path. e.g. "C:/folder/another folder" and change import_function according to instrument.
+eem_list <- eem_read("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice/EEMs_corrected", recursive = TRUE, import_function = 'aqualog') # in case you use your own data, just replace folder by a path. e.g. "C:/folder/another folder" and change import_function according to instrument.
 View(eem_list)
 eem_overview_plot(eem_list, spp=9, contour = TRUE)
 
@@ -33,9 +33,12 @@ eem_overview_plot(eem_list, spp=9, contour = TRUE)
 #step, you may need to trim absorbance columns to exclusively wavelenghth
 #and absorbance columns.
 
-absorbance_path = "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/19Mar25/ABS_corrected" # load example data, set a path without using system.file to use your own data e.g. "C:/folder/another folder"
+absorbance_path = "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice/ABS_corrected" # load example data, set a path without using system.file to use your own data e.g. "C:/folder/another folder"
 
 absorbance <- absorbance_read(absorbance_path, recursive = TRUE, order = TRUE) # load csv or txt tables in folder
+
+colnames(absorbance)[1] <- "wavelength"
+colnames(absorbance)[2] <- "EG18Feb25"
 
 #Read in a metadata table if present
 #metatable <- system.file("extdata/metatable_dreem.csv",package = "staRdom") # path to example data, can be replaced by a path to your own data
@@ -44,6 +47,7 @@ absorbance <- absorbance_read(absorbance_path, recursive = TRUE, order = TRUE) #
 #write.csv(file="metatable.csv", row.names = FALSE)
 
 #Check import for erorrs. This version puts the output into an object.
+
 eem_checkdata(eem_list,absorbance)
 
 
@@ -76,6 +80,7 @@ eem_list <- eem_raman_normalisation2(eem_list, blank = "blank")
 eem_list <- eem_extract(eem_list, c("nano", "miliq", "milliq", "mq", "blank"),ignore_case = TRUE)
 absorbance <- dplyr::select(absorbance, -matches("nano|miliq|milliq|mq|blank", ignore.case = TRUE))
 
+
 #Remove scatter. 1st two values on the vectors are Raman scattering,
 #while the second two are Rayleigh. Can be split into 4 lines
 #for easier manipulation of each scattering seperately.
@@ -94,6 +99,7 @@ eem_overview_plot(eem_list, spp=9, contour = TRUE)
 
 
 #Data smoothing
+
 eem4peaks <- eem_smooth(eem_list, n = 4)
 summary(eem_list)
 
@@ -110,7 +116,7 @@ indices_peaks <- bix %>%
   full_join(hix, by = "sample")
 indices_peaks
 
-write.csv(indices_peaks, file = "REU_indices.csv")
+write.csv(indices_peaks, file = "WG2_indices.csv")
 
 #Calculates absorbance indices
 slope_parms <- abs_parms(absorbance, cuvl = 1)

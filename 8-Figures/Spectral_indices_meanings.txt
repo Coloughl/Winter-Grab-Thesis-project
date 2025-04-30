@@ -1,0 +1,10 @@
+SUVA	 Wavelength (nm)	             Primary Use	                                                                             Indication
+SUVA254	    254	             Aromaticity of DOM, especially humic substances	                          Higher values = terrestrial DOM (humic-like, more aromatic)
+SUVA280	    280	             Proteinaceous DOM, tryptophan-like fluorophores	                          Higher values = microbial DOM (proteinaceous, less aromatic)
+SUVA350	    350	             Humic-like and fulvic acids	                                          Higher values = humic-like DOM (terrestrial origin)
+SUVA412	    412	             Fluorescent DOM (fDOM), fulvic acids	                                  Higher values = fulvic acid, fluorescent DOM (terrestrial)
+SUVA440	    440	             Fluorescent humic-like substances, fulvic acid	                          Higher values = humic, fulvic acid (terrestrial) DOM
+SUVA480	    480	             Humic-like and fulvic acids	                                          Higher values = humic (terrestrial) DOM, aromatic
+SUVA510	    510	             Fluorescent DOM, fulvic acids, humic-like DOM	                          Higher values = humic/fulvic acid from terrestrial sources
+SUVA532	    532	             Fluorescent DOM (humic, fulvic, and microbial DOM)	                          Higher values = humic/fulvic acid (terrestrial) DOM
+SUVA555	    555	             Fluorescent DOM (humic acids, microbial components)	                  Higher values = humic (terrestrial) DOM with aromatic components
