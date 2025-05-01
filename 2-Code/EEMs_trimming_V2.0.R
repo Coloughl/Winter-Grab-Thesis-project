@@ -109,7 +109,7 @@ for (file in EEMs_files) {
   data[1, 1] <- ""
   
   # Build output path
-  sample_name <- gsub("\\(01\\) - Sample - Blank Waterfall Plot\\.dat$", "", basename(file))
+  sample_name <- gsub(" \\(01\\) - Sample - Blank Waterfall Plot\\.dat$", "", basename(file))
   new_file_name <- paste0(sample_name, ".csv")
   new_file <- file.path(EEMs_output_dir, new_file_name)
   
