@@ -3,7 +3,7 @@
 
 
 getwd()
-setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice/")
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice_2/")
 
 #Grabbing files ----
 
@@ -33,20 +33,12 @@ EEMs_files <- EEMs_files[!grepl("blank", basename(EEMs_files), ignore.case = TRU
 BEEMs_files <- list.files(path = EEMs_input_dir, pattern = "blank.*\\csv$", full.names = TRUE)
 
 
-EEMs_folderpath <- "4Nov24"
-ABS_folderpath <- "4Nov24"
-
-ABS_files <- list.files(path = ABS_input_dir, pattern = "Abs Spectra Graphs\\.dat$", full.names = TRUE)
-EEMs_files <- list.files(path = EEMs_input_dir, pattern = "Waterfall Plot Sample\\.dat$", full.names = TRUE)
-BEEMs_files <- list.files(path = EEMs_input_dir, pattern = "Waterfall Plot Blank\\.dat$", full.names = TRUE)
-View(ABS_files)
-
-
 #Removing the nessecary rows and columns from each file then saving to a new folder ----
 
 
+#ABS file trimming. This should remain constant between all runs.
+#This just removes rows and columns with extraneous data
 for (file in ABS_files) {
-  # Read the .dat file (adjust 'sep' as needed, e.g., sep = "\t" for tab-delimited)
   data <- read.csv(file, header = FALSE)
   
   
@@ -71,30 +63,45 @@ for (file in ABS_files) {
 
 
 
-
+#File trimming for EEMs files
+#You will need to adjust line 76 for whichever method you are running
+#Just make sure that your EEMs wavelength range is shorter than your ABS range
+#I am work shopping another loop to automatically check for this
 for (file in EEMs_files) {
   # Read the CSV with headers
   data <- read.csv(file, header = FALSE, stringsAsFactors = FALSE)
   
-  # Remove rows 2 and 3 (if needed)
+  # Remove row 2 (extra row that does not contain any actual data)  
   data <- data[-2, ]
   
-  # Remove rows 239 to 250
-  data <- data[-c(243:252), ]  # Adjust as needed
+  # Remove rows from the upper end of the wavelength range (~800 or so)
+  data <- data[-c(258:262), ]  # Adjust as needed
+  #For 0.1 sec, 2nm inc, 240-800 cut lines 243:252
+  #For Mari's 0.5 sec method cut lines 258:262. I am not sure this entirely necessary for this method, as it seems to already be under the ABS range (at this end of the wavelength range)
   
-  data <- data[-2, ]
+  
+  
+  #Removes rows from the lower end of the wavelength range (~240 or so)
+  #data <- data[-2, ] # This line of code is for my 0.1 sec method
+  #This removes row 2 to ensure that the wavelength range of the EEMs file is short than that of the ABS file.
+  
+  data <- data[-c(2,3), ] # This line of code is for Mari's 0.5 sec method
+  #This removes rows 2 and 3 to ensure that the wavelength range of the EEMs file is short than that of the ABS file.
   
   # Convert entire data frame to character (to allow blanking A1)
-  data[] <- lapply(data, as.character)
+  data[] <- lapply(data, as.character) #Do NOT change this. Otherwise everything will read in as numeric and R hates numerical data as headers.
+  #This row is technically not a header but when you go to save the csv, it would paste an x into each cell (Ex. X800, X798, X796,...)
   
   # Blank out cell A1
   data[1, 1] <- ""
+  #Makes a blank space in cell A1 to match up with the format that staRdom likes
   
   # Build output path
   new_file_name <- basename(file)
   new_file <- file.path(EEMs_output_dir, new_file_name)
   
   # Write line by line to fully control formatting
+  #DO NOT change this
   writeLines(
     apply(data, 1, function(row) paste(row, collapse = ",")),
     con = new_file
@@ -105,18 +112,26 @@ for (file in EEMs_files) {
 
 
 
+
+#Blank EEMs file are a little special in their structure so this loop is special for them
 for (file in BEEMs_files) {
   data <- read.csv(file, header = FALSE, stringsAsFactors = FALSE)
   
   
+  
+  #These lines of code may not be necessary for the blanks
   # Remove rows 239 to 250
-  data_modified <- data[-c(239:250), ]
+  #data_modified <- data[-c(239:250), ]
+  #For 0.1 sec, 2nm inc, 240-800 cut lines 239:250
+  #For Mari's 0.5 sec method cut lines 
+  
   
   
   data[] <- lapply(data, as.character)
   
   # Blank out cell A1
   data[1, 1] <- ""
+  #Makes a blank space in cell A1 to match up with the format that staRdom likes
   
   new_file_name <- basename(file)
   
@@ -124,7 +139,7 @@ for (file in BEEMs_files) {
   new_file <- file.path(BEEMs_output_dir ,new_file_name)  # 'basename' keeps the original filename
   
   # Save to the new directory with the same filename (no '_modified' added)
-  #
+  #DO NOT change this
   writeLines(
     apply(data, 1, function(row) paste(row, collapse = ",")),
     con = new_file)
