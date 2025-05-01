@@ -19,12 +19,12 @@ library("stringr")
 library("svglite")
 
 getwd()
-setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice/")
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice_2/")
 
 #Read in data and visualize using an overview.
 #Note that import functions are machine-specific (run help("eem_read"), and 
 #file paths Will need to be changed to point at folders containing data. 
-eem_list <- eem_read("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice/EEMs_corrected", recursive = TRUE, import_function = 'aqualog') # in case you use your own data, just replace folder by a path. e.g. "C:/folder/another folder" and change import_function according to instrument.
+eem_list <- eem_read("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice_2/EEMs_corrected", recursive = TRUE, import_function = 'aqualog') # in case you use your own data, just replace folder by a path. e.g. "C:/folder/another folder" and change import_function according to instrument.
 View(eem_list)
 eem_overview_plot(eem_list, spp=9, contour = TRUE)
 
@@ -33,12 +33,12 @@ eem_overview_plot(eem_list, spp=9, contour = TRUE)
 #step, you may need to trim absorbance columns to exclusively wavelenghth
 #and absorbance columns.
 
-absorbance_path = "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice/ABS_corrected" # load example data, set a path without using system.file to use your own data e.g. "C:/folder/another folder"
+absorbance_path = "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice_2/ABS_corrected" # load example data, set a path without using system.file to use your own data e.g. "C:/folder/another folder"
 
 absorbance <- absorbance_read(absorbance_path, recursive = TRUE, order = TRUE) # load csv or txt tables in folder
 
 colnames(absorbance)[1] <- "wavelength"
-colnames(absorbance)[2] <- "EG18Feb25"
+#colnames(absorbance)[2] <- "EG18Feb25"
 
 #Read in a metadata table if present
 #metatable <- system.file("extdata/metatable_dreem.csv",package = "staRdom") # path to example data, can be replaced by a path to your own data

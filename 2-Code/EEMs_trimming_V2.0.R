@@ -1,88 +1,106 @@
-#EEMs file alteration code
+#EEMs file alteration code ----
+#Connor O'Loughlin
+#Used ChatGPT-4o to help develop code and troubleshoot
+#Last update: 5/1/25 by CCO
 
+library(tidyverse)
+library(dplyr)
 
 
 getwd()
-setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice/")
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/")
 
 #Grabbing files ----
 
 #Making input directories for ABS and EEMs data
 
-ABS_input_dir <- "ABS"
+ABS_input_dir <- "Practice_3"
 
-ABS_output_dir <- "ABS_corrected"  
+ABS_output_dir <- "Practice_3/ABS_corrected"  
 
 
 #Making output directories for ABS and EEMs data
-EEMs_input_dir <- "EEMs"
-EEMs_output_dir <- "EEMs_corrected"
-BEEMs_output_dir <- "EEMs_corrected"
+EEMs_input_dir <- "Practice_3"
+EEMs_output_dir <- "Practice_3/EEMs_corrected"
+BEEMs_output_dir <- "Practice_3/EEMs_corrected"
 
 
 # List all files ending in "_ABS.dat" or "_EEMs.dat"
 
 #Grabbing all ABS files and making a list variable
-ABS_files <- list.files(path = ABS_input_dir, pattern = ".csv$", full.names = TRUE)
+ABS_files <- list.files(path = ABS_input_dir, pattern = "\\(01\\) - Abs Spectra Graphs\\.dat$", full.names = TRUE)
+print(ABS_files)
 
 #Grabbing all EEMs files and making a list variable, then removing any blank files from the list
-EEMs_files <- list.files(path = EEMs_input_dir, pattern = ".csv$", full.names = TRUE)
-EEMs_files <- EEMs_files[!grepl("blank", basename(EEMs_files), ignore.case = TRUE)]
+EEMs_files <- list.files(path = EEMs_input_dir, pattern = "\\(01\\) - Sample - Blank Waterfall Plot\\.dat$", full.names = TRUE)
+print(EEMs_files)
+
+
+#Checking file names and looking for missing data ----
+#Making sure that there is a EEMs file for every ABS file
+ABS_names <- basename(ABS_files) %>%
+  gsub(" \\(01\\) - Abs Spectra Graphs\\.dat$", "", .)
+
+# Extract sample names from EEMs file paths
+EEMs_names <- basename(EEMs_files) %>%
+  gsub(" \\(01\\) - Sample - Blank Waterfall Plot\\.dat$", "", .)
+
+# Check to make sure data matches (should be 0)
+ABS_names %>%
+  setdiff(EEMs_names) %>%
+  print()
+
+EEMs_names %>%
+  setdiff(ABS_names) %>%
+  print()
+
+#Check to see if the names are exactly the same (nessecary for EEMs pipeline)
+if (setequal(ABS_names, EEMs_names)) {
+  print("✅ Sample names match between ABS and EEMs.")
+} else {
+  print("❌ Sample names do NOT match.")
+}
+
 
 #This line is what grabs the blank file
-BEEMs_files <- list.files(path = EEMs_input_dir, pattern = "blank.*\\csv$", full.names = TRUE)
+BEEMs_files <- list.files(path = EEMs_input_dir, pattern = "\\(01\\) - Waterfall Plot Blank\\.dat$", full.names = TRUE)
+print(BEEMs_files)
 
 
-EEMs_folderpath <- "4Nov24"
-ABS_folderpath <- "4Nov24"
 
-ABS_files <- list.files(path = ABS_input_dir, pattern = "Abs Spectra Graphs\\.dat$", full.names = TRUE)
-EEMs_files <- list.files(path = EEMs_input_dir, pattern = "Waterfall Plot Sample\\.dat$", full.names = TRUE)
-BEEMs_files <- list.files(path = EEMs_input_dir, pattern = "Waterfall Plot Blank\\.dat$", full.names = TRUE)
-View(ABS_files)
-
-
-#Removing the nessecary rows and columns from each file then saving to a new folder ----
-
+#Removing the necessary rows and columns from each file then saving to a new folder ----
 
 for (file in ABS_files) {
-  # Read the .dat file (adjust 'sep' as needed, e.g., sep = "\t" for tab-delimited)
-  data <- read.csv(file, header = FALSE)
+  # Read the space-separated .dat file, skipping the first 3 lines
+  data <- read.table(file, skip = 3, sep = "\t", header = FALSE, fill = TRUE)
   
+  # Remove columns 2 through 9 and column 11. Leaves only OD column
+  data_modified <- data[-c(2,3), -c(2:9,11)]
   
-  # Modify the data: Remove the 11th column
-  data_modified <- data[-c(1,2,3),-c(2,3,4,5,6,7,8,9,11)]
+  # Create output file name with .csv extension
+  sample_name <- gsub(" \\(01\\) - Abs Spectra Graphs\\.dat$", "", basename(file))
+  new_file_name <- paste0(sample_name, ".csv")
+  new_file <- file.path(ABS_output_dir, new_file_name)
   
-  colnames(data_modified) <- NULL
-  
-  
-  # Define the new file path in the output directory
-  new_file_name <- basename(file)
-
-  new_file <- file.path(ABS_output_dir , new_file_name)
-  
-  
-  # Save to the new directory with the same filename (no overwriting)
-  write.csv(data_modified, file = new_file, row.names = FALSE, col.names = TRUE, quote = FALSE) # adjust 'sep' as needed
+  # Write cleaned data to CSV
+  write.table(data_modified, file = new_file, sep = ",", row.names = FALSE, col.names = FALSE, quote = FALSE)
   
   print(paste("Processed and saved:", new_file))
 }
 
 
 
-
-
 for (file in EEMs_files) {
   # Read the CSV with headers
-  data <- read.csv(file, header = FALSE, stringsAsFactors = FALSE)
+  data <- read.table(file, sep = "\t", header = FALSE)
   
   # Remove rows 2 and 3 (if needed)
   data <- data[-2, ]
   
   # Remove rows 239 to 250
-  data <- data[-c(243:252), ]  # Adjust as needed
+  data <- data[-c(244:252), ]  # Adjust as needed
   
-  data <- data[-2, ]
+  data <- data[-c(2,3), ]
   
   # Convert entire data frame to character (to allow blanking A1)
   data[] <- lapply(data, as.character)
@@ -91,7 +109,8 @@ for (file in EEMs_files) {
   data[1, 1] <- ""
   
   # Build output path
-  new_file_name <- basename(file)
+  sample_name <- gsub("\\(01\\) - Sample - Blank Waterfall Plot\\.dat$", "", basename(file))
+  new_file_name <- paste0(sample_name, ".csv")
   new_file <- file.path(EEMs_output_dir, new_file_name)
   
   # Write line by line to fully control formatting
@@ -105,12 +124,17 @@ for (file in EEMs_files) {
 
 
 
+
+run_date <- "9Apr25"
+blank_file_name <- paste0("blank", run_date, ".csv")
+blank_file_path <- file.path(BEEMs_output_dir, blank_file_name)
+
+
 for (file in BEEMs_files) {
-  data <- read.csv(file, header = FALSE, stringsAsFactors = FALSE)
-  
+  data <- read.table(file, sep = "\t", header = FALSE)
   
   # Remove rows 239 to 250
-  data_modified <- data[-c(239:250), ]
+  #data_modified <- data[-c(239:250), ]
   
   
   data[] <- lapply(data, as.character)
@@ -118,20 +142,23 @@ for (file in BEEMs_files) {
   # Blank out cell A1
   data[1, 1] <- ""
   
-  new_file_name <- basename(file)
+  #sample_name <- gsub("\\(01\\) - Waterfall Plot Blank\\.dat$", "", basename(file))
+  #new_file_name <- paste0(blank_file_name, ".csv")
+  blank_file_path <- file.path(BEEMs_output_dir, blank_file_name)
+  
   
   # Define the new file path in the output directory
-  new_file <- file.path(BEEMs_output_dir ,new_file_name)  # 'basename' keeps the original filename
+  #new_file <- file.path(BEEMs_output_dir ,new_file_name)  # 'basename' keeps the original filename
   
   # Save to the new directory with the same filename (no '_modified' added)
   #
   writeLines(
     apply(data, 1, function(row) paste(row, collapse = ",")),
-    con = new_file)
+    con = blank_file_path)
   
   #write.csv(data_modified, file = new_file, row.names = FALSE, col.names = TRUE)
   
-  print(paste("Processed and saved:", new_file))
+  print(paste("Processed and saved:", blank_file_name))
 }
 
 
