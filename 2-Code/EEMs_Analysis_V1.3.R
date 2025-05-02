@@ -37,6 +37,9 @@ absorbance_path = "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-p
 
 absorbance <- absorbance_read(absorbance_path, recursive = TRUE, order = TRUE) # load csv or txt tables in folder
 
+#This line of code is what makes the EEMs trimming code work. 
+#It manually assigns the first column of the absorbance object as a header called "wavelength"
+#It is nesseary for the eem_checkdata function
 colnames(absorbance)[1] <- "wavelength"
 
 #Read in a metadata table if present
