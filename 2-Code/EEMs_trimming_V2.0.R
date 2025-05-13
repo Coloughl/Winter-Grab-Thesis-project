@@ -13,21 +13,21 @@ library(dplyr)
 
 
 getwd()
-setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/")
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/WinterGrab/")
 
 #Grabbing files ----
 
 #Making input directories for ABS and EEMs data
 
-ABS_input_dir <- "Practice_3"
+ABS_input_dir <- "27Jun24"
 
-ABS_output_dir <- "Practice_3/ABS_corrected"  
+ABS_output_dir <- "27Jun24/ABS_corrected"  
 
 
 #Making output directories for ABS and EEMs data
-EEMs_input_dir <- "Practice_3"
-EEMs_output_dir <- "Practice_3/EEMs_corrected"
-BEEMs_output_dir <- "Practice_3/EEMs_corrected"
+EEMs_input_dir <- "27Jun24"
+EEMs_output_dir <- "27Jun24/EEMs_corrected"
+BEEMs_output_dir <- "27Jun24/EEMs_corrected"
 
 
 # List all EEMs and ABS files ending in .dat
@@ -111,13 +111,13 @@ for (file in EEMs_files) {
   # Remove rows 239 to 250
   #This is going to have to be adjusted for each method
   #This fits the upper bounds of the EEMs wavelength range into the ABS range
-  data <- data[-c(244:252), ]  # Adjust as needed
+  data <- data[-c(238:252), ]  # Adjust as needed
   
   
   #This is line of code removes rows 2 and 3
   #May need to adjust based upon your method
   #This is to fit the lower bounds of the EEMs wavelength range into the ABS range.
-  data <- data[-c(2,3), ] #adjust as needed
+  #data <- data[-c(2,3), ] #adjust as needed
   
   #Reads in the first row as charcaters instead of numeric
   #DO NOT change this. It is required for the rest of the transformations to work

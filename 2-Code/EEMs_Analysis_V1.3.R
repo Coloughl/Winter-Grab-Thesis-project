@@ -19,12 +19,12 @@ library("stringr")
 library("svglite")
 
 getwd()
-setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice_3/")
+setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/WinterGrab/27Jun24")
 
 #Read in data and visualize using an overview.
 #Note that import functions are machine-specific (run help("eem_read"), and 
 #file paths Will need to be changed to point at folders containing data. 
-eem_list <- eem_read("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice_3/EEMs_corrected", recursive = TRUE, import_function = 'aqualog') # in case you use your own data, just replace folder by a path. e.g. "C:/folder/another folder" and change import_function according to instrument.
+eem_list <- eem_read("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/WinterGrab/27Jun24/EEMs_corrected", recursive = TRUE, import_function = 'aqualog') # in case you use your own data, just replace folder by a path. e.g. "C:/folder/another folder" and change import_function according to instrument.
 View(eem_list)
 eem_overview_plot(eem_list, spp=9, contour = TRUE)
 
@@ -33,7 +33,7 @@ eem_overview_plot(eem_list, spp=9, contour = TRUE)
 #step, you may need to trim absorbance columns to exclusively wavelenghth
 #and absorbance columns.
 
-absorbance_path = "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/Practice_3/ABS_corrected" # load example data, set a path without using system.file to use your own data e.g. "C:/folder/another folder"
+absorbance_path = "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/1-Data/CDOM/Winter grab/WinterGrab/27Jun24/ABS_corrected" # load example data, set a path without using system.file to use your own data e.g. "C:/folder/another folder"
 
 absorbance <- absorbance_read(absorbance_path, recursive = TRUE, order = TRUE) # load csv or txt tables in folder
 
@@ -125,6 +125,13 @@ write.csv(indices_peaks, file = "WG2_indices.csv")
 slope_parms <- abs_parms(absorbance, cuvl = 1)
 slope_parms
 write.csv(slope_parms, file = "slope_parms.csv")
+
+
+
+
+
+
+
 
 #Individual Plots. The example code below needs to be changed to the correct file path and sample ID for your setup. 
 
