@@ -143,5 +143,46 @@ EEMs_seasoned <- WG_EEMs %>%
 WG_BP <- BP %>% 
   left_join(Sites,
             by = "Station",
-            relationship = "many-to-one")
+            relationship = "many-to-one") %>% 
+  mutate(Season = as.factor(Season)) 
+  WG_BP <- WG_BP[-27,]
+WG_BP$Season <- factor(WG_BP$Season, levels = c("Summer", "Spring", "Winter"))
+WG_BP$Year <- factor(WG_BP$Year, levels = c("2025", "2024"))
 
+
+
+
+
+
+
+ggplot(WG_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Season))) +
+  labs(x = expression(paste(, "nmol Thymidine L"^-1, "d"^-1,)), 
+       y = expression(paste(, "nmol Leucine L"^-1, "d"^-1,)),
+       fill = "Year", shape = "Season") +
+  scale_fill_manual(values = c("2025" = "#87CEDA",  # Lighter, vibrant blue
+                               "2024" = "#E50245")) +
+  scale_shape_manual(values = c("Summer" = 21, "Spring" = 22, "Winter" = 24)) +
+  geom_point(size = 5, alpha = 0.7) +  # Black outline for points, fill color by Season
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 3)+
+  facet_wrap(~ Lake.x)
+  xlim(0, 0.5) +  # Set x-axis limit to 0.3
+  ylim(0, 15)
+
+# Legend for graph above ^^^^^
+  theme(axis.title.x = element_text(size = 24),
+        axis.title.y = element_text(size = 24),
+        axis.text.y = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
+        axis.text.x = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        legend.position = c(0.1, 0.8),
+        axis.ticks.length = unit(-0.35, "cm"),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size = 28)) 
+  
+  
+  
+aov(`Leu.TdR` ~ Lake.x + Year + Season, data = WG_BP)
+t.test(`Leu.TdR` ~ Year, data = WG_BP)  
