@@ -10,6 +10,7 @@ library(readxl)
 library(dplyr)
 library(stringr)
 library(tidyr)
+library(tidyverse)
 
 #Fetching and setting Working directory
 getwd()
@@ -114,11 +115,50 @@ Sites <- read_excel("1-Data/WG2_Sites.xlsx")
 
 BP <- read.csv("1-Data/Bacterial_Production/WG_BP_long.csv")
 
+DINP <- read_excel("1-Data/Nutrients/DissolvedNP.xlsx")
+
+NH4 <- read_excel("1-Data/Nutrients/NH4.xlsx")
+
+NOx <- read_excel("1-Data/Nutrients/NOx.xlsx")
+
+SRP <- read_excel("1-Data/Nutrients/SRP.xlsx")
+
+TOC <- read.csv("1-Data/DOC_TN/WG2_24_TOC_TN.csv")
+
+
+#Filtering DOC and TN data
+DOC <- TOC %>% 
+  filter(`NPOC.LOD.flag` != ">RANGE",
+         `NPOC.LOD.flag` != "<LOD")
+DOC <- DOC %>%
+  arrange(Station, date) %>%       # optional: pick which order if you care
+  distinct(Station, date, .keep_all = TRUE) %>% 
+  select(-Lake) %>% 
+  select(-TN)
+
+TN <- TOC %>% 
+  filter(`TN.LOD.flag` != ">RANGE",
+         `TN.LOD.flag` != "<LOD") %>% 
+  mutate(Month = NULL,
+         Lake = NULL,
+         NPOC = NULL,
+         NPOC.LOD.flag = NULL,
+         TN.LOD.flag = NULL,
+         Notes = NULL)
+
+TN <- TN %>%
+  group_by(Station, date) %>%
+  summarize(across(where(is.numeric), mean, na.rm = TRUE),
+            .groups = "drop")
+
+
+#Merging EEMs data with Sites
 WG_EEMs <- EEMs %>% 
   left_join(Sites,
             by = "Station",
             relationship = "many-to-one")
 
+#Making Seasons and Years
 EEMs_seasoned <- WG_EEMs %>%
   mutate(
     # 1) Month abbreviation (e.g. "Feb", "May", etc.)
@@ -138,6 +178,32 @@ EEMs_seasoned <- WG_EEMs %>%
   ) %>%
   # (optional) drop helpers if you only want date, year, season
   select(-month_abbrev, -year2)
+
+
+
+
+#Merging all carbon data into one file
+Carbon <- EEMs_seasoned %>% 
+  left_join(DOC, by = c("Station", "date"),
+            relationship = "many-to-one") %>% 
+  left_join(TN, by = c("Station", "date"),
+            relationship = "many-to-one") %>% 
+  mutate(SUVA254 = (a254/NPOC))
+
+Carbon_filtered <- Carbon %>%
+  group_by(Station, date) %>%
+  filter(
+    # if there is ANY 1 s run in this Station+date group, keep only those:
+    if (any(integration_time == "1s")) {
+      integration_time == "1s"
+    } else {
+      # otherwise keep whatever you have (i.e. only "01s")
+      TRUE
+    }
+  ) %>%
+  ungroup()
+
+
 
 
 WG_BP <- BP %>% 
@@ -186,3 +252,6 @@ ggplot(WG_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Se
   
 aov(`Leu.TdR` ~ Lake.x + Year + Season, data = WG_BP)
 t.test(`Leu.TdR` ~ Year, data = WG_BP)  
+
+
+
