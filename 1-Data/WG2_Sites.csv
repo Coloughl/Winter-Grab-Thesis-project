@@ -1,39 +1,39 @@
-PI_name,Station,Latitude° N,Longitude°W ,Lake,
-Ozersky,Washburn,46.67001,-90.884295,Lake Superior,
-Vick-Majors,Keweenaw_Waterway,47.12155,-88.54558,Lake Superior,
-Vick-Majors,Keweenaw_Bay_Baraga,46.77674,-88.48309,Lake Superior,
-Xenopoulos,Georgian_Bay,44.751916,-79.7777518,Lake Huron,
-Xenopoulos,Bay_of_Quinte,44.14273,-77.38573,Lake Ontario,
-Uzarski,1629_Suttons_Bay,44.97469,-85.64677,Lake Michigan,
-Uzarski,NW_Pier,44.76573,-85.60578,Lake Michigan,
-McKay,LSC_MB,42.46891,-82.41095,Lake St Clair,
-McKay,EC951,42.47513,-81.44148,Lake Erie,
-McKay,EC933,42.82494,-79.56764,Lake Erie,
-McKay,EC888,41.28117,-81.67035,Lake Erie,
-McKay,EC958,41.51525,-81.72153,Lake Erie,
-Wagner,SCS2,46.66423,-82.7546,Lake St Clair,
-Wagner,SCS1,42.4719444,-82.875,Lake St Clair,
-Rae-Ann,GB_32,44.58152,-87.97967,Lake Michigan,
-Rae-Ann,Racine,42.737571,-87.777174,Lake Michigan,
-Currie,CCIW,43.29726,-79.80184,Lake Ontario,
-Currie,B-Pier,43.30237,-79.7915,Lake Ontario,
-Currie,,,,,
-Currie,,,,,
-Coleman,Chicago,41.79519,-87.57619,Lake Michigan,
-Boegman,Queen's,44.22061,-76.50165,Lake Ontario,
-Zastepa,Graeber,42.8631,-79.0524,Lake Erie,
-Doubek,Whitefish_Bay,46.45445,-84.8302,Lake Superior,
-Doubek,St_Martins_Bay,46.01307,-84.8302,Lake Huron,
-Eveleth,Lorain,41.47275,-82.1752,Lake Erie,
-Chaffin,Put-In-Bay,41.658349,-82.826087,Lake Erie,
-Currie,LH-1A,43.0893,-82.4123,Lake Huron,
-Currie,DR-1,42.351483,-82.935167,Lake St Clair,
-Currie,LH-9A,43.45683,-82.251167,Lake Huron,
-Currie,LH-10A,43.74195,-81.834583,Lake Huron,
-Twiss,LHU_04,46.2894,-83.793,Lake Huron,
-Twiss,LSU_01,46.529167,-84.5861167,Lake Huron,
-Twiss,SMR_02,46.501389,-84.34689,Lake Huron,
-Twiss,SMR_03,46.5025,-84.32083,Lake Huron,
-Godwin,SB_4,43.73636,-83.9486,Lake Huron,
-Godwin,SB_14,43.73836,-83.64078,Lake Huron,
-Godwin,SB_2,43.66742,-83.80702,Lake Huron,
+PI_name,Station,Latitude° N,Longitude°W ,Lake
+Ozersky,Washburn,46.67001,-90.884295,Lake Superior
+Vick-Majors,Keweenaw_Waterway,47.12155,-88.54558,Lake Superior
+Vick-Majors,Keweenaw_Bay_Baraga,46.77674,-88.48309,Lake Superior
+Xenopoulos,Georgian_Bay,44.751916,-79.7777518,Lake Huron
+Xenopoulos,Bay_of_Quinte,44.14273,-77.38573,Lake Ontario
+Uzarski,1629_Suttons_Bay,44.97469,-85.64677,Lake Michigan
+Uzarski,NW_Pier,44.76573,-85.60578,Lake Michigan
+McKay,LSC_MB,42.46891,-82.41095,Lake St Clair
+McKay,EC951,42.47513,-81.44148,Lake Erie
+McKay,EC933,42.82494,-79.56764,Lake Erie
+McKay,EC888,42.28117,-81.67035,Lake Erie
+McKay,EC958,41.51525,-81.72153,Lake Erie
+Wagner,SCS2,42.664722,-82.7546,Lake St Clair
+Wagner,SCS1,42.4719444,-82.875,Lake St Clair
+Rae-Ann,GB_32,44.58152,-87.97967,Lake Michigan
+Rae-Ann,Racine,42.737571,-87.777174,Lake Michigan
+Currie,CCIW,43.29726,-79.80184,Lake Ontario
+Currie,B-Pier,43.30237,-79.7915,Lake Ontario
+Currie,,,,
+Currie,,,,
+Coleman,Chicago,41.79519,-87.57619,Lake Michigan
+Boegman,Queen's,44.22061,-76.50165,Lake Ontario
+Zastepa,Graeber,42.8631,-79.0524,Lake Erie
+Doubek,Whitefish_Bay,46.45445,-84.8302,Lake Superior
+Doubek,St_Martins_Bay,46.01307,-84.8302,Lake Huron
+Eveleth,Lorain,41.47275,-82.1752,Lake Erie
+Chaffin,Put-In-Bay,41.658349,-82.826087,Lake Erie
+Currie,LH-1A,43.0893,-82.4123,Lake Huron
+Currie,DR-1,42.351483,-82.935167,Lake St Clair
+Currie,LH-9A,43.45683,-82.251167,Lake Huron
+Currie,LH-10A,43.74195,-81.834583,Lake Huron
+Twiss,LHU_04,46.2894,-83.793,Lake Huron
+Twiss,LSU_01,46.529167,-84.5861167,Lake Huron
+Twiss,SMR_02,46.501389,-84.34689,Lake Huron
+Twiss,SMR_03,46.5025,-84.32083,Lake Huron
+Godwin,SB_4,43.73636,-83.9486,Lake Huron
+Godwin,SB_14,43.73836,-83.64078,Lake Huron
+Godwin,SB_2,43.66742,-83.80702,Lake Huron
