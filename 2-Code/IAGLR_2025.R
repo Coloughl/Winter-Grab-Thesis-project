@@ -116,17 +116,28 @@ Sites <- read_excel("1-Data/WG2_Sites.xlsx")
 BP <- read.csv("1-Data/Bacterial_Production/WG_BP_long.csv")
 
 DINP <- read_excel("1-Data/Nutrients/DissolvedNP.xlsx")
+DINP$Season <- factor(DINP$Season, levels = c("Summer", "Spring", "Winter"))
+DINP$Year <- factor(DINP$Year, levels = c("2025", "2024"))
 
 NH4 <- read_excel("1-Data/Nutrients/NH4.xlsx")
+NH4$Season <- factor(NH4$Season, levels = c("Summer", "Spring", "Winter"))
+NH4$Year <- factor(NH4$Year, levels = c("2025", "2024"))
 
 NOx <- read_excel("1-Data/Nutrients/NOx.xlsx")
+NOx$Season <- factor(NOx$Season, levels = c("Summer", "Spring", "Winter"))
+NOx$Year <- factor(NOx$Year, levels = c("2025", "2024"))
 
 SRP <- read_excel("1-Data/Nutrients/SRP.xlsx")
+SRP$Season <- factor(SRP$Season, levels = c("Summer", "Spring", "Winter"))
+SRP$Year <- factor(SRP$Year, levels = c("2025", "2024"))
 
 TOC <- read.csv("1-Data/DOC_TN/WG2_24_TOC_TN.csv")
 
+Chla <-read_excel("1-Data/Chla/Chla.xlsx")
+Chla$Season <- factor(Chla$Season, levels = c("Summer", "Spring", "Winter"))
+Chla$Year <- factor(Chla$Year, levels = c("2025", "2024"))
 
-#Filtering DOC and TN data
+#Filtering DOC and TN data----
 DOC <- TOC %>% 
   filter(`NPOC.LOD.flag` != ">RANGE",
          `NPOC.LOD.flag` != "<LOD")
@@ -152,7 +163,7 @@ TN <- TN %>%
             .groups = "drop")
 
 
-#Merging EEMs data with Sites
+#Merging EEMs data with Sites ----
 WG_EEMs <- EEMs %>% 
   left_join(Sites,
             by = "Station",
@@ -166,10 +177,10 @@ EEMs_seasoned <- WG_EEMs %>%
     
     # 2) Year: last two digits, coerced to 2000-series
     year2        = str_extract(date, "\\d{2}$"),
-    year         = as.integer(paste0("20", year2)),
+    Year         = as.integer(paste0("20", year2)),
     
     # 3) Season based on month_abbrev
-    season = case_when(
+    Season = case_when(
       month_abbrev %in% c("Feb", "Mar")    ~ "Winter",
       month_abbrev == "May"                ~ "Spring",
       month_abbrev %in% c("Jun", "Aug")    ~ "Summer",
@@ -182,7 +193,7 @@ EEMs_seasoned <- WG_EEMs %>%
 
 
 
-#Merging all carbon data into one file
+#Merging all carbon data into one file ----
 Carbon <- EEMs_seasoned %>% 
   left_join(DOC, by = c("Station", "date"),
             relationship = "many-to-one") %>% 
@@ -202,10 +213,11 @@ Carbon_filtered <- Carbon %>%
     }
   ) %>%
   ungroup()
+Carbon$Season <- factor(WG_BP$Season, levels = c("Summer", "Spring", "Winter"))
+WG_BP$Year <- factor(WG_BP$Year, levels = c("2025", "2024"))
 
 
-
-
+#Merging BP data in Carbon data ----
 WG_BP <- BP %>% 
   left_join(Sites,
             by = "Station",
@@ -216,21 +228,186 @@ WG_BP$Season <- factor(WG_BP$Season, levels = c("Summer", "Spring", "Winter"))
 WG_BP$Year <- factor(WG_BP$Year, levels = c("2025", "2024"))
 
 
+carbon_to_merge <- Carbon_filtered %>% 
+  select(-PI_name, -Lake)
+carbon_to_merge$Season <- factor(carbon_to_merge$Season, levels = c("Summer", "Spring", "Winter"))
+carbon_to_merge$Year <- factor(carbon_to_merge$Year, levels = c("2025", "2024"))
+
+
+#Prepping nutrient and Chla data ----
+NH4_summary <- NH4 %>%
+  group_by(Station, Season, Year) %>%
+  summarise(
+    across(where(is.numeric), ~ mean(.x, na.rm = TRUE)),
+    .groups = "drop"
+  ) %>% 
+  distinct(Station, Season, Year, .keep_all = TRUE)
+
+NOx_summary <- NOx %>%
+  group_by(Station, Season, Year) %>%
+  summarise(
+    across(where(is.numeric), ~ mean(.x, na.rm = TRUE)),
+    .groups = "drop"
+  )%>% 
+  distinct(Station, Season, Year, .keep_all = TRUE)
+
+SRP_summary <- SRP %>%
+  group_by(Station, Season, Year) %>%
+  summarise(
+    across(where(is.numeric), ~ mean(.x, na.rm = TRUE)),
+    .groups = "drop"
+  )%>% 
+  distinct(Station, Season, Year, .keep_all = TRUE)
+
+
+DINP_summary <- DINP %>%
+  group_by(Station, Season, Year) %>%
+  summarise(
+    across(where(is.numeric), ~ mean(.x, na.rm = TRUE)),
+    .groups = "drop"
+  )%>% 
+  distinct(Station, Season, Year, .keep_all = TRUE)
+
+Chla <- Chla %>%
+  mutate(
+    Season = factor(Season,
+                    levels = levels(carbon_to_merge$Season)),
+    Year   = factor(as.character(Year),
+                    levels = levels(carbon_to_merge$Year))
+  )
+Chla <- Chla %>%
+  # if it’s a factor:
+  mutate(`Chla ug/L` = as.character(`Chla ug/L`)) %>%
+  # then numeric:
+  mutate(`Chla ug/L` = as.numeric(`Chla ug/L`))
+
+
+Chla_summary <- Chla %>%
+  group_by(Station, Season, Year) %>%
+  summarise(
+    Chla = mean(`Chla ug/L`, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+
+
+#Making master data frame ----
+merged_data <- carbon_to_merge %>%
+  left_join(WG_BP, by = c("Station", "Season","Year"), relationship = "many-to-one") %>% 
+  left_join(NH4_summary, by = c("Station", "Season","Year"), relationship = "many-to-one") %>% 
+  left_join(NOx_summary, by = c("Station", "Season","Year"), relationship = "many-to-one") %>% 
+  left_join(SRP_summary, by = c("Station", "Season","Year"), relationship = "many-to-one") %>% 
+  left_join(DINP_summary, by = c("Station", "Season","Year"), relationship = "many-to-one") %>%  
+  left_join(Chla_summary, by = c("Station", "Season","Year"), relationship = "many-to-one")
+
+master_clean <- merged_data %>%
+  select(-ends_with(".y"))
+
+# 3. (Optional) Rename the remaining ".x" suffixed columns to remove the ".x"
+names(master_clean) <- sub("\\.x$", "", names(master_clean))
+
+
+#MLM ----
+library(glmmTMB)
+library(nlme)
+library(lme4)
+library(MuMIn)
+library(lattice)
+
+
+Global <- lmer(`Leu.TdR` ~ Chla + bix + hix + `Nox.N.ug.L` + `P ug/L` + (1|Lake) + (1|Season), data = master_clean)
+
+Global2 <- lmer(`Leu.TdR` ~ Chla + SUVA254 + `Nox.N.ug.L` + `P ug/L` + TN + NPOC + (1|Lake) + (1|Season), data = master_clean)
+
+Global3 <- lmer(`Leu.TdR` ~ Chla + SUVA254 + `P ug/L` + TN + (1|Lake) + (1|Season), data = master_clean)
+summary(Global)
+
+Global4 <- lmer(Leu.TdR ~ Chla + SUVA254 + Nox.N.ug.L + `P ug/L` +
+                  TN + NPOC + `NH4_ug/L` +
+                  (1 | Season),
+                data = master_clean)
+
+Global5 <- lmer(`Leu.TdR` ~ Chla + SUVA254 + `P ug/L` + TN + NPOC + (1|Lake) + (1|Season), data = master_clean)
+
+
+master_scaled <- master_clean %>%
+  mutate(across(c(Chla, SUVA254, Nox.N.ug.L, `P ug/L`, TN, NPOC, `NH4_ug/L`,bix, hix ),
+                ~ scale(.)[,1]))
+
+Global_scaled <- update(Global5, data = master_scaled)
+summary(Global_scaled)
+
+AIC(Global, Global2,Global3, Global4, Global5, Global_scaled)
+
+
+
+plot(Global_scaled, which = 1)            # fitted vs. residuals
+qqnorm(resid(Global_scaled)); qqline(resid(Global_scaled))
+
+
+r.squaredGLMM(Global_scaled)
+
+ranef(Global_scaled, condVar = TRUE)
+dotplot(ranef(Global_scaled), strip = FALSE)
 
 
 
 
 
-ggplot(WG_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Season))) +
+
+
+
+master_scaled <- master_scaled %>%
+  rename_with(~ make.names(.), everything())
+
+# Now your columns will be, e.g., P.ug.L and NH4_ug.L
+preds <- c("Chla", "SUVA254", "Nox.N.ug.L", "P ug/L", "TN", "NPOC", "NH4_ug.L")
+
+uni_results <- map_df(preds, function(var) {
+  # build formula safely now that var is syntactic
+  f  <- reformulate(c(var, "(1|Season)"), response = "Leu.TdR")
+  m  <- lmer(f, data = master_scaled, REML = FALSE)
+  ss <- summary(m)$coefficients
+  tibble(
+    predictor = var,
+    AIC       = AIC(m),
+    estimate  = ss[var, "Estimate"],
+    se        = ss[var, "Std. Error"],
+    t.value   = ss[var, "t value"]
+  )
+})
+
+print(uni_results)
+
+
+
+
+
+
+
+
+
+
+#Plots ----
+plot_data <- merged_data %>%
+  filter(!is.na(Lake.x))
+
+
+ggplot(plot_data, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Season))) +
   labs(x = expression(paste(, "nmol Thymidine L"^-1, "d"^-1,)), 
        y = expression(paste(, "nmol Leucine L"^-1, "d"^-1,)),
        fill = "Year", shape = "Season") +
   scale_fill_manual(values = c("2025" = "#87CEDA",  # Lighter, vibrant blue
                                "2024" = "#E50245")) +
   scale_shape_manual(values = c("Summer" = 21, "Spring" = 22, "Winter" = 24)) +
+  guides(
+    fill = guide_legend(
+      override.aes = list(shape = 21, color = "black")
+    )
+  ) +
   geom_point(size = 5, alpha = 0.7) +  # Black outline for points, fill color by Season
   geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 3)+
-  facet_wrap(~ Lake.x)
+  facet_wrap(~ Lake.x) 
   xlim(0, 0.5) +  # Set x-axis limit to 0.3
   ylim(0, 15)
 
