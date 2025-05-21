@@ -11,7 +11,7 @@ library(dplyr)
 library(stringr)
 library(tidyr)
 library(tidyverse)
-
+library(car)
 #Fetching and setting Working directory
 getwd()
 setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/")
@@ -306,6 +306,45 @@ master_clean <- merged_data %>%
 # 3. (Optional) Rename the remaining ".x" suffixed columns to remove the ".x"
 names(master_clean) <- sub("\\.x$", "", names(master_clean))
 
+master_clean <- master_clean %>%
+  mutate(
+    # 1) Remove any leading “Lake ” if present
+    Lake = str_remove(Lake, "^Lake\\s*"),
+    # 2) Trim whitespace (in case there were leading/trailing spaces)
+    Lake = str_trim(Lake),
+    # 3) Re-add the prefix so every entry reads “Lake XYZ”
+    Lake = paste("Lake", Lake)
+  )
+
+master_clean <- master_clean %>%
+  mutate(
+    Lake = as.character(Lake),  # if it’s a factor, turn it into character first
+    Lake = if_else(
+      is.na(Lake) | Lake == "Lake NA",
+      "Lake Erie",
+      Lake
+    ),
+    Lake = factor(Lake)         # back to factor if you want
+  )
+
+master_clean <- master_clean %>%
+  mutate(
+    Year = as.character(Year),  
+    Year = if_else(
+      is.na(Year) & Season %in% c("Spring","Summer"),
+      "2024",
+      Year
+    ),
+    Year = factor(Year, levels = c("2024","2025"))
+  )
+master_clean <- master_clean %>%
+  mutate(
+    Lake = case_when(
+      Lake %in% c("Lake St. Clair", "Lake St Clair") ~ "Lake St. Clair",
+      TRUE                                          ~ Lake
+    )
+  )
+
 
 #MLM ----
 library(glmmTMB)
@@ -376,8 +415,7 @@ summary(m2)
 
 
 m_season <- lmer(
-  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + 
-    (1|Season),
+  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + hix,
   data   = master_mod,
   REML   = FALSE
 )
@@ -407,7 +445,8 @@ newdata <- expand_grid(
   Season    = factor(c("Summer","Spring"), levels = levels(master_mod$Season)),
   `P.ug.L`  = mean(master_mod$P.ug.L, na.rm=TRUE),
   NH4_ug.L  = mean(master_mod$NH4_ug.L, na.rm=TRUE),
-  NPOC      = mean(master_mod$NPOC, na.rm=TRUE)
+  NPOC      = mean(master_mod$NPOC, na.rm=TRUE),
+  hix       = mean(master_mod$hix, na.rm=TRUE)
 )
 
 
@@ -421,12 +460,22 @@ ggplot(newdata, aes(x = Chla, y = pred, colour = Season)) +
   labs(x = "Chlorophyll-a (µg L⁻¹)",
        y = "Predicted Leu:TdR",
        colour = "Season") +
-  theme_classic(base_size = 14)
+  theme_classic(base_size = 14) +
+  theme(
+    # axis text
+    axis.title.x     = element_text(size = 24),
+    axis.title.y     = element_text(size = 24),
+    axis.text.x      = element_text(size = 22, margin = margin(t = 6, r = 0, b = 6, l = 0)),
+    axis.text.y      = element_text(size = 22, margin = margin(t = 0, r = 6, b = 0, l = 6)),
+    
+    # legend
+    legend.title     = element_text(size = 28),
+    legend.text      = element_text(size = 20))
 
 
 
 
-#Plots -full_ml#Plots ----
+#Plots ----
 plot_data <- merged_data %>%
   filter(!is.na(Lake.x))
 
@@ -443,30 +492,98 @@ ggplot(plot_data, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = facto
       override.aes = list(shape = 21, color = "black")
     )
   ) +
-  geom_point(size = 5, alpha = 0.7) +  # Black outline for points, fill color by Season
+  geom_point(size = 8, alpha = 0.7) +  # Black outline for points, fill color by Season
   geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 3)+
-  facet_wrap(~ Lake.x) 
-  xlim(0, 0.5) +  # Set x-axis limit to 0.3
-  ylim(0, 15)
+  facet_wrap(~ Lake.x) +
+  theme_classic(base_size = 14) +
+  theme(
+    # axis text
+    axis.title.x     = element_text(size = 24),
+    axis.title.y     = element_text(size = 24),
+    axis.text.x      = element_text(size = 22, margin = margin(t = 6, r = 0, b = 6, l = 0)),
+    axis.text.y      = element_text(size = 22, margin = margin(t = 0, r = 6, b = 0, l = 6)),
+    
+    # legend
+    legend.title     = element_text(size = 28),
+    legend.text      = element_text(size = 20),
+    
+    # facet text
+    strip.text.x     = element_text(size = 24, face = "bold"),
+    
+    # box around each panel
+    panel.border     = element_rect(color = "black", fill = NA, size = 1),
+    
+    # spacing between panels
+    panel.spacing    = unit(0.5, "cm")
+  )
 
-# Legend for graph above ^^^^^
-  theme(axis.title.x = element_text(size = 24),
-        axis.title.y = element_text(size = 24),
-        axis.text.y = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        axis.text.x = element_text(size = 22, margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank(), 
-        axis.line = element_line(colour = "black"),
-        legend.position = c(0.1, 0.8),
-        axis.ticks.length = unit(-0.35, "cm"),
-        legend.text = element_text(size = 20),
-        legend.title = element_text(size = 28)) 
-  
-  
-  
-aov(`Leu.TdR` ~ Lake.x + Year + Season, data = WG_BP)
+mod <- aov(`Leu.TdR` ~ Lake.x + Year + Season, data = WG_BP)
+summary(mod)
+
+
+Anova(mod, type = 2)
+
 t.test(`Leu.TdR` ~ Year, data = WG_BP)  
 
 
+hix_summary <- master_clean %>%
+  mutate(SeasonYear = paste(Season, Year)) %>%
+  group_by(Lake, SeasonYear) %>%
+  summarise(
+    n        = sum(!is.na(hix)),
+    mean_hix = mean(hix, na.rm = TRUE),
+    se_hix   = sd(hix,   na.rm = TRUE) / sqrt(n),
+    .groups  = "drop"
+  ) %>%
+  mutate(
+    SeasonYear = factor(SeasonYear,
+                        levels = c("Winter 2024","Spring 2024","Summer 2024","Winter 2025")
+    )
+  )
+
+
+offset <- 0.05 * max(hix_summary$mean_hix, na.rm = TRUE)
+
+ggplot(hix_summary, aes(x = Lake, y = mean_hix, fill = SeasonYear)) +
+  geom_col(
+    position = position_dodge(width = 0.8),
+    width    = 0.7,
+    color    = "black"
+  ) +
+  geom_errorbar(
+    aes(ymin = mean_hix - se_hix, ymax = mean_hix + se_hix),
+    width    = 0.2,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_text(
+    aes(
+      label = paste0("n=", n),
+      y     = mean_hix + se_hix + offset
+    ),
+    position = position_dodge(width = 0.8),
+    vjust    = 0,
+    size     = 4,
+    fontface = "bold"
+  ) +
+  scale_fill_manual(values = c(
+    "Winter 2024" = "#87CEDA",
+    "Spring 2024" = "#B6798F",
+    "Summer 2024" = "#E50245",
+    "Winter 2025" = "#6BDACF"
+  )) +
+  labs(
+    x    = "Lake",
+    y    = "Mean HIX (±SE)",
+    fill = "Season & Year"
+  ) +
+  theme_classic(base_size = 14) +
+  theme(
+    axis.text.x   = element_text(angle = 45, hjust = 1, size = 22),
+    axis.text.y   = element_text(size = 22),
+    axis.title    = element_text(size = 24),
+    legend.title  = element_text(size = 28),
+    legend.text   = element_text(size = 20),
+    panel.border  = element_rect(colour = "black", fill = NA, size = 0.5),
+    panel.spacing = unit(0.6, "cm")
+  )
 

@@ -346,7 +346,61 @@ ggplot(WG_fDOM) +
   labs(x = "Lake",
        y = "Flourescence Index (FI)")
 
+hix_summary <- master_clean %>%
+  mutate(SeasonYear = paste(Season, Year)) %>%
+  group_by(Lake, SeasonYear) %>%
+  summarise(
+    n        = sum(!is.na(hix)),
+    mean_hix = mean(hix, na.rm = TRUE),
+    se_hix   = sd(hix,   na.rm = TRUE) / sqrt(n),
+    .groups  = "drop"
+  ) %>%
+  mutate(
+    SeasonYear = factor(SeasonYear,
+      levels = c("Winter 2024","Spring 2024","Summer 2024","Winter 2025")
+    )
+  )
 
+# 2) Plot bars + error bars + n labels
+ggplot(hix_summary, aes(x = Lake, y = mean_hix, fill = SeasonYear)) +
+  geom_col(
+    position = position_dodge(width = 0.8),
+    width    = 0.7,
+    color    = "black"
+  ) +
+  geom_errorbar(
+    aes(ymin = mean_hix - se_hix, ymax = mean_hix + se_hix),
+    width    = 0.2,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_text(
+    aes(label = n,
+        y     = mean_hix + se_hix + 1),    # adjust +1 to move labels just above the error bar
+    position = position_dodge(width = 0.8),
+    vjust    = 0,
+    size     = 4,
+    fontface = "bold"
+  ) +
+  scale_fill_manual(values = c(
+    "Winter 2024" = "#87CEDA",
+    "Spring 2024" = "#B6798F",
+    "Summer 2024" = "#E50245",
+    "Winter 2025" = "#6BDACF"
+  )) +
+  labs(
+    x    = "Lake",
+    y    = "Mean HIX (±SE)",
+    fill = "Season & Year"
+  ) +
+  theme_classic(base_size = 14) +
+  theme(
+    axis.text.x   = element_text(angle = 45, hjust = 1, size = 12),
+    axis.title    = element_text(size = 16),
+    legend.title  = element_text(size = 14),
+    legend.text   = element_text(size = 12),
+    panel.border  = element_rect(colour = "black", fill = NA, size = 0.5),
+    panel.spacing = unit(0.6, "cm")
+  )
 
 
 
