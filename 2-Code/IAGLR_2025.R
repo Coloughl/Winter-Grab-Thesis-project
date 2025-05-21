@@ -313,59 +313,21 @@ library(nlme)
 library(lme4)
 library(MuMIn)
 library(lattice)
-
-
-Global <- lmer(`Leu.TdR` ~ Chla + bix + hix + `Nox.N.ug.L` + `P ug/L` + (1|Lake) + (1|Season), data = master_clean)
-
-Global2 <- lmer(`Leu.TdR` ~ Chla + SUVA254 + `Nox.N.ug.L` + `P ug/L` + TN + NPOC + (1|Lake) + (1|Season), data = master_clean)
-
-Global3 <- lmer(`Leu.TdR` ~ Chla + SUVA254 + `P ug/L` + TN + (1|Lake) + (1|Season), data = master_clean)
-summary(Global)
-
-Global4 <- lmer(Leu.TdR ~ Chla + SUVA254 + Nox.N.ug.L + `P ug/L` +
-                  TN + NPOC + `NH4_ug/L` +
-                  (1 | Season),
-                data = master_clean)
-
-Global5 <- lmer(`Leu.TdR` ~ Chla + SUVA254 + `P ug/L` + TN + NPOC + (1|Lake) + (1|Season), data = master_clean)
-
+library(emmeans)
 
 master_scaled <- master_clean %>%
   mutate(across(c(Chla, SUVA254, Nox.N.ug.L, `P ug/L`, TN, NPOC, `NH4_ug/L`,bix, hix ),
                 ~ scale(.)[,1]))
 
-Global_scaled <- update(Global5, data = master_scaled)
-summary(Global_scaled)
-
-AIC(Global, Global2,Global3, Global4, Global5, Global_scaled)
-
-
-
-plot(Global_scaled, which = 1)            # fitted vs. residuals
-qqnorm(resid(Global_scaled)); qqline(resid(Global_scaled))
-
-
-r.squaredGLMM(Global_scaled)
-
-ranef(Global_scaled, condVar = TRUE)
-dotplot(ranef(Global_scaled), strip = FALSE)
-
-
-
-
-
-
-
-
 master_scaled <- master_scaled %>%
   rename_with(~ make.names(.), everything())
 
-# Now your columns will be, e.g., P.ug.L and NH4_ug.L
-preds <- c("Chla", "SUVA254", "Nox.N.ug.L", "P ug/L", "TN", "NPOC", "NH4_ug.L")
+
+preds <- c("Chla", "SUVA254", "Nox.N.ug.L", "P.ug.L", "TN", "NPOC", "NH4_ug.L")
 
 uni_results <- map_df(preds, function(var) {
   # build formula safely now that var is syntactic
-  f  <- reformulate(c(var, "(1|Season)"), response = "Leu.TdR")
+  f  <- reformulate(c(var, "(1|Season)", "(1|Lake)"), response = "Leu.TdR")
   m  <- lmer(f, data = master_scaled, REML = FALSE)
   ss <- summary(m)$coefficients
   tibble(
@@ -379,16 +341,92 @@ uni_results <- map_df(preds, function(var) {
 
 print(uni_results)
 
+full_ml <- lmer(
+  Leu.TdR ~ Chla + `P.ug.L` + NH4_ug.L + 
+    (1|Lake) + (1|Season),
+  data   = master_scaled,
+  REML   = FALSE
+)
+summary(full_ml)
+
+drop1(full_ml, test = "Chisq")
+
+vars <- c("Leu.TdR", "Chla", "P.ug.L", "NH4_ug.L", "Lake", "Season", "NPOC")
+
+
+master_mod <- master_scaled %>%
+  select(all_of(vars)) %>%
+  drop_na()
+
+
+nrow(master_mod)  
+
+full_ml2 <- lmer(
+  Leu.TdR ~ Chla + `P.ug.L` + NH4_ug.L + (1|Lake) + (1|Season),
+  data = master_mod,
+  REML = FALSE,
+  na.action = na.omit
+)
+
+drop1(full_ml2, test = "Chisq")
+
+m2 <- update(full_ml2, . ~ . - `P ug/L`)
+
+summary(m2)
+
+
+m_season <- lmer(
+  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + 
+    (1|Season),
+  data   = master_mod,
+  REML   = FALSE
+)
+AIC(m_season)
+summary(m_season)
+
+AIC(full_ml2, m_season)
+
+
+final_mod <- update(m_season, REML = TRUE)
+summary(final_mod)
+r.squaredGLMM(final_mod)
+
+
+slopes <- emtrends(final_mod, ~ Season, var = "Chla")
+summary(slopes)
+
+emmip(final_mod, Season ~ Chla, CIs = TRUE) +
+  labs(x = "Chla (µg L⁻¹)",
+       y = "Predicted Leu.TdR (nmol L⁻¹ d⁻¹)",
+       colour = "Season") +
+  theme_minimal(base_size = 14)
+
+
+newdata <- expand_grid(
+  Chla      = seq(min(master_mod$Chla), max(master_mod$Chla), length.out = 50),
+  Season    = factor(c("Summer","Spring"), levels = levels(master_mod$Season)),
+  `P.ug.L`  = mean(master_mod$P.ug.L, na.rm=TRUE),
+  NH4_ug.L  = mean(master_mod$NH4_ug.L, na.rm=TRUE),
+  NPOC      = mean(master_mod$NPOC, na.rm=TRUE)
+)
+
+
+newdata$pred <- predict(final_mod, newdata, re.form = NA)
+
+ggplot(newdata, aes(x = Chla, y = pred, colour = Season)) +
+  geom_line(size = 1.2) +
+  geom_ribbon(aes(ymin = pred - 1.96 * predict(final_mod, newdata, re.form = NA, se.fit = TRUE)$se.fit,
+                  ymax = pred + 1.96 * predict(final_mod, newdata, re.form = NA, se.fit = TRUE)$se.fit),
+              alpha = 0.2) +
+  labs(x = "Chlorophyll-a (µg L⁻¹)",
+       y = "Predicted Leu:TdR",
+       colour = "Season") +
+  theme_classic(base_size = 14)
 
 
 
 
-
-
-
-
-
-#Plots ----
+#Plots -full_ml#Plots ----
 plot_data <- merged_data %>%
   filter(!is.na(Lake.x))
 
