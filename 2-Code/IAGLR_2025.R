@@ -191,6 +191,41 @@ EEMs_seasoned <- WG_EEMs %>%
   select(-month_abbrev, -year2)
 
 
+EEMs_seasoned <- EEMs_seasoned %>%
+  mutate(
+    # 1) Remove any leading “Lake ” if present
+    Lake = str_remove(Lake, "^Lake\\s*"),
+    # 2) Trim whitespace (in case there were leading/trailing spaces)
+    Lake = str_trim(Lake),
+    # 3) Re-add the prefix so every entry reads “Lake XYZ”
+    Lake = paste("Lake", Lake)
+  ) %>%
+  mutate(
+    Lake = as.character(Lake), 
+    Lake = if_else(
+      is.na(Lake) | Lake == "Lake NA",
+      "Lake Erie",
+      Lake
+    ),
+    Lake = factor(Lake)      
+  ) %>%
+  mutate(
+    Year = as.character(Year),  
+    Year = if_else(
+      is.na(Year) & Season %in% c("Spring","Summer"),
+      "2024",
+      Year
+    ),
+    Year = factor(Year, levels = c("2024","2025"))
+  ) %>%
+  mutate(
+    Lake = case_when(
+      Lake %in% c("Lake St. Clair", "Lake St Clair") ~ "Lake St. Clair",
+      TRUE                                          ~ Lake
+    )
+  )
+
+
 
 
 #Merging all carbon data into one file ----
@@ -362,7 +397,7 @@ master_scaled <- master_scaled %>%
   rename_with(~ make.names(.), everything())
 
 
-preds <- c("Chla", "SUVA254", "Nox.N.ug.L", "P.ug.L", "TN", "NPOC", "NH4_ug.L")
+preds <- c("Chla", "SUVA254", "Nox.N.ug.L", "P.ug.L", "TN", "NPOC", "NH4_ug.L", "hix", "bix")
 
 uni_results <- map_df(preds, function(var) {
   # build formula safely now that var is syntactic
@@ -381,12 +416,22 @@ uni_results <- map_df(preds, function(var) {
 print(uni_results)
 
 full_ml <- lmer(
-  Leu.TdR ~ Chla + `P.ug.L` + NH4_ug.L + 
+  Leu.TdR ~ Chla + `P.ug.L` + NPOC + hix + Nox.N.ug.L + SUVA254 +  
     (1|Lake) + (1|Season),
   data   = master_scaled,
   REML   = FALSE
 )
 summary(full_ml)
+AIC(full_ml)
+
+full_ml2 <- lmer(
+  Leu.TdR ~ Chla:Season + `P.ug.L` + NPOC + hix + Nox.N.ug.L +  
+    (1|Lake) + (1|Season),
+  data   = master_scaled,
+  REML   = FALSE
+)
+summary(full_ml2)
+AIC(full_ml2)
 
 drop1(full_ml, test = "Chisq")
 
@@ -415,7 +460,7 @@ summary(m2)
 
 
 m_season <- lmer(
-  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + hix,
+  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + ,
   data   = master_mod,
   REML   = FALSE
 )
@@ -480,7 +525,7 @@ plot_data <- merged_data %>%
   filter(!is.na(Lake.x))
 
 
-ggplot(plot_data, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Season))) +
+ggplot(WG_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Season))) +
   labs(x = expression(paste(, "nmol Thymidine L"^-1, "d"^-1,)), 
        y = expression(paste(, "nmol Leucine L"^-1, "d"^-1,)),
        fill = "Year", shape = "Season") +
@@ -526,7 +571,8 @@ Anova(mod, type = 2)
 t.test(`Leu.TdR` ~ Year, data = WG_BP)  
 
 
-hix_summary <- master_clean %>%
+#EEMs and DOC plots. Additional data manipulation ----
+hix_summary <- EEMs_seasoned %>%
   mutate(SeasonYear = paste(Season, Year)) %>%
   group_by(Lake, SeasonYear) %>%
   summarise(
@@ -538,6 +584,57 @@ hix_summary <- master_clean %>%
   mutate(
     SeasonYear = factor(SeasonYear,
                         levels = c("Winter 2024","Spring 2024","Summer 2024","Winter 2025")
+    )
+  )
+
+bix_summary <- EEMs_seasoned %>%
+  mutate(SeasonYear = paste(Season, Year)) %>%
+  group_by(Lake, SeasonYear) %>%
+  summarise(
+    n       = sum(!is.na(bix)),
+    mean_b  = mean(bix, na.rm = TRUE),
+    se_b    = sd(bix,   na.rm = TRUE)/sqrt(n),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    SeasonYear = factor(SeasonYear,
+                        levels = c("Winter 2024","Spring 2024","Summer 2024","Winter 2025")
+    )
+  )
+
+
+
+EEMs_seasoned <- EEMs_seasoned %>%
+  mutate(
+    # 1) Remove any leading “Lake ” if present
+    Lake = str_remove(Lake, "^Lake\\s*"),
+    # 2) Trim whitespace (in case there were leading/trailing spaces)
+    Lake = str_trim(Lake),
+    # 3) Re-add the prefix so every entry reads “Lake XYZ”
+    Lake = paste("Lake", Lake)
+  ) %>%
+  mutate(
+    Lake = as.character(Lake),  # if it’s a factor, turn it into character first
+    Lake = if_else(
+      is.na(Lake) | Lake == "Lake NA",
+      "Lake Erie",
+      Lake
+    ),
+    Lake = factor(Lake)         # back to factor if you want
+  ) %>%
+  mutate(
+    Year = as.character(Year),  
+    Year = if_else(
+      is.na(Year) & Season %in% c("Spring","Summer"),
+      "2024",
+      Year
+    ),
+    Year = factor(Year, levels = c("2024","2025"))
+  ) %>%
+  mutate(
+    Lake = case_when(
+      Lake %in% c("Lake St. Clair", "Lake St Clair") ~ "Lake St. Clair",
+      TRUE                                          ~ Lake
     )
   )
 
@@ -587,3 +684,49 @@ ggplot(hix_summary, aes(x = Lake, y = mean_hix, fill = SeasonYear)) +
     panel.spacing = unit(0.6, "cm")
   )
 
+
+hix_mod <- aov(hix ~ Year*Season, clean_EEMs)
+summary(hix_mod)
+
+
+ggplot(bix_summary, aes(Lake, mean_b, fill = SeasonYear)) +
+  geom_col(position = position_dodge(0.8), width = 0.7, color = "black") +
+  geom_errorbar(aes(ymin = mean_b - se_b, ymax = mean_b + se_b),
+                width = 0.2, position = position_dodge(0.8)) +
+  geom_text(aes(label = paste0("n=",n),
+                y     = mean_b + se_b + 0.05*max(mean_b)),
+            position = position_dodge(0.8), vjust = 0, size = 4) +
+  scale_fill_manual(values = c(
+    "Winter 2024" = "#87CEDA",
+    "Spring 2024" = "#B6798F",
+    "Summer 2024" = "#E50245",
+    "Winter 2025" = "#6BDACF"
+  )) +
+  labs(x = NULL, y = "Mean BIX (±SE)", fill = "Season & Year") +
+  theme_classic(base_size = 14) +
+  theme(
+    axis.text.x   = element_text(angle = 45, hjust = 1, size = 12),
+    axis.text.y   = element_text(size = 12),
+    axis.title    = element_text(size = 14),
+    legend.position = "none",             # hide second legend
+    panel.border  = element_rect(color = "black", fill = NA),
+    panel.spacing = unit(0.5, "cm")
+  )
+
+# 5) Combine with patchwork
+hix_plot + bix_plot + 
+  plot_annotation(
+    title = "Mean HIX and BIX by Lake, Season & Year",
+    theme = theme(plot.title = element_text(size = 16, face = "bold"))
+  )
+
+
+
+
+EEMs_seasoned$date <- as.Date(EEMs_seasoned$date, format = "%d-%b-%y")
+# If any dates parsed before 1970, bump them into 2000s:
+EEMs_seasoned$date <- ifelse(
+  EEMs_seasoned$date < as.Date("1960-01-01"),
+  EEMs_seasoned$date + years(100),
+  EEMs_seasoned$date)   # adjust format if needed
+EEMs_seasoned$Year <- as.integer(format(EEMs_seasoned$date, "%Y"))
