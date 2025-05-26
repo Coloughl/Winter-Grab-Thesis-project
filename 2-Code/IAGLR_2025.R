@@ -268,6 +268,8 @@ carbon_to_merge <- Carbon_filtered %>%
 carbon_to_merge$Season <- factor(carbon_to_merge$Season, levels = c("Summer", "Spring", "Winter"))
 carbon_to_merge$Year <- factor(carbon_to_merge$Year, levels = c("2025", "2024"))
 
+BP <- WG_BP %>% 
+  left_join(carbon_to_merge, by = c("Station", "Year","Season"))
 
 #Prepping nutrient and Chla data ----
 NH4_summary <- NH4 %>%
@@ -381,149 +383,43 @@ master_clean <- master_clean %>%
   )
 
 
-#MLM ----
-library(glmmTMB)
-library(nlme)
-library(lme4)
-library(MuMIn)
-library(lattice)
-library(emmeans)
-
-master_scaled <- master_clean %>%
-  mutate(across(c(Chla, SUVA254, Nox.N.ug.L, `P ug/L`, TN, NPOC, `NH4_ug/L`,bix, hix ),
-                ~ scale(.)[,1]))
-
-master_scaled <- master_scaled %>%
-  rename_with(~ make.names(.), everything())
-
-
-preds <- c("Chla", "SUVA254", "Nox.N.ug.L", "P.ug.L", "TN", "NPOC", "NH4_ug.L", "hix", "bix")
-
-uni_results <- map_df(preds, function(var) {
-  # build formula safely now that var is syntactic
-  f  <- reformulate(c(var, "(1|Season)", "(1|Lake)"), response = "Leu.TdR")
-  m  <- lmer(f, data = master_scaled, REML = FALSE)
-  ss <- summary(m)$coefficients
-  tibble(
-    predictor = var,
-    AIC       = AIC(m),
-    estimate  = ss[var, "Estimate"],
-    se        = ss[var, "Std. Error"],
-    t.value   = ss[var, "t value"]
-  )
-})
-
-print(uni_results)
-
-full_ml <- lmer(
-  Leu.TdR ~ Chla + `P.ug.L` + NPOC + hix + Nox.N.ug.L + SUVA254 +  
-    (1|Lake) + (1|Season),
-  data   = master_scaled,
-  REML   = FALSE
-)
-summary(full_ml)
-AIC(full_ml)
-
-full_ml2 <- lmer(
-  Leu.TdR ~ Chla:Season + `P.ug.L` + NPOC + hix + Nox.N.ug.L +  
-    (1|Lake) + (1|Season),
-  data   = master_scaled,
-  REML   = FALSE
-)
-summary(full_ml2)
-AIC(full_ml2)
-
-drop1(full_ml, test = "Chisq")
-
-vars <- c("Leu.TdR", "Chla", "P.ug.L", "NH4_ug.L", "Lake", "Season", "NPOC")
-
-
-master_mod <- master_scaled %>%
-  select(all_of(vars)) %>%
-  drop_na()
-
-
-nrow(master_mod)  
-
-full_ml2 <- lmer(
-  Leu.TdR ~ Chla + `P.ug.L` + NH4_ug.L + (1|Lake) + (1|Season),
-  data = master_mod,
-  REML = FALSE,
-  na.action = na.omit
-)
-
-drop1(full_ml2, test = "Chisq")
-
-m2 <- update(full_ml2, . ~ . - `P ug/L`)
-
-summary(m2)
-
-
-m_season <- lmer(
-  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + ,
-  data   = master_mod,
-  REML   = FALSE
-)
-AIC(m_season)
-summary(m_season)
-
-AIC(full_ml2, m_season)
-
-
-final_mod <- update(m_season, REML = TRUE)
-summary(final_mod)
-r.squaredGLMM(final_mod)
-
-
-slopes <- emtrends(final_mod, ~ Season, var = "Chla")
-summary(slopes)
-
-emmip(final_mod, Season ~ Chla, CIs = TRUE) +
-  labs(x = "Chla (µg L⁻¹)",
-       y = "Predicted Leu.TdR (nmol L⁻¹ d⁻¹)",
-       colour = "Season") +
-  theme_minimal(base_size = 14)
-
-
-newdata <- expand_grid(
-  Chla      = seq(min(master_mod$Chla), max(master_mod$Chla), length.out = 50),
-  Season    = factor(c("Summer","Spring"), levels = levels(master_mod$Season)),
-  `P.ug.L`  = mean(master_mod$P.ug.L, na.rm=TRUE),
-  NH4_ug.L  = mean(master_mod$NH4_ug.L, na.rm=TRUE),
-  NPOC      = mean(master_mod$NPOC, na.rm=TRUE),
-  hix       = mean(master_mod$hix, na.rm=TRUE)
-)
-
-
-newdata$pred <- predict(final_mod, newdata, re.form = NA)
-
-ggplot(newdata, aes(x = Chla, y = pred, colour = Season)) +
-  geom_line(size = 1.2) +
-  geom_ribbon(aes(ymin = pred - 1.96 * predict(final_mod, newdata, re.form = NA, se.fit = TRUE)$se.fit,
-                  ymax = pred + 1.96 * predict(final_mod, newdata, re.form = NA, se.fit = TRUE)$se.fit),
-              alpha = 0.2) +
-  labs(x = "Chlorophyll-a (µg L⁻¹)",
-       y = "Predicted Leu:TdR",
-       colour = "Season") +
-  theme_classic(base_size = 14) +
-  theme(
-    # axis text
-    axis.title.x     = element_text(size = 24),
-    axis.title.y     = element_text(size = 24),
-    axis.text.x      = element_text(size = 22, margin = margin(t = 6, r = 0, b = 6, l = 0)),
-    axis.text.y      = element_text(size = 22, margin = margin(t = 0, r = 6, b = 0, l = 6)),
-    
-    # legend
-    legend.title     = element_text(size = 28),
-    legend.text      = element_text(size = 20))
-
-
-
-
 #Plots ----
+z_cutoff <- 3
+
+clean_BP <- BP%>%
+  # 1. compute the z‐score for Leu.TdR
+  mutate(z_Leu = (Leu_nM - mean(Leu_nM, na.rm = TRUE)) /
+           sd(Leu_nM, na.rm = TRUE)) %>% 
+  # 2. keep only those with |z| ≤ cutoff
+  filter(abs(Leu_nM) <= z_cutoff)
+  # 3. drop the helper column if you like
+  select(-z_Leu)
+
+ggplot(clean_BP, aes(x = Leu_nM , y = TN)) +
+  geom_point()
+
+ggplot(master_clean) +
+  geom_boxplot(aes(Leu_nM))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 plot_data <- merged_data %>%
   filter(!is.na(Lake.x))
-
 
 ggplot(WG_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Season))) +
   labs(x = expression(paste(, "nmol Thymidine L"^-1, "d"^-1,)), 
@@ -730,3 +626,141 @@ EEMs_seasoned$date <- ifelse(
   EEMs_seasoned$date + years(100),
   EEMs_seasoned$date)   # adjust format if needed
 EEMs_seasoned$Year <- as.integer(format(EEMs_seasoned$date, "%Y"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+z_cutoff <- 3
+
+clean_EEMs <- EEMs_seasoned %>%
+  # 1. compute the z‐score for Leu.TdR
+  mutate(z_hix = (hix - mean(hix, na.rm = TRUE)) /
+           sd(hix, na.rm = TRUE)) %>%
+  # 2. keep only those with |z| ≤ cutoff
+  filter(abs(z_hix) <= z_cutoff) %>%
+  # 3. drop the helper column if you like
+  select(-z_hix)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vars <- c("Leu.TdR", "Chla", "P.ug.L", "NH4_ug.L", "Lake", "Season", "NPOC", "SUVA254","bix","hix")
+
+# Drop any rows with NA in those columns
+master_mod <- master_scaled %>%
+  select(all_of(vars)) %>%
+  drop_na()
+
+# Check it
+nrow(master_mod)  
+
+full_ml2 <- lmer(
+  Leu.TdR ~ Chla + `P.ug.L` + NH4_ug.L + (1|Lake) + (1|Season),
+  data = master_mod,
+  REML = FALSE,
+  na.action = na.omit
+)
+
+drop1(full_ml2, test = "Chisq")
+
+m2 <- update(full_ml2, . ~ . - `P ug/L`)
+
+summary(m2)
+
+
+m_season <- lmer(
+  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + hix +
+    (1|Season),
+  data   = master_mod,
+  REML   = FALSE
+)
+
+m_season <- lmer(
+  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + 
+    (1|Season),
+  data   = master_mod,
+  REML   = FALSE
+)
+
+AIC(m_season)
+summary(m_season)
+
+AIC(full_ml2, m_season)
+
+
+final_mod <- update(m_season, REML = TRUE)
+summary(final_mod)
+r.squaredGLMM(final_mod)
+
+library(emmeans)
+install.packages("emmeans")
+
+
+# Get estimated slopes (trends) of Leu.TdR vs Chla for each Season
+slopes <- emtrends(final_mod, ~ Season, var = "Chla")
+summary(slopes)
+
+emmip(final_mod, Season ~ Chla, CIs = TRUE) +
+  labs(x = "Chla (µg L⁻¹)",
+       y = "Predicted Leu.TdR (nmol L⁻¹ d⁻¹)",
+       colour = "Season") +
+  theme_minimal(base_size = 14)
+
+
+newdata <- expand_grid(
+  Chla      = seq(min(master_mod$Chla), max(master_mod$Chla), length.out = 50),
+  Season    = factor(c("Summer","Spring"), levels = levels(master_mod$Season)),
+  `P.ug.L`  = mean(master_mod$P.ug.L, na.rm=TRUE),
+  NH4_ug.L  = mean(master_mod$NH4_ug.L, na.rm=TRUE),
+  NPOC      = mean(master_mod$NPOC, na.rm=TRUE),
+  hix       = mean(master_mod$hix, na.rm=TRUE)
+)
+
+# Predict (fixed effects only)
+newdata$pred <- predict(final_mod, newdata, re.form = NA)
+
+ggplot(newdata, aes(x = Chla, y = pred, colour = Season)) +
+  geom_line(size = 1.2) +
+  geom_ribbon(aes(ymin = pred - 1.96 * predict(final_mod, newdata, re.form = NA, se.fit = TRUE)$se.fit,
+                  ymax = pred + 1.96 * predict(final_mod, newdata, re.form = NA, se.fit = TRUE)$se.fit),
+              alpha = 0.2) +
+  labs(x = "Chla (µg L⁻¹)",
+       y = "Predicted Leu.TdR",
+       colour = "Season") +
+  theme_classic(base_size = 14)
+
+
+
+
+ggplot(clean_EEMs)+
+  geom_histogram(aes(hix))
