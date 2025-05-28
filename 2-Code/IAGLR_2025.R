@@ -2,16 +2,22 @@
 #This code was developed for the analysis and visualization of WG2 data for IAGLR 2025
 #Chatgpt was used to help write and troubleshoot code
 #Made by Connor O'Louglin
-#Last updated: 5/13/25
+#Last updated: 5/27/25
 
 
 #Loading in packages
+library(reshape2)
+library(corrplot)
+library(GGally)
+library(rlang)
 library(readxl)
 library(dplyr)
 library(stringr)
 library(tidyr)
 library(tidyverse)
 library(car)
+library(patchwork)
+library(lmodel2)
 #Fetching and setting Working directory
 getwd()
 setwd("C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/")
@@ -248,8 +254,8 @@ Carbon_filtered <- Carbon %>%
     }
   ) %>%
   ungroup()
-Carbon$Season <- factor(WG_BP$Season, levels = c("Summer", "Spring", "Winter"))
-WG_BP$Year <- factor(WG_BP$Year, levels = c("2025", "2024"))
+Carbon_filtered$Season <- factor(Carbon_filtered$Season, levels = c("Summer", "Spring", "Winter"))
+Carbon_filtered$Year <- factor(Carbon_filtered$Year, levels = c("2025", "2024"))
 
 
 #Merging BP data in Carbon data ----
@@ -269,7 +275,8 @@ carbon_to_merge$Season <- factor(carbon_to_merge$Season, levels = c("Summer", "S
 carbon_to_merge$Year <- factor(carbon_to_merge$Year, levels = c("2025", "2024"))
 
 BP <- WG_BP %>% 
-  left_join(carbon_to_merge, by = c("Station", "Year","Season"))
+  left_join(carbon_to_merge, by = c("Station", "Year","Season")) %>% 
+  
 
 #Prepping nutrient and Chla data ----
 NH4_summary <- NH4 %>%
@@ -330,7 +337,7 @@ Chla_summary <- Chla %>%
 
 #Making master data frame ----
 merged_data <- carbon_to_merge %>%
-  left_join(WG_BP, by = c("Station", "Season","Year"), relationship = "many-to-one") %>% 
+  left_join(WG_BP, by = c("Station", "Season","Year"), relationship = "many-to-one") %>%  
   left_join(NH4_summary, by = c("Station", "Season","Year"), relationship = "many-to-one") %>% 
   left_join(NOx_summary, by = c("Station", "Season","Year"), relationship = "many-to-one") %>% 
   left_join(SRP_summary, by = c("Station", "Season","Year"), relationship = "many-to-one") %>% 
@@ -383,45 +390,66 @@ master_clean <- master_clean %>%
   )
 
 
-#Plots ----
+#Plotting all vars against Leu:TdR-----
+out_dir <- "C:/Users/ccolo/OneDrive/Documents/GitHub/Winter-Grab-Thesis-project/8-Figures/IAGLR"
+
+if (!dir.exists("plots")) dir.create("plots")
+
+# 3) get all numeric predictors except the response
+for (var in numeric_vars) {
+  # 1) turn the string into a symbol for aes()
+  var_sym <- sym(var)
+  
+  # 2) sanitize the variable name for the filename
+  safe_var <- gsub("[^A-Za-z0-9]", "_", var)
+  fname    <- file.path(out_dir, paste0("TdR_", safe_var, ".png"))
+  
+  # 3) open a PNG device (6"x4" at 300dpi)
+  png(
+    filename = fname,
+    width    = 6,     
+    height   = 4,     
+    units    = "in",  
+    res      = 300    
+  )
+  
+  # 4) draw the plot (you can filter out NA if you like)
+  print(
+    ggplot(master_clean, aes(x = !!var_sym, y = TdR_nM)) +
+      geom_point(size = 2, na.rm = TRUE) +
+      labs(
+        title = paste("TdR_nM vs", var),
+        x     = var,
+        y     = "Thymidine nM"
+      ) +
+      theme_classic(base_size = 14)
+  )
+  
+  # 5) close the device
+  dev.off()
+}
+
+
+
+
+# BP Plots ----
 z_cutoff <- 3
 
 clean_BP <- BP%>%
   # 1. compute the z‐score for Leu.TdR
   mutate(z_Leu = (Leu_nM - mean(Leu_nM, na.rm = TRUE)) /
-           sd(Leu_nM, na.rm = TRUE)) %>% 
-  # 2. keep only those with |z| ≤ cutoff
-  filter(abs(Leu_nM) <= z_cutoff)
-  # 3. drop the helper column if you like
-  select(-z_Leu)
-
-ggplot(clean_BP, aes(x = Leu_nM , y = TN)) +
-  geom_point()
-
-ggplot(master_clean) +
-  geom_boxplot(aes(Leu_nM))
+           sd(Leu_nM, na.rm = TRUE),
+         z_TdR = (TdR_nM - mean(TdR_nM, na.rm = TRUE)) / 
+           sd(TdR_nM, na.rm = TRUE)) %>% 
+  filter(abs(z_Leu) <= z_cutoff) %>% 
+  filter(abs(z_TdR) <= z_cutoff) %>% 
+  select(-z_Leu) %>% 
+  select(-z_TdR) %>% 
+  rename(Lake = Lake.x) %>%  
+  mutate(Lake = paste("Lake", Lake))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-plot_data <- merged_data %>%
-  filter(!is.na(Lake.x))
-
-ggplot(WG_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Season))) +
+ggplot(clean_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Season))) +
   labs(x = expression(paste(, "nmol Thymidine L"^-1, "d"^-1,)), 
        y = expression(paste(, "nmol Leucine L"^-1, "d"^-1,)),
        fill = "Year", shape = "Season") +
@@ -435,7 +463,7 @@ ggplot(WG_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Se
   ) +
   geom_point(size = 8, alpha = 0.7) +  # Black outline for points, fill color by Season
   geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "darkgray", linewidth = 3)+
-  facet_wrap(~ Lake.x) +
+  facet_wrap(~ Lake) +
   theme_classic(base_size = 14) +
   theme(
     # axis text
@@ -458,23 +486,27 @@ ggplot(WG_BP, aes(x = TdR_nM, y = Leu_nM, fill = factor(Year), shape = factor(Se
     panel.spacing    = unit(0.5, "cm")
   )
 
-mod <- aov(`Leu.TdR` ~ Lake.x + Year + Season, data = WG_BP)
-summary(mod)
 
+#EEMs plots. Additional data manipulation ----
+clean_EEMs <- Carbon_filtered %>%
+  mutate(z_hix = (hix - mean(hix, na.rm = TRUE)) /
+           sd(hix, na.rm = TRUE),
+         z_bix = (bix - mean(bix, na.rm = TRUE)) / 
+           sd(bix, na.rm = TRUE)) %>% 
+  filter(abs(z_hix) <= z_cutoff) %>% 
+  filter(abs(z_bix) <= z_cutoff) %>% 
+  select(-z_hix) %>% 
+  select(-z_bix) 
 
-Anova(mod, type = 2)
-
-t.test(`Leu.TdR` ~ Year, data = WG_BP)  
-
-
-#EEMs and DOC plots. Additional data manipulation ----
-hix_summary <- EEMs_seasoned %>%
+hix_summary <- clean_EEMs %>%
   mutate(SeasonYear = paste(Season, Year)) %>%
   group_by(Lake, SeasonYear) %>%
   summarise(
     n        = sum(!is.na(hix)),
     mean_hix = mean(hix, na.rm = TRUE),
-    se_hix   = sd(hix,   na.rm = TRUE) / sqrt(n),
+    se_hix   = if_else(n > 1,
+                     sd(hix, na.rm = TRUE) / sqrt(n),
+                     0),
     .groups  = "drop"
   ) %>%
   mutate(
@@ -483,13 +515,15 @@ hix_summary <- EEMs_seasoned %>%
     )
   )
 
-bix_summary <- EEMs_seasoned %>%
+bix_summary <- clean_EEMs %>%
   mutate(SeasonYear = paste(Season, Year)) %>%
   group_by(Lake, SeasonYear) %>%
   summarise(
     n       = sum(!is.na(bix)),
     mean_b  = mean(bix, na.rm = TRUE),
-    se_b    = sd(bix,   na.rm = TRUE)/sqrt(n),
+    se_b   = if_else(n > 1,
+                       sd(bix, na.rm = TRUE) / sqrt(n),
+                       0),
     .groups = "drop"
   ) %>%
   mutate(
@@ -500,267 +534,421 @@ bix_summary <- EEMs_seasoned %>%
 
 
 
-EEMs_seasoned <- EEMs_seasoned %>%
-  mutate(
-    # 1) Remove any leading “Lake ” if present
-    Lake = str_remove(Lake, "^Lake\\s*"),
-    # 2) Trim whitespace (in case there were leading/trailing spaces)
-    Lake = str_trim(Lake),
-    # 3) Re-add the prefix so every entry reads “Lake XYZ”
-    Lake = paste("Lake", Lake)
-  ) %>%
-  mutate(
-    Lake = as.character(Lake),  # if it’s a factor, turn it into character first
-    Lake = if_else(
-      is.na(Lake) | Lake == "Lake NA",
-      "Lake Erie",
-      Lake
-    ),
-    Lake = factor(Lake)         # back to factor if you want
-  ) %>%
-  mutate(
-    Year = as.character(Year),  
-    Year = if_else(
-      is.na(Year) & Season %in% c("Spring","Summer"),
-      "2024",
-      Year
-    ),
-    Year = factor(Year, levels = c("2024","2025"))
-  ) %>%
-  mutate(
-    Lake = case_when(
-      Lake %in% c("Lake St. Clair", "Lake St Clair") ~ "Lake St. Clair",
-      TRUE                                          ~ Lake
-    )
-  )
 
+#Setting offsets for bar charts and color pallette.
 
-offset <- 0.05 * max(hix_summary$mean_hix, na.rm = TRUE)
+offset_h <- 0.05 * max(hix_summary$mean_hix, na.rm = TRUE)
 
-ggplot(hix_summary, aes(x = Lake, y = mean_hix, fill = SeasonYear)) +
-  geom_col(
-    position = position_dodge(width = 0.8),
-    width    = 0.7,
-    color    = "black"
-  ) +
-  geom_errorbar(
-    aes(ymin = mean_hix - se_hix, ymax = mean_hix + se_hix),
-    width    = 0.2,
-    position = position_dodge(width = 0.8)
-  ) +
-  geom_text(
-    aes(
-      label = paste0("n=", n),
-      y     = mean_hix + se_hix + offset
-    ),
-    position = position_dodge(width = 0.8),
-    vjust    = 0,
-    size     = 4,
-    fontface = "bold"
-  ) +
-  scale_fill_manual(values = c(
-    "Winter 2024" = "#87CEDA",
-    "Spring 2024" = "#B6798F",
-    "Summer 2024" = "#E50245",
-    "Winter 2025" = "#6BDACF"
-  )) +
-  labs(
-    x    = "Lake",
-    y    = "Mean HIX (±SE)",
-    fill = "Season & Year"
-  ) +
-  theme_classic(base_size = 14) +
+offset_b <- 0.05 * max(bix_summary$mean_b, na.rm = TRUE)
+
+season_palette <- c(
+  "Winter 2024" = "#87CEDA",
+  "Spring 2024" = "#B6798F",
+  "Summer 2024" = "#E50245",
+  "Winter 2025" = "#6BDACF"
+)
+
+#Making theme for plots
+common_theme <- theme_classic(base_size = 14) +
   theme(
-    axis.text.x   = element_text(angle = 45, hjust = 1, size = 22),
-    axis.text.y   = element_text(size = 22),
-    axis.title    = element_text(size = 24),
-    legend.title  = element_text(size = 28),
-    legend.text   = element_text(size = 20),
-    panel.border  = element_rect(colour = "black", fill = NA, size = 0.5),
-    panel.spacing = unit(0.6, "cm")
+    axis.text.x  = element_text(angle = 45, hjust = 1, size = 45),
+    axis.text.y  = element_text(size = 45),
+    axis.title   = element_text(size = 45),
+    legend.title = element_text(size = 28),
+    legend.text  = element_text(size = 20),
+    panel.border = element_rect(colour = "black", fill = NA, size = 0.5),
+    panel.background    = element_rect(fill = NA, colour = NA),
+    plot.background     = element_rect(fill = NA, colour = NA),
+    legend.background   = element_rect(fill = NA, colour = NA),
+    legend.key          = element_rect(fill = NA, colour = NA)
   )
 
+#HIX plot
+hix_plot <- ggplot(hix_summary, aes(Lake, mean_hix, fill = SeasonYear)) +
+  geom_col(position = position_dodge(0.8), width = 0.7, color = "black") +
+  geom_errorbar(aes(ymin = mean_hix - se_hix, ymax = mean_hix + se_hix),
+                width = 0.2, position = position_dodge(0.8)) +
+  geom_text(aes(label = paste0("n=", n),
+                y     = mean_hix + se_hix + offset_h),
+            position = position_dodge(0.8), vjust = 0, size = 8, fontface = "bold") +
+  scale_fill_manual(values = season_palette) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +  
+  coord_cartesian(clip = "off") +
+  labs(x = NULL, y = "Mean HIX (±SE)", fill = "Season & Year") +
+  common_theme +
+  theme(
+    axis.text.x  = element_blank(),
+    axis.ticks.x = element_blank()
+  )
 
-hix_mod <- aov(hix ~ Year*Season, clean_EEMs)
-summary(hix_mod)
+hix_plot
 
 
-ggplot(bix_summary, aes(Lake, mean_b, fill = SeasonYear)) +
+# BIX 
+bix_plot <- ggplot(bix_summary, aes(Lake, mean_b, fill = SeasonYear)) +
   geom_col(position = position_dodge(0.8), width = 0.7, color = "black") +
   geom_errorbar(aes(ymin = mean_b - se_b, ymax = mean_b + se_b),
                 width = 0.2, position = position_dodge(0.8)) +
-  geom_text(aes(label = paste0("n=",n),
-                y     = mean_b + se_b + 0.05*max(mean_b)),
-            position = position_dodge(0.8), vjust = 0, size = 4) +
-  scale_fill_manual(values = c(
-    "Winter 2024" = "#87CEDA",
-    "Spring 2024" = "#B6798F",
-    "Summer 2024" = "#E50245",
-    "Winter 2025" = "#6BDACF"
+  geom_text(aes(label = paste0("n=", n),
+                y     = mean_b + se_b + offset_b),
+            position = position_dodge(0.8), vjust = 0, size = 8, fontface = "bold") +
+  scale_fill_manual(values = season_palette) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) + 
+  coord_cartesian(clip = "off") +
+  labs(x = "Lake", y = "Mean BIX (±SE)") +
+  common_theme +
+  theme(legend.position = "none")
+bix_plot
+
+
+transparent_theme <- theme(
+  panel.background    = element_rect(fill = NA, colour = NA),
+  plot.background     = element_rect(fill = NA, colour = NA),
+  legend.background   = element_rect(fill = NA, colour = NA),
+  legend.key          = element_rect(fill = NA, colour = NA)
+)
+
+
+hix_plot <- hix_plot + transparent_theme +
+  guides(fill = guide_legend(
+    nrow        = 1,
+    byrow       = TRUE,
+    keywidth    = unit(2,   "lines"),
+    keyheight   = unit(2,   "lines"),
+    label.position = "bottom",
+    title.position = "top",
+    title.hjust = 0.5
   )) +
-  labs(x = NULL, y = "Mean BIX (±SE)", fill = "Season & Year") +
-  theme_classic(base_size = 14) +
   theme(
-    axis.text.x   = element_text(angle = 45, hjust = 1, size = 12),
-    axis.text.y   = element_text(size = 12),
-    axis.title    = element_text(size = 14),
-    legend.position = "none",             # hide second legend
-    panel.border  = element_rect(color = "black", fill = NA),
-    panel.spacing = unit(0.5, "cm")
+    legend.position    = "top",           
+    legend.box         = "horizontal",       
+    legend.box.just    = "center",           
+    legend.spacing.x   = unit(1.5, "cm"),    
+    legend.spacing.y   = unit(0.5, "cm"),    
+    legend.title       = element_text(size = 28),
+    legend.text        = element_text(size = 24)
   )
 
-# 5) Combine with patchwork
-hix_plot + bix_plot + 
-  plot_annotation(
-    title = "Mean HIX and BIX by Lake, Season & Year",
-    theme = theme(plot.title = element_text(size = 16, face = "bold"))
+bix_plot <- bix_plot + transparent_theme
+
+hix_plot <- hix_plot +
+  labs(tag = "A") +
+  theme(
+    plot.tag           = element_text(size = 36, face = "bold"),
+    plot.tag.position  = c(0.02, 0.98)
+  )
+
+bix_plot <- bix_plot +
+  labs(tag = "B") +
+  theme(
+    plot.margin        = margin(t = 20, r = 5, b = 5, l = 5, unit = "pt"),
+    plot.tag           = element_text(size = 36, face = "bold"),
+    plot.tag.position  = c(0.02, 1.05)
   )
 
 
 
-
-EEMs_seasoned$date <- as.Date(EEMs_seasoned$date, format = "%d-%b-%y")
-# If any dates parsed before 1970, bump them into 2000s:
-EEMs_seasoned$date <- ifelse(
-  EEMs_seasoned$date < as.Date("1960-01-01"),
-  EEMs_seasoned$date + years(100),
-  EEMs_seasoned$date)   # adjust format if needed
-EEMs_seasoned$Year <- as.integer(format(EEMs_seasoned$date, "%Y"))
+combined <- hix_plot /
+  plot_spacer() /
+  bix_plot +
+  plot_layout(heights = c(1, 0.1, 1))
 
 
+combined
+
+SUVA_summary <- Carbon_filtered %>%
+  mutate(SeasonYear = paste(Season, Year)) %>%
+  group_by(Lake, SeasonYear) %>%
+  mutate(
+    SeasonYear = factor(SeasonYear,
+                        levels = c("Winter 2024","Spring 2024","Summer 2024")
+    )
+  )
+suva_plot <- SUVA_summary %>% 
+  filter(!is.na(SeasonYear)) %>% 
+  ggplot(aes(x = SeasonYear, y = SUVA254, fill = SeasonYear)) +
+  geom_boxplot(position = position_dodge(0.8), width = 0.7, color = "black") +
+  scale_fill_manual(values = season_palette, drop = TRUE) +
+  labs(x = NULL, y = "SUVA254 (L·mg⁻¹·m⁻¹)") +
+  facet_wrap(~ Lake) +
+  theme(
+    legend.position   = "none",
+    axis.title.x      = element_text(size = 24),
+    axis.title.y      = element_text(size = 24),
+    axis.text.x       = element_text(
+      size    = 22,
+      angle   = 45,
+      hjust   = 1,
+      margin  = margin(0.5,0.5,0.5,0.5, "cm")
+    ),
+    axis.text.y       = element_text(
+      size    = 22,
+      margin  = margin(0.5,0.5,0.5,0.5, "cm")
+    ),
+    strip.text        = element_text(size = 28, face = "bold"),   # <- bigger facet labels
+    panel.grid.major  = element_blank(), 
+    panel.grid.minor  = element_blank(),
+    panel.background  = element_blank(), 
+    axis.line         = element_line(colour = "black"),
+    axis.ticks.length = unit(-0.35, "cm")
+  )
+
+suva_plot
+
+#DOC Plot ----
+clean_DOC <- Carbon_filtered %>%
+  mutate(z_doc = (NPOC - mean(NPOC, na.rm = TRUE)) /
+           sd(NPOC, na.rm = TRUE)) %>% 
+  filter(abs(z_doc) <= z_cutoff) %>% 
+  select(-z_doc)  
+
+DOC_summary <- clean_DOC %>%
+  mutate(SeasonYear = paste(Season, Year)) %>%
+  group_by(Lake, SeasonYear) %>%
+  summarise(
+    n        = sum(!is.na(NPOC)),
+    mean_DOC = mean(NPOC, na.rm = TRUE),
+    se_DOC   = if_else(n > 1,
+                       sd(NPOC, na.rm = TRUE) / sqrt(n),
+                       0),
+    .groups  = "drop"
+  ) %>%
+  mutate(
+    SeasonYear = factor(SeasonYear,
+                        levels = c("Winter 2024","Spring 2024","Summer 2024","Winter 2025")
+    )
+  )
+
+uncommon_theme <- theme_classic(base_size = 14) +
+  theme(
+    axis.text.x  = element_text(angle = 45, hjust = 1, size = 45),
+    axis.text.y  = element_text(size = 45),
+    axis.title   = element_text(size = 45),
+    legend.title = element_text(size = 30),
+    legend.text  = element_text(size = 24),
+    panel.border = element_rect(colour = "black", fill = NA, size = 0.5),
+    panel.background    = element_rect(fill = NA, colour = NA),
+    plot.background     = element_rect(fill = NA, colour = NA),
+    legend.background   = element_rect(fill = NA, colour = NA),
+    legend.key          = element_rect(fill = NA, colour = NA)
+  )
 
 
+offset_doc <- 0.05 * max(DOC_summary$mean_DOC, na.rm = TRUE)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-z_cutoff <- 3
-
-clean_EEMs <- EEMs_seasoned %>%
-  # 1. compute the z‐score for Leu.TdR
-  mutate(z_hix = (hix - mean(hix, na.rm = TRUE)) /
-           sd(hix, na.rm = TRUE)) %>%
-  # 2. keep only those with |z| ≤ cutoff
-  filter(abs(z_hix) <= z_cutoff) %>%
-  # 3. drop the helper column if you like
-  select(-z_hix)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-vars <- c("Leu.TdR", "Chla", "P.ug.L", "NH4_ug.L", "Lake", "Season", "NPOC", "SUVA254","bix","hix")
-
-# Drop any rows with NA in those columns
-master_mod <- master_scaled %>%
-  select(all_of(vars)) %>%
-  drop_na()
-
-# Check it
-nrow(master_mod)  
-
-full_ml2 <- lmer(
-  Leu.TdR ~ Chla + `P.ug.L` + NH4_ug.L + (1|Lake) + (1|Season),
-  data = master_mod,
-  REML = FALSE,
-  na.action = na.omit
+season_palette <- c(
+  "Winter 2024" = "#87CEDA",
+  "Spring 2024" = "#B6798F",
+  "Summer 2024" = "#E50245",
+  "Winter 2025" = "#6BDACF"
 )
 
-drop1(full_ml2, test = "Chisq")
 
-m2 <- update(full_ml2, . ~ . - `P ug/L`)
+doc_plot <- ggplot(DOC_summary, aes(Lake, mean_DOC, fill = SeasonYear)) +
+  geom_col(position = position_dodge(0.8), width = 0.7, color = "black") +
+  geom_errorbar(aes(ymin = mean_DOC - se_DOC, ymax = mean_DOC + se_DOC),
+                width = 0.2, position = position_dodge(0.8)) +
+  geom_text(aes(label = paste0("n=", n),
+                y     = mean_DOC + se_DOC + offset_doc),
+            position = position_dodge(0.8), vjust = 0, size = 16, fontface = "bold") +
+  scale_fill_manual(values = season_palette) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+  coord_cartesian(clip = "off") +
+  labs(x = "Lake", y = expression(paste("Mean DOC Concentration (", "mg L"^-1, ")")), fill = "Season & Year") +
+  uncommon_theme 
 
-summary(m2)
+doc_plot
+# ignore this. For Type II linear regressions ----
+plot(log(`Leu.TdR`) ~ log(`NH4_ug/L`) ,data = master_clean)
+mod3 <- lmodel2(log(`Leu.TdR`) ~ log(`NH4_ug/L`), data = master_clean,
+                nperm = 0)
+print(mod3)
+
+plot(log(`Leu.TdR`) ~ log(NPOC), data = master_clean)
+mod <- lmodel2(log(`Leu.TdR`) ~ log(NPOC), data = master_clean,
+                nperm = 0)
+print(mod)
+
+sma_row <- mod$regression.results[
+  mod$regression.results$Method == "SMA", ]
+ci_row  <- mod$confidence.intervals[
+  mod$confidence.intervals$Method  == "SMA", ]
+
+sma_slope     <- sma_row$Slope
+sma_intercept <- sma_row$Intercept
+slope_lwr     <- ci_row$`2.5%-Slope`
+slope_upr     <- ci_row$`97.5%-Slope`
+int_lwr       <- ci_row$`2.5%-Intercept`
+int_upr       <- ci_row$`97.5%-Intercept`
+r_val         <- mod$r
 
 
-m_season <- lmer(
-  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + hix +
-    (1|Season),
-  data   = master_mod,
-  REML   = FALSE
+
+annotation_text <- sprintf(
+  "SMA slope = %.2f [%.2f, %.2f]\nPearson r = %.2f",
+  sma_slope, slope_lwr, slope_upr, r_val
 )
 
-m_season <- lmer(
-  Leu.TdR ~ Chla*Season + P.ug.L + NH4_ug.L + NPOC + 
-    (1|Season),
-  data   = master_mod,
-  REML   = FALSE
+
+x_pos <- max(sma_df$logNPOC)
+y_pos <- max(sma_df$upr)
+ 
+
+x_log_seq <- seq(
+  from = min(log(master_clean$NPOC), na.rm = TRUE),
+  to   = max(log(master_clean$NPOC), na.rm = TRUE),
+  length.out = 100
 )
 
-AIC(m_season)
-summary(m_season)
-
-AIC(full_ml2, m_season)
-
-
-final_mod <- update(m_season, REML = TRUE)
-summary(final_mod)
-r.squaredGLMM(final_mod)
-
-library(emmeans)
-install.packages("emmeans")
-
-
-# Get estimated slopes (trends) of Leu.TdR vs Chla for each Season
-slopes <- emtrends(final_mod, ~ Season, var = "Chla")
-summary(slopes)
-
-emmip(final_mod, Season ~ Chla, CIs = TRUE) +
-  labs(x = "Chla (µg L⁻¹)",
-       y = "Predicted Leu.TdR (nmol L⁻¹ d⁻¹)",
-       colour = "Season") +
-  theme_minimal(base_size = 14)
-
-
-newdata <- expand_grid(
-  Chla      = seq(min(master_mod$Chla), max(master_mod$Chla), length.out = 50),
-  Season    = factor(c("Summer","Spring"), levels = levels(master_mod$Season)),
-  `P.ug.L`  = mean(master_mod$P.ug.L, na.rm=TRUE),
-  NH4_ug.L  = mean(master_mod$NH4_ug.L, na.rm=TRUE),
-  NPOC      = mean(master_mod$NPOC, na.rm=TRUE),
-  hix       = mean(master_mod$hix, na.rm=TRUE)
+sma_df <- data.frame(
+  logNPOC = x_log_seq,
+  fit      = sma_intercept + sma_slope   * x_log_seq,
+  lwr      = int_lwr       + slope_lwr   * x_log_seq,
+  upr      = int_upr       + slope_upr   * x_log_seq
 )
 
-# Predict (fixed effects only)
-newdata$pred <- predict(final_mod, newdata, re.form = NA)
+# 3) Plot points + SMA ribbon + SMA line
+ggplot(master_clean, aes(x = log(NPOC), y = log(`Leu.TdR`))) +
+  geom_point(size = 2) +
+  geom_ribbon(
+    data = sma_df,
+    inherit.aes  = FALSE,
+    aes(x = logNPOC, ymin = lwr, ymax = upr),
+    fill  = "steelblue", alpha = 0.3
+  ) +
+  geom_line(
+    data = sma_df,
+    inherit.aes  = FALSE,
+    aes(x = logNPOC, y = fit),
+    color = "steelblue", size = 1
+  ) +
 
-ggplot(newdata, aes(x = Chla, y = pred, colour = Season)) +
-  geom_line(size = 1.2) +
-  geom_ribbon(aes(ymin = pred - 1.96 * predict(final_mod, newdata, re.form = NA, se.fit = TRUE)$se.fit,
-                  ymax = pred + 1.96 * predict(final_mod, newdata, re.form = NA, se.fit = TRUE)$se.fit),
-              alpha = 0.2) +
-  labs(x = "Chla (µg L⁻¹)",
-       y = "Predicted Leu.TdR",
-       colour = "Season") +
+  annotate(
+    "text",
+    x     = x_pos,
+    y     = y_pos,
+    label = annotation_text,
+    hjust = 1,    
+    vjust = 1,    
+    size  = 4
+  ) +
+  labs(
+    x = expression(Log[10]*"(NPOC, mg L"^{-1}*")"),
+    y = expression(Log[10]*"(Leu:TdR)")
+  ) +
   theme_classic(base_size = 14)
 
 
 
 
-ggplot(clean_EEMs)+
-  geom_histogram(aes(hix))
+
+#Use this one
+plot(log(`Leu.TdR`) ~ log(`P ug/L`) ,data = master_clean)
+mod2 <- lmodel2(log(`Leu.TdR`) ~ log(`P ug/L`), data = master_clean,
+                nperm = 0)
+print(mod2)
+
+
+sma_row <- mod2$regression.results[
+  mod$regression.results$Method == "SMA", ]
+ci_row  <- mod2$confidence.intervals[
+  mod$confidence.intervals$Method  == "SMA", ]
+
+sma_slope     <- sma_row$Slope
+sma_intercept <- sma_row$Intercept
+slope_lwr     <- ci_row$`2.5%-Slope`
+slope_upr     <- ci_row$`97.5%-Slope`
+int_lwr       <- ci_row$`2.5%-Intercept`
+int_upr       <- ci_row$`97.5%-Intercept`
+r_val         <- mod2$r
+
+
+
+annotation_text <- sprintf(
+  "SMA slope = %.2f [%.2f, %.2f]\nPearson r = %.2f",
+  sma_slope, slope_lwr, slope_upr, r_val
+)
+
+
+sma_df <- data.frame(
+  logP = x_log_seq,
+  fit      = sma_intercept + sma_slope   * x_log_seq,
+  lwr      = int_lwr       + slope_lwr   * x_log_seq,
+  upr      = int_upr       + slope_upr   * x_log_seq
+)
+
+x_pos <- max(sma_df$logNP)
+y_pos <- max(sma_df$upr)
+
+
+x_log_seq <- seq(
+  from = min(log(master_clean$`P ug/L`), na.rm = TRUE),
+  to   = max(log(master_clean$`P ug/L`), na.rm = TRUE),
+  length.out = 100
+)
+
+
+
+# 3) Plot points + SMA ribbon + SMA line
+ggplot(master_clean, aes(x = log(`P ug/L`), y = log(`Leu.TdR`))) +
+  geom_point(size = 2) +
+  geom_ribbon(
+    data = sma_df,
+    inherit.aes  = FALSE,
+    aes(x = logP, ymin = lwr, ymax = upr),
+    fill  = "steelblue", alpha = 0.3
+  ) +
+  geom_line(
+    data = sma_df,
+    inherit.aes  = FALSE,
+    aes(x = logP, y = fit),
+    color = "steelblue", size = 1
+  ) +
+  
+  annotate(
+    "text",
+    x     = x_pos,
+    y     = y_pos,
+    label = annotation_text,
+    hjust = 1,    
+    vjust = 1,    
+    size  = 4
+  ) +
+  labs(
+    x = expression(Log[10]*"(P, μg L"^{-1}*")"),
+    y = expression(Log[10]*"(Leu:TdR)")
+  ) +
+  theme_classic(base_size = 14)
+
+
+clean_Chla <- master_clean %>% 
+  mutate(z_Chla = (Chla- mean(Chla, na.rm = TRUE)) /
+           sd(Chla, na.rm = TRUE)) %>% 
+  filter(abs(z_Chla) <= z_cutoff) %>% 
+  select(-z_Chla) 
+
+ggplot(clean_Chla, aes(x = Leu_nM , y = Chla)) +
+  geom_point()
+ggplot(clean_Chla, aes(x = TdR_nM , y = Chla)) +
+  geom_point()
+
+
+
+clean_TN <- clean_BP %>% 
+  mutate(z_TN = (TN- mean(TN, na.rm = TRUE)) /
+           sd(TN, na.rm = TRUE)) %>% 
+  filter(abs(z_TN) <= z_cutoff) %>% 
+  select(-z_TN) 
+
+clean_NPOC <- clean_BP %>% 
+  mutate(z_NPOC = (NPOC- mean(NPOC, na.rm = TRUE)) /
+           sd(NPOC, na.rm = TRUE)) %>% 
+  filter(abs(z_NPOC) <= z_cutoff) %>% 
+  select(-z_NPOC) 
+
+
+clean_P <- master_clean %>% 
+  mutate(z_P = (`P ug/L` - mean(`P ug/L`, na.rm = TRUE)) /
+           sd(`P ug/L`, na.rm = TRUE)) %>% 
+  filter(abs(z_P) <= z_cutoff) %>% 
+  select(-z_P) 
