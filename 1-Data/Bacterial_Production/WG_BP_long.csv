@@ -1,0 +1,54 @@
+,Season,Year,Month,Lake,Leu_nM,TdR_nM,Leu,TdR,Leu.TdR,Station
+1,Winter,2025,February,St. Clair,0.14,0.02,18.4,45.5,5.8,SCS1
+2,Winter,2025,February,St. Clair,7.31,0.02,937,34.3,390,SCS2
+3,Winter,2025,February,Superior,0.07,0.01,8.4,14.8,8.1,Keweenaw_Bay_Baraga
+4,Winter,2025,February,Michigan,1.97,0.07,253,124,29,Racine
+5,Winter,2025,February,Erie,0.52,0.03,66.7,52.8,18,EC1
+6,Winter,2025,February,Erie,0.93,0.07,119,130,13,EC2
+7,Winter,2025,February,Huron,0.23,0.03,29.4,50.3,8.3,St_Martins_Bay
+8,Winter,2025,February,Erie,1.43,0.1,183,191,14,Put-In-Bay
+9,Winter,2025,February,Superior,0.27,0.02,34.5,38.6,13,Keweenaw_Waterway
+10,Winter,2025,February,St. Clair,1.07,0.05,138,99.5,20,LSC-MB
+11,Winter,2025,February,Superior,0.08,0.02,9.89,39.2,3.6,Washburn
+12,Winter,2025,February,Superior,0.02,0,3.16,5.66,8,Whitefish_Bay
+13,Winter,2024,February,Erie,4.19,0.31,537,571,13,EC958
+14,Winter,2024,February,Superior,1.46,0.03,188,52.6,51,Keweenaw_Waterway
+15,Winter,2024,February,Erie,9.03,0.34,1160,625,26,EC933
+16,Winter,2024,February,Erie,7.35,0.33,943,599,22,EC888
+17,Winter,2024,February,St. Clair,1.54,0.13,198,245,12,SCS1
+18,Winter,2024,February,Huron,3.9,0.14,500,248,29,St_Martins_Bay
+19,Winter,2024,February,Superior,0.32,0.07,41.3,128,4.6,Washburn
+20,Winter,2024,February,St. Clair,21.72,1.1,2780,2020,20,LSC_MB
+21,Winter,2024,February,Michigan,8.38,0.12,1070,215,71,1629_Suttons_Bay
+22,Winter,2024,February,Ontario,11.98,0.26,1540,478,46,CCIW
+23,Winter,2024,February,Michigan,6.13,0.14,786,258,43,Racine
+24,Winter,2024,February,Ontario,0.04,0.08,5.36,141,0.54,Queen's
+25,Winter,2024,February,Ontario,0.11,0.01,13.9,26.3,7.6,Bay_of_Quinte
+26,Winter,2024,February,Superior,0.68,0.04,87.5,80,16,Keweenaw_Bay_Baraga
+27,Winter,2024,February,NA,1.2,0.02,154,27.8,79,M16
+28,Spring,2024,May,Superior,1.22,0.07,156,135,17,Keweenaw_Bay_Baraga
+29,Spring,2024,May,Erie,2.68,0.22,344,402,12,EC962
+30,Spring,2024,May,Michigan,13.71,0.42,1760,775,32,NW_Pier
+31,Spring,2024,May,Superior,2.63,0.16,337,293,16,Keweenaw_Waterway
+32,Spring,2024,May,Superior,2.23,0.15,286,279,15,Washburn
+33,Spring,2024,May,Erie,-0.01,0.86,-0.928,1570,-0.0085,EC958
+34,Spring,2024,May,Michigan,1.86,0.03,239,59.9,57,1629_Suttons_Bay
+35,Spring,2024,May,St. Clair,6.77,0.45,868,818,15,SCS1
+36,Spring,2024,May,St. Clair,12.55,0.67,1610,1240,19,SCS2
+37,Spring,2024,May,Michigan,12.16,0.93,1560,1700,13,Racine
+38,Spring,2024,May,Huron,1.37,0.11,176,207,12,St_Martins_Bay
+39,Spring,2024,May,Ontario,1.47,0.3,188,545,4.9,Queen's
+40,Summer,2024,August,Superior,5.42,0.09,695,158,63,Washburn
+41,Summer,2024,August,St. Clair,13.45,0.39,1730,723,34,SCS1
+42,Summer,2024,August,Superior,1.23,0.05,157,89.7,25,Keweenaw_Bay_Baraga
+43,Summer,2024,August,Superior,10.08,1.13,1290,2060,8.9,Keweenaw_Waterway
+44,Summer,2024,August,St. Clair,11.91,0.11,1530,201,110,SCS2
+45,Summer,2024,August,Erie,3.45,0.53,442,962,6.6,Put-In-Bay
+46,Summer,2024,August,Michigan,11.27,0.44,1450,801,26,Racine
+47,Summer,2024,August,Huron,19.1,0.59,2450,1070,33,Georgian_Bay
+48,Summer,2024,August,Huron,3,0.09,384,171,32,St_Martins_Bay
+49,Summer,2024,August,Superior,2.41,0.07,309,133,33,Whitefish_Bay
+50,Summer,2024,August,Ontario,14.79,2.61,1900,4780,5.7,Bay_of_Quinte
+51,Summer,2024,August,Ontario,15.02,1,1930,1830,15,CCIW
+52,Summer,2024,August,Erie,1.52,0.52,195,954,2.9,Graeber
+53,Summer,2024,August,Ontario,2.43,0.19,311,353,13,B-Pier
