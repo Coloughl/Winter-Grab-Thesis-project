@@ -1,0 +1,2936 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Article rdf:about="https://repository.library.noaa.gov/view/noaa/38612">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rau</foaf:surname>
+                        <foaf:givenName>Emily</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Riseng</foaf:surname>
+                        <foaf:givenName>Catheri​Ne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vaccaro</foaf:surname>
+                        <foaf:givenName>Lynn</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Read</foaf:surname>
+                        <foaf:givenName>Jennifer G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_157"/>
+        <dc:title>The Dynamic Great Lakes Economy: Employment Trends From 2009 To 2018</dc:title>
+        <z:language>en</z:language>
+        <z:shortTitle>The Dynamic Great Lakes Economy</z:shortTitle>
+        <z:libraryCatalog>repository.library.noaa.gov</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://repository.library.noaa.gov/view/noaa/38612</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 14:55:56</dcterms:dateSubmitted>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_157">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/157/Rau et al. - The Dynamic Great Lakes Economy Employment Trends.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://repository.library.noaa.gov/view/noaa/38612/noaa_38612_DS1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 14:55:57</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1111/j.1931-0846.2014.12041.x">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0016-7428"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hudson</foaf:surname>
+                        <foaf:givenName>John C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ziegler</foaf:surname>
+                        <foaf:givenName>Susy S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Canada</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>fisheries</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Great Lakes</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>United States</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Environment, Culture, and The Great Lakes Fisheries*</dc:title>
+        <dcterms:abstract>The commercial fisheries of the United States and Canadian Great Lakes are in a long period of decline. Detailed statistics kept for well over a century document a fluctuating pattern of harvests of the major commercial species. In the 1940s, sea lamprey began to devastate the fisheries, an effect that has not been fully countered. Overfishing, nonnative species, declining nutrient levels, and chemical pollution have contributed to reduced catches. Court decisions in the United States and Canada during the past thirty years have awarded a sizable share of commercial fishing rights to Native North Americans for their own support and sustenance. The Lake Erie yellow perch and walleye fishery, based mainly in Ontario, is the most successful commercial fishing operation in the region. Despite the many environmental and cultural challenges, the Great Lakes fisheries live on.</dcterms:abstract>
+        <dc:date>2014-10-01</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1111/j.1931-0846.2014.12041.x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 15:01:38</dcterms:dateSubmitted>
+        <dc:description>Publisher: Routledge
+_eprint: https://doi.org/10.1111/j.1931-0846.2014.12041.x</dc:description>
+        <bib:pages>391-413</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0016-7428">
+        <prism:volume>104</prism:volume>
+        <dc:title>Geographical Review</dc:title>
+        <dc:identifier>DOI 10.1111/j.1931-0846.2014.12041.x</dc:identifier>
+        <prism:number>4</prism:number>
+        <dc:identifier>ISSN 0016-7428</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="https://doi.org/10.1093/plankt/fbv002">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0142-7873"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hampton</foaf:surname>
+                        <foaf:givenName>Stephanie E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moore</foaf:surname>
+                        <foaf:givenName>Marianne V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ozersky</foaf:surname>
+                        <foaf:givenName>Tedy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stanley</foaf:surname>
+                        <foaf:givenName>Emily H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Polashenski</foaf:surname>
+                        <foaf:givenName>Christopher M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Galloway</foaf:surname>
+                        <foaf:givenName>Aaron W.E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_161"/>
+        <dc:title>Heating up a cold subject: prospects for under-ice plankton research in lakes</dc:title>
+        <dcterms:abstract>Long-term patterns and drivers of ecosystem structure may be misunderstood if knowledge of an ecosystem is derived primarily from a single season, a situation common in many temperate lakes where the role of winter has been less studied. In lakes, avoidance of winter research has been especially pronounced for those that experience winter ice, but critical ecological processes can take place under ice. Even when obscured by snow, ice transmitting as little as 2% incident light can allow relatively high rates of photosynthesis, and winter trophic interactions may have year-round repercussions. Here, we offer a suite of research questions that require attention, in order to build a mature understanding of seasonal plankton dynamics in lakes. Specifically, we ask freshwater ecologists to consider the extent to which abundance and nutrition of winter primary productivity supports consumers under the ice, reorganizes food webs, and how long the effects of winter trophic dynamics extend throughout the year. In addition, we recognize some critical gaps in knowledge about physical and biogeochemical conditions at the time of ice-off. Worldwide shortening in ice duration lends imperative to under-ice studies, in order to more fully understand changes in ecosystem structure and function that may already be underway.</dcterms:abstract>
+        <dc:date>2015-03-01</dc:date>
+        <z:shortTitle>Heating up a cold subject</z:shortTitle>
+        <z:libraryCatalog>Silverchair</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1093/plankt/fbv002</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 15:30:03</dcterms:dateSubmitted>
+        <bib:pages>277-284</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0142-7873">
+        <prism:volume>37</prism:volume>
+        <dc:title>Journal of Plankton Research</dc:title>
+        <dc:identifier>DOI 10.1093/plankt/fbv002</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>Journal of Plankton Research</dcterms:alternative>
+        <dc:identifier>ISSN 0142-7873</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_161">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/161/1456685.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/plankt/article-abstract/37/2/277/1456685?redirectedFrom=fulltext&amp;login=false</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 15:30:12</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1007/s10452-009-9278-z">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1573-5125"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Salonen</foaf:surname>
+                        <foaf:givenName>K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leppäranta</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Viljanen</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gulati</foaf:surname>
+                        <foaf:givenName>R. D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Boreal Ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Climate Change Ecology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ecophysiology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Fish</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Freshwater and Marine Ecology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Hydrodynamics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ice</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Limnology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Marine and Freshwater Sciences</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Microorganisms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Winter limnology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Perspectives in winter limnology: closing the annual cycle of freezing lakes</dc:title>
+        <dcterms:abstract>Winter has traditionally been considered as an ecologically insignificant season and, together with technical difficulties, this has led winter limnology to lag behind summer limnology. Recently, rapidly expanding interest in climate warming has increased water research in winter. It has also become clear that neither winter conditions of lakes nor under-ice communities are as static as often supposed. Although interannual differences in water temperature are small, close to the maximum density temperature, they may have profound effect on under-ice hydrodynamics. Thus, stochastic variations in weather, particularly those preceding the time of freezing and ice melting, may have important consequences for hydrodynamics which then affect the distributions and conditions of microorganisms and probably further to higher trophic levels. Even fish distributions can be dictated by under-ice conditions and their activities as well as behavior can sometimes approach those in summer. Life in freshwater ice is one of the least studied aspects of winter limnology and recent studies suggest that a thorough evaluation is needed. Altogether there are strengthening signs that winter should be considered as an integral part in the functioning and dynamics of lakes affecting quantitative and qualitative characteristics of aquatic communities in summer. There are great prospects that more thorough understanding of the prevailing limnological conditions in winter will improve our understanding of lake ecosystems in their entirety, and there is no doubt that such an approach requires multidisciplinary and long- term studies at different spatial scales.</dcterms:abstract>
+        <dc:date>2009-09-01</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Perspectives in winter limnology</z:shortTitle>
+        <z:libraryCatalog>Springer Link</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1007/s10452-009-9278-z</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 15:30:11</dcterms:dateSubmitted>
+        <bib:pages>609-616</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1573-5125">
+        <prism:volume>43</prism:volume>
+        <dc:title>Aquatic Ecology</dc:title>
+        <dc:identifier>DOI 10.1007/s10452-009-9278-z</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Aquat Ecol</dcterms:alternative>
+        <dc:identifier>ISSN 1573-5125</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1002/lob.10152">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1539-6088"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Powers</foaf:surname>
+                        <foaf:givenName>Stephen M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hampton</foaf:surname>
+                        <foaf:givenName>Stephanie E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_163"/>
+        <link:link rdf:resource="#item_164"/>
+        <dc:title>Winter Limnology as a New Frontier</dc:title>
+        <dc:date>2016</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1002/lob.10152</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 15:30:16</dcterms:dateSubmitted>
+        <dc:rights>© 2016 Association for the Sciences of Limnology and Oceanography</dc:rights>
+        <dc:description>_eprint: https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.1002/lob.10152</dc:description>
+        <bib:pages>103-108</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1539-6088">
+        <prism:volume>25</prism:volume>
+        <dc:title>Limnology and Oceanography Bulletin</dc:title>
+        <dc:identifier>DOI 10.1002/lob.10152</dc:identifier>
+        <prism:number>4</prism:number>
+        <dc:identifier>ISSN 1539-6088</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_163">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/163/Powers and Hampton - 2016 - Winter Limnology as a New Frontier.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lob.10152</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 15:30:17</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_164">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/164/lob.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://aslopubs.onlinelibrary.wiley.com/doi/10.1002/lob.10152</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 15:30:25</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12699">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1461-0248"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hampton</foaf:surname>
+                        <foaf:givenName>Stephanie E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Galloway</foaf:surname>
+                        <foaf:givenName>Aaron W. E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Powers</foaf:surname>
+                        <foaf:givenName>Stephen M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ozersky</foaf:surname>
+                        <foaf:givenName>Ted</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Woo</foaf:surname>
+                        <foaf:givenName>Kara H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Batt</foaf:surname>
+                        <foaf:givenName>Ryan D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Labou</foaf:surname>
+                        <foaf:givenName>Stephanie G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>O'Reilly</foaf:surname>
+                        <foaf:givenName>Catherine M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sharma</foaf:surname>
+                        <foaf:givenName>Sapna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lottig</foaf:surname>
+                        <foaf:givenName>Noah R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stanley</foaf:surname>
+                        <foaf:givenName>Emily H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>North</foaf:surname>
+                        <foaf:givenName>Rebecca L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stockwell</foaf:surname>
+                        <foaf:givenName>Jason D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Adrian</foaf:surname>
+                        <foaf:givenName>Rita</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weyhenmeyer</foaf:surname>
+                        <foaf:givenName>Gesa A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Arvola</foaf:surname>
+                        <foaf:givenName>Lauri</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baulch</foaf:surname>
+                        <foaf:givenName>Helen M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bertani</foaf:surname>
+                        <foaf:givenName>Isabella</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bowman Jr.</foaf:surname>
+                        <foaf:givenName>Larry L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Carey</foaf:surname>
+                        <foaf:givenName>Cayelan C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Catalan</foaf:surname>
+                        <foaf:givenName>Jordi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Colom-Montero</foaf:surname>
+                        <foaf:givenName>William</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Domine</foaf:surname>
+                        <foaf:givenName>Leah M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Felip</foaf:surname>
+                        <foaf:givenName>Marisol</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Granados</foaf:surname>
+                        <foaf:givenName>Ignacio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gries</foaf:surname>
+                        <foaf:givenName>Corinna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Grossart</foaf:surname>
+                        <foaf:givenName>Hans-Peter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Haberman</foaf:surname>
+                        <foaf:givenName>Juta</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Haldna</foaf:surname>
+                        <foaf:givenName>Marina</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hayden</foaf:surname>
+                        <foaf:givenName>Brian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Higgins</foaf:surname>
+                        <foaf:givenName>Scott N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jolley</foaf:surname>
+                        <foaf:givenName>Jeff C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kahilainen</foaf:surname>
+                        <foaf:givenName>Kimmo K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kaup</foaf:surname>
+                        <foaf:givenName>Enn</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kehoe</foaf:surname>
+                        <foaf:givenName>Michael J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>MacIntyre</foaf:surname>
+                        <foaf:givenName>Sally</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mackay</foaf:surname>
+                        <foaf:givenName>Anson W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mariash</foaf:surname>
+                        <foaf:givenName>Heather L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McKay</foaf:surname>
+                        <foaf:givenName>Robert M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nixdorf</foaf:surname>
+                        <foaf:givenName>Brigitte</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nõges</foaf:surname>
+                        <foaf:givenName>Peeter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nõges</foaf:surname>
+                        <foaf:givenName>Tiina</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Palmer</foaf:surname>
+                        <foaf:givenName>Michelle</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pierson</foaf:surname>
+                        <foaf:givenName>Don C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Post</foaf:surname>
+                        <foaf:givenName>David M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pruett</foaf:surname>
+                        <foaf:givenName>Matthew J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rautio</foaf:surname>
+                        <foaf:givenName>Milla</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Read</foaf:surname>
+                        <foaf:givenName>Jordan S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roberts</foaf:surname>
+                        <foaf:givenName>Sarah L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rücker</foaf:surname>
+                        <foaf:givenName>Jacqueline</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sadro</foaf:surname>
+                        <foaf:givenName>Steven</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Silow</foaf:surname>
+                        <foaf:givenName>Eugene A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Smith</foaf:surname>
+                        <foaf:givenName>Derek E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sterner</foaf:surname>
+                        <foaf:givenName>Robert W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Swann</foaf:surname>
+                        <foaf:givenName>George E. A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Timofeyev</foaf:surname>
+                        <foaf:givenName>Maxim A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Toro</foaf:surname>
+                        <foaf:givenName>Manuel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Twiss</foaf:surname>
+                        <foaf:givenName>Michael R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vogt</foaf:surname>
+                        <foaf:givenName>Richard J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Watson</foaf:surname>
+                        <foaf:givenName>Susan B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Whiteford</foaf:surname>
+                        <foaf:givenName>Erika J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xenopoulos</foaf:surname>
+                        <foaf:givenName>Marguerite A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_166"/>
+        <link:link rdf:resource="#item_168"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Aquatic ecosystem</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>data synthesis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>freshwater</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>lake</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>limnology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>long-term</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>plankton</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>seasonal</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>time series</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>winter ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Ecology under lake ice</dc:title>
+        <dcterms:abstract>Winter conditions are rapidly changing in temperate ecosystems, particularly for those that experience periods of snow and ice cover. Relatively little is known of winter ecology in these systems, due to a historical research focus on summer ‘growing seasons’. We executed the first global quantitative synthesis on under-ice lake ecology, including 36 abiotic and biotic variables from 42 research groups and 101 lakes, examining seasonal differences and connections as well as how seasonal differences vary with geophysical factors. Plankton were more abundant under ice than expected; mean winter values were 43.2% of summer values for chlorophyll a, 15.8% of summer phytoplankton biovolume and 25.3% of summer zooplankton density. Dissolved nitrogen concentrations were typically higher during winter, and these differences were exaggerated in smaller lakes. Lake size also influenced winter-summer patterns for dissolved organic carbon (DOC), with higher winter DOC in smaller lakes. At coarse levels of taxonomic aggregation, phytoplankton and zooplankton community composition showed few systematic differences between seasons, although literature suggests that seasonal differences are frequently lake-specific, species-specific, or occur at the level of functional group. Within the subset of lakes that had longer time series, winter influenced the subsequent summer for some nutrient variables and zooplankton biomass.</dcterms:abstract>
+        <dc:date>2017</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.12699</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:46:23</dcterms:dateSubmitted>
+        <dc:rights>© 2016 The Authors. Ecology Letters published by CNRS and John Wiley &amp; Sons Ltd.</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/ele.12699</dc:description>
+        <bib:pages>98-111</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1461-0248">
+        <prism:volume>20</prism:volume>
+        <dc:title>Ecology Letters</dc:title>
+        <dc:identifier>DOI 10.1111/ele.12699</dc:identifier>
+        <prism:number>1</prism:number>
+        <dc:identifier>ISSN 1461-0248</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_166">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/166/Hampton et al. - 2017 - Ecology under lake ice.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ele.12699</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:46:24</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_168">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/168/ele.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/full/10.1111/ele.12699</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:46:34</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110411-160251">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1543-592X,%201545-2069"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sommer</foaf:surname>
+                        <foaf:givenName>Ulrich</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Adrian</foaf:surname>
+                        <foaf:givenName>Rita</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Domis</foaf:surname>
+                        <foaf:givenName>Lisette De Senerpont</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Elser</foaf:surname>
+                        <foaf:givenName>James J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gaedke</foaf:surname>
+                        <foaf:givenName>Ursula</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ibelings</foaf:surname>
+                        <foaf:givenName>Bas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jeppesen</foaf:surname>
+                        <foaf:givenName>Erik</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lürling</foaf:surname>
+                        <foaf:givenName>Miquel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Molinero</foaf:surname>
+                        <foaf:givenName>Juan Carlos</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mooij</foaf:surname>
+                        <foaf:givenName>Wolf M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Donk</foaf:surname>
+                        <foaf:givenName>Ellen van</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Winder</foaf:surname>
+                        <foaf:givenName>Monika</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_169"/>
+        <dc:title>Beyond the Plankton Ecology Group (PEG) Model: Mechanisms Driving Plankton Succession</dc:title>
+        <dcterms:abstract>The seasonal succession of plankton is an annually repeated process of community assembly during which all major external factors and internal interactions shaping communities can be studied. A quarter of a century ago, the state of this understanding was described by the verbal plankton ecology group (PEG) model. It emphasized the role of physical factors, grazing and nutrient limitation for phytoplankton, and the role of food limitation and fish predation for zooplankton. Although originally targeted at lake ecosystems, it was also adopted by marine plankton ecologists. Since then, a suite of ecological interactions previously underestimated in importance have become research foci: overwintering of key organisms, the microbial food web, parasitism, and food quality as a limiting factor and an extended role of higher order predators. A review of the impact of these novel interactions on plankton seasonal succession reveals limited effects on gross seasonal biomass patterns, but strong effects on species replacements.</dcterms:abstract>
+        <dc:date>2012/12/01</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Beyond the Plankton Ecology Group (PEG) Model</z:shortTitle>
+        <z:libraryCatalog>www.annualreviews.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110411-160251</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:46:29</dcterms:dateSubmitted>
+        <dc:description>Publisher: Annual Reviews</dc:description>
+        <bib:pages>429-448</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1543-592X,%201545-2069">
+        <prism:volume>43</prism:volume>
+        <dc:title>Annual Review of Ecology, Evolution, and Systematics</dc:title>
+        <dc:identifier>DOI 10.1146/annurev-ecolsys-110411-160251</dc:identifier>
+        <prism:number>Volume 43, 2012</prism:number>
+        <dc:identifier>ISSN 1543-592X, 1545-2069</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_169">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/169/annurev-ecolsys-110411-160251.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-110411-160251</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:46:35</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0380133088715671">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0380-1330"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bolsenga</foaf:surname>
+                        <foaf:givenName>S. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vanderploeg</foaf:surname>
+                        <foaf:givenName>H. A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Quigley</foaf:surname>
+                        <foaf:givenName>M. A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fahnenstiel</foaf:surname>
+                        <foaf:givenName>G. L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_173"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ice cover</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>lake ice</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Operations for an Under-Ice Ecology Program</dc:title>
+        <dcterms:abstract>A pilot program tested the feasibility of conducting a study on the under-ice ecology of the Great Lakes. The east arm of Grand Traverse Bay, in the lower peninsula of Michigan, was chosen as the test area. The project was conducted in three phases; (1) a pre-ice cruise (open water), (2) an under-ice phase, and (3) a post-ice cruise (open water). Overall, an under-ice ecology program that could produce sound scientific results was found to be feasible. However, to be successful, detailed planning is essential and careful attention must be given to operational safety, proper winter clothing, and scientific coordination.</dcterms:abstract>
+        <dc:date>1988-01-01</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133088715671</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:49:40</dcterms:dateSubmitted>
+        <bib:pages>372-376</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0380-1330">
+        <prism:volume>14</prism:volume>
+        <dc:title>Journal of Great Lakes Research</dc:title>
+        <dc:identifier>DOI 10.1016/S0380-1330(88)71567-1</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Journal of Great Lakes Research</dcterms:alternative>
+        <dc:identifier>ISSN 0380-1330</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_173">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/173/S0380133088715671.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/abs/pii/S0380133088715671?via%3Dihub</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:49:47</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1002/lom3.10295">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1541-5856"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Block</foaf:surname>
+                        <foaf:givenName>Benjamin D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Denfeld</foaf:surname>
+                        <foaf:givenName>Blaize A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stockwell</foaf:surname>
+                        <foaf:givenName>Jason D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Flaim</foaf:surname>
+                        <foaf:givenName>Giovanna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Grossart</foaf:surname>
+                        <foaf:givenName>Hans-Peter F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Knoll</foaf:surname>
+                        <foaf:givenName>Lesley B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maier</foaf:surname>
+                        <foaf:givenName>Dominique B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>North</foaf:surname>
+                        <foaf:givenName>Rebecca L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rautio</foaf:surname>
+                        <foaf:givenName>Milla</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rusak</foaf:surname>
+                        <foaf:givenName>James A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sadro</foaf:surname>
+                        <foaf:givenName>Steve</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weyhenmeyer</foaf:surname>
+                        <foaf:givenName>Gesa A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bramburger</foaf:surname>
+                        <foaf:givenName>Andrew J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Branstrator</foaf:surname>
+                        <foaf:givenName>Donn K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Salonen</foaf:surname>
+                        <foaf:givenName>Kalevi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hampton</foaf:surname>
+                        <foaf:givenName>Stephanie E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_172"/>
+        <link:link rdf:resource="#item_174"/>
+        <dc:title>The unique methodological challenges of winter limnology</dc:title>
+        <dcterms:abstract>Winter is an important season for many limnological processes, which can range from biogeochemical transformations to ecological interactions. Interest in the structure and function of lake ecosystems under ice is on the rise. Although limnologists working at polar latitudes have a long history of winter work, the required knowledge to successfully sample under winter conditions is not widely available and relatively few limnologists receive formal training. In particular, the deployment and operation of equipment in below 0°C temperatures pose considerable logistical and methodological challenges, as do the safety risks of sampling during the ice-covered period. Here, we consolidate information on winter lake sampling and describe effective methods to measure physical, chemical, and biological variables in and under ice. We describe variation in snow and ice conditions and discuss implications for sampling logistics and safety. We outline commonly encountered methodological challenges and make recommendations for best practices to maximize safety and efficiency when sampling through ice or deploying instruments in ice-covered lakes. Application of such practices over a broad range of ice-covered lakes will contribute to a better understanding of the factors that regulate lakes during winter and how winter conditions affect the subsequent ice-free period.</dcterms:abstract>
+        <dc:date>2019</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1002/lom3.10295</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:49:45</dcterms:dateSubmitted>
+        <dc:rights>© 2018 Association for the Sciences of Limnology and Oceanography</dc:rights>
+        <dc:description>_eprint: https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.1002/lom3.10295</dc:description>
+        <bib:pages>42-57</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1541-5856">
+        <prism:volume>17</prism:volume>
+        <dc:title>Limnology and Oceanography: Methods</dc:title>
+        <dc:identifier>DOI 10.1002/lom3.10295</dc:identifier>
+        <prism:number>1</prism:number>
+        <dc:identifier>ISSN 1541-5856</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_172">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/172/Block et al. - 2019 - The unique methodological challenges of winter lim.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lom3.10295</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:49:46</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_174">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/174/lom3.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://aslopubs.onlinelibrary.wiley.com/doi/full/10.1002/lom3.10295</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:49:52</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0301479720312640">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0301-4797"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wen</foaf:surname>
+                        <foaf:givenName>Zhidan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Song</foaf:surname>
+                        <foaf:givenName>Kaishan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shang</foaf:surname>
+                        <foaf:givenName>Yingxin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lyu</foaf:surname>
+                        <foaf:givenName>Lili</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenName>Qian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fang</foaf:surname>
+                        <foaf:givenName>Chong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Du</foaf:surname>
+                        <foaf:givenName>Jia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Sijia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liu</foaf:surname>
+                        <foaf:givenName>Ge</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Baohua</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cheng</foaf:surname>
+                        <foaf:givenName>Shuai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_176"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Chlorophyll</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Phytoplankton</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lake</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Winter ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Winter severity</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Variability of chlorophyll and the influence factors during winter in seasonally ice-covered lakes</dc:title>
+        <dcterms:abstract>Lake ice is an essential and integral part of the cryosphere and freshwater systems. The formation of lake ice affects the physical, hydrological, and biological conditions of ecological systems. Global warming may contribute to even shorter periods of ice cover in the lakes of the Frigid Zone, which adversely affects the growth of phytoplankton and primary productivity. This study was conducted for the purpose of evaluating the growth of phytoplankton and factors involved, in 28 ice-covered lakes across the Songnen Plain, in the Northeast of China, to understand how they take part in the whole-ecosystem functioning. A total of 1026 water samples were collected in April, September, and January during the period 2014–2018. In the frozen period, the concentration levels of dissolved organic carbon (DOC), total nitrogen (TN), and total phosphorus (TP) were all comparable with the spring and autumn. Despite the limited light availability and low temperature, the phytoplankton survived in sub-ice waters during winter with a low concentration of chlorophyll a (Chla). Its average concentration was positively correlated with the concentration observed in the previous autumn (rp = 0.563, p &lt; 0.01). According to the regression tree analysis, during the winter period, Chla was mainly related to the concentration of TN in sub-ice water (TNwater) and with the difference of concentration of TP between water and ice (TPcd). Furthermore, either in ice or in sub-ice water, the concentration of Chla was also significantly affected by total suspended matter (TSM) (p &lt; 0.05). The levels of TNwater, TPcd, and TSM could explain the 77.8% of the variance in the concentration of Chla during winter with contributions in the ranges of 25.5%–35.0%, 9.2%–11.3%, and 21.5%–34.0%, respectively (p &lt; 0.05). This research substantially contributes to comprehending how the existing conditions under-ice affect the whole ecosystem when the ice cover is reduced lakes or rivers.</dcterms:abstract>
+        <dc:date>2020-12-15</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0301479720312640</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:57:01</dcterms:dateSubmitted>
+        <bib:pages>111338</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0301-4797">
+        <prism:volume>276</prism:volume>
+        <dc:title>Journal of Environmental Management</dc:title>
+        <dc:identifier>DOI 10.1016/j.jenvman.2020.111338</dc:identifier>
+        <dcterms:alternative>Journal of Environmental Management</dcterms:alternative>
+        <dc:identifier>ISSN 0301-4797</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_176">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/176/S0301479720312640.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0301479720312640?casa_token=QE1IWQRVPkIAAAAA:vZpwPP-Ny48sQoNvjJ8Zdss18KtlokYe32ALCobipbCio2UurdDvnXUovy7onbCzILUM75o</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:57:10</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.13085">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1365-2486"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Özkundakci</foaf:surname>
+                        <foaf:givenName>Deniz</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gsell</foaf:surname>
+                        <foaf:givenName>Alena S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hintze</foaf:surname>
+                        <foaf:givenName>Thomas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Täuscher</foaf:surname>
+                        <foaf:givenName>Helgard</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Adrian</foaf:surname>
+                        <foaf:givenName>Rita</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_178"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>climate change</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>winter limnology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>functional groups</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>ice thickness</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>phytoplankton traits</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Winter severity determines functional trait composition of phytoplankton in seasonally ice-covered lakes</dc:title>
+        <dcterms:abstract>How climate change will affect the community dynamics and functionality of lake ecosystems during winter is still little understood. This is also true for phytoplankton in seasonally ice-covered temperate lakes which are particularly vulnerable to the presence or absence of ice. We examined changes in pelagic phytoplankton winter community structure in a north temperate lake (Müggelsee, Germany), covering 18 winters between 1995 and 2013. We tested how phytoplankton taxa composition varied along a winter-severity gradient and to what extent winter severity shaped the functional trait composition of overwintering phytoplankton communities using multivariate statistical analyses and a functional trait-based approach. We hypothesized that overwintering phytoplankton communities are dominated by taxa with trait combinations corresponding to the prevailing winter water column conditions, using ice thickness measurements as a winter-severity indicator. Winter severity had little effect on univariate diversity indicators (taxon richness and evenness), but a strong relationship was found between the phytoplankton community structure and winter severity when taxon trait identity was taken into account. Species responses to winter severity were mediated by the key functional traits: motility, nutritional mode, and the ability to form resting stages. Accordingly, one or the other of two functional groups dominated the phytoplankton biomass during mild winters (i.e., thin or no ice cover; phototrophic taxa) or severe winters (i.e., thick ice cover; exclusively motile taxa). Based on predicted milder winters for temperate regions and a reduction in ice-cover durations, phytoplankton communities during winter can be expected to comprise taxa that have a relative advantage when the water column is well mixed (i.e., need not be motile) and light is less limiting (i.e., need not be mixotrophic). A potential implication of this result is that winter severity promotes different communities at the vernal equinox, which may have different nutritional quality for the next trophic level and ecosystem-scale effects.</dcterms:abstract>
+        <dc:date>2016</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.13085</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:57:15</dcterms:dateSubmitted>
+        <dc:rights>© 2015 John Wiley &amp; Sons Ltd</dc:rights>
+        <dc:description>_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/gcb.13085</dc:description>
+        <bib:pages>284-298</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1365-2486">
+        <prism:volume>22</prism:volume>
+        <dc:title>Global Change Biology</dc:title>
+        <dc:identifier>DOI 10.1111/gcb.13085</dc:identifier>
+        <prism:number>1</prism:number>
+        <dc:identifier>ISSN 1365-2486</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_178">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/178/gcb.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/10.1111/gcb.13085</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 16:57:23</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1002/lol2.10447">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2378-2242"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pu</foaf:surname>
+                        <foaf:givenName>Ge</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shchapov</foaf:surname>
+                        <foaf:givenName>Kirill</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pearce</foaf:surname>
+                        <foaf:givenName>Nolan J. T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bowen</foaf:surname>
+                        <foaf:givenName>Kelly</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bramburger</foaf:surname>
+                        <foaf:givenName>Andrew</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Camilleri</foaf:surname>
+                        <foaf:givenName>Andrew</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Carrick</foaf:surname>
+                        <foaf:givenName>Hunter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chaffin</foaf:surname>
+                        <foaf:givenName>Justin D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cody</foaf:surname>
+                        <foaf:givenName>William</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Coleman</foaf:surname>
+                        <foaf:givenName>Maureen L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Currie</foaf:surname>
+                        <foaf:givenName>Warren J. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Depew</foaf:surname>
+                        <foaf:givenName>David C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Doubek</foaf:surname>
+                        <foaf:givenName>Jonathan P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Eveleth</foaf:surname>
+                        <foaf:givenName>Rachel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fitzpatrick</foaf:surname>
+                        <foaf:givenName>Mark</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Glyshaw</foaf:surname>
+                        <foaf:givenName>Paul W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Godwin</foaf:surname>
+                        <foaf:givenName>Casey M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McKay</foaf:surname>
+                        <foaf:givenName>R. Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Munawar</foaf:surname>
+                        <foaf:givenName>Mohiuddin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Niblock</foaf:surname>
+                        <foaf:givenName>Heather</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Quintanilla</foaf:surname>
+                        <foaf:givenName>Maci</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rennie</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sand</foaf:surname>
+                        <foaf:givenName>Matthew W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schraitle</foaf:surname>
+                        <foaf:givenName>Kimberly J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Twiss</foaf:surname>
+                        <foaf:givenName>Michael R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Uzarski</foaf:surname>
+                        <foaf:givenName>Donald G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vanderploeg</foaf:surname>
+                        <foaf:givenName>Henry A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vick-Majors</foaf:surname>
+                        <foaf:givenName>Trista J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Westrick</foaf:surname>
+                        <foaf:givenName>Judy A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wheelock</foaf:surname>
+                        <foaf:givenName>Bridget A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xenopoulos</foaf:surname>
+                        <foaf:givenName>Marguerite A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zastepa</foaf:surname>
+                        <foaf:givenName>Arthur</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ozersky</foaf:surname>
+                        <foaf:givenName>Ted</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_180"/>
+        <link:link rdf:resource="#item_181"/>
+        <dc:title>The Great Lakes Winter Grab: Limnological data from a multi-institutional winter sampling campaign on the Laurentian Great Lakes</dc:title>
+        <dcterms:abstract>Interest in winter limnology is growing rapidly, but progress is hindered by a shortage of standardized multivariate datasets on winter conditions. Addressing the winter data gap will enhance our understanding of winter ecosystem function and of lake response to environmental change. Here, we describe a dataset generated by a multi-institutional winter sampling campaign across all five Laurentian Great Lakes and some of their connecting waters (the Great Lakes Winter Grab). The objective of Winter Grab was to characterize mid-winter limnological conditions in the Great Lakes using standard sample collection and analysis methods. Nineteen research groups sampled 49 locations varying widely in depth and trophic status, collecting a range of limnological data. This dataset includes physical, chemical, and biological measurements. These data can be used to examine diverse aspects of Great Lakes ecosystems or integrated with winter observations from other lakes to improve understanding of winter limnology across different aquatic systems.</dcterms:abstract>
+        <dc:date>2025</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>The Great Lakes Winter Grab</z:shortTitle>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1002/lol2.10447</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:07:39</dcterms:dateSubmitted>
+        <dc:rights>© 2024 The Author(s). Limnology and Oceanography Letters published by Wiley Periodicals LLC on behalf of Association for the Sciences of Limnology and Oceanography.</dc:rights>
+        <dc:description>_eprint: https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.1002/lol2.10447</dc:description>
+        <bib:pages>37-61</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2378-2242">
+        <prism:volume>10</prism:volume>
+        <dc:title>Limnology and Oceanography Letters</dc:title>
+        <dc:identifier>DOI 10.1002/lol2.10447</dc:identifier>
+        <prism:number>1</prism:number>
+        <dc:identifier>ISSN 2378-2242</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_180">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/180/Pu et al. - 2025 - The Great Lakes Winter Grab Limnological data fro.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lol2.10447</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:07:40</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_181">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/181/lol2.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://aslopubs.onlinelibrary.wiley.com/doi/full/10.1002/lol2.10447</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:07:47</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://drive.google.com/file/d/1KbxTHAGoV_vm-eiIJz7KaVglZzLbarnI/view?usp=sharing&amp;usp=embed_facebook">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>Google Docs</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_183"/>
+        <dc:title>Global Change Biology - 2018 - Creed - Global change‐driven effects on dissolved organic matter composition Implications (1).pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://drive.google.com/file/d/1KbxTHAGoV_vm-eiIJz7KaVglZzLbarnI/view?usp=sharing&amp;usp=embed_facebook</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:09:24</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_183">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/183/view.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://drive.google.com/file/d/1KbxTHAGoV_vm-eiIJz7KaVglZzLbarnI/view</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:09:26</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019JC015950">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_185"/>
+        <dc:title>Simulating Impacts of Precipitation on Ice Cover and Surface Water Temperature Across Large Lakes - Fujisaki-Manome - 2020 - Journal of Geophysical Research: Oceans - Wiley Online Library</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019JC015950</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:20:11</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_185">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/185/2019JC015950.html"/>
+        <dc:title>Simulating Impacts of Precipitation on Ice Cover and Surface Water Temperature Across Large Lakes - Fujisaki-Manome - 2020 - Journal of Geophysical Research: Oceans - Wiley Online Library</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019JC015950</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:20:18</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0380133012001967">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>38</prism:volume>
+                <dc:title>Journal of Great Lakes Research</dc:title>
+                <dc:identifier>DOI 10.1016/j.jglr.2012.09.021</dc:identifier>
+                <prism:number>4</prism:number>
+                <dcterms:alternative>Journal of Great Lakes Research</dcterms:alternative>
+                <dc:identifier>ISSN 0380-1330</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fujisaki</foaf:surname>
+                        <foaf:givenName>Ayumi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Jia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hu</foaf:surname>
+                        <foaf:givenName>Haoguo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schwab</foaf:surname>
+                        <foaf:givenName>David J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hawley</foaf:surname>
+                        <foaf:givenName>Nathan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rao</foaf:surname>
+                        <foaf:givenName>Yerubandi R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_187"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Ice-hydrodynamic modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Ice–water coupling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lake Erie</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lake ice</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A modeling study of ice–water processes for Lake Erie applying coupled ice-circulation models</dc:title>
+        <dcterms:abstract>A hydrodynamic model that includes ice processes and is optimized for parallel processing was configured for Lake Erie in order to study the ice–water coupling processes in the lake. A hindcast from April 2003 to December 2004 with hourly atmospheric forcing was conducted. The model reproduced the seasonal variation of ice cover, but the development of ice extent in January and its decay in March somewhat preceded the observations. Modeled lake circulation in ice-free seasons is consistent with previous studies for Lake Erie. Thermal structure of the lake was reasonably comparable to both satellite-derived observations and in-situ measurements, with mean differences ranging from −2°C to 4°C, depending on the season. The impacts of ice–water stress coupling and basal melting of ice were examined based on numerical experiments. The results show that: 1) ice–water stress coupling significantly dampens the subjacent lake circulation in winter due to packed ice cover that slows down the surface water, and 2) basal melting of ice contributes to widespread ice cover in the lake. The demonstrated model validity could lead to further studies of ice–water processes in the lake, including interannual variation and impacts on ecosystems.</dcterms:abstract>
+        <dc:date>2012-12-01</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133012001967</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:21:59</dcterms:dateSubmitted>
+        <bib:pages>585-599</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_187">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/187/S0380133012001967.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133012001967?via%3Dihub</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:22:06</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0380133078721787">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>4</prism:volume>
+                <dc:title>Journal of Great Lakes Research</dc:title>
+                <dc:identifier>DOI 10.1016/S0380-1330(78)72178-7</dc:identifier>
+                <prism:number>2</prism:number>
+                <dcterms:alternative>Journal of Great Lakes Research</dcterms:alternative>
+                <dc:identifier>ISSN 0380-1330</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Burns</foaf:surname>
+                        <foaf:givenName>N. M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rosa</foaf:surname>
+                        <foaf:givenName>F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gedeon</foaf:surname>
+                        <foaf:givenName>A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_191"/>
+        <dc:title>Lake Erie in Mid-Winter</dc:title>
+        <dcterms:abstract>The results of four surveys of Lake Erie during mid-winter are presented here. The most recent survey, from February 15 to 17, 1977, was conducted during an exceptionally cold winter to determine whether six weeks of complete ice-cover had led to low levels of oxygen concentration in the lake. The results showed that all parts of the lake, even the shallow, normally highly productive areas, contained acceptable levels of oxygen. Apparently, production of oxygen by a small phytoplankton population counterbalanced a fairly low uptake of oxygen and maintained the level of oxygen concentration in most of the water above 90% saturation. The 1976-77 winter phytoplankton biomass was low (0.1 to 1.0 gm biomass per m3) and consisted mostly of diatoms. It appears that some of the phytoplankton were photo-synthetically active under 70 cm of ice and 23 m of water. All surveys of the lake showed the water to be virtually isothermal at a temperature just above the freezing point of water. The maximum temperature differences observed were about 0.2° in magnitude and were found in the East Basin. Nevertheless, the slight temperature differences apparently caused density currents under the ice, which resulted in lowered oxygen concentrations in the deepest part of the East Basin.</dcterms:abstract>
+        <dc:date>1978-01-01</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0380133078721787</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:39:41</dcterms:dateSubmitted>
+        <bib:pages>134-141</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_191">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/191/S0380133078721787.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/abs/pii/S0380133078721787?via%3Dihub</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:39:51</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1002/lno.10628">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1939-5590"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Prater</foaf:surname>
+                        <foaf:givenName>Clay</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Frost</foaf:surname>
+                        <foaf:givenName>Paul C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Howell</foaf:surname>
+                        <foaf:givenName>E. Todd</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Watson</foaf:surname>
+                        <foaf:givenName>Susan B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zastepa</foaf:surname>
+                        <foaf:givenName>Arthur</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>King</foaf:surname>
+                        <foaf:givenName>Sarah S. E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vogt</foaf:surname>
+                        <foaf:givenName>Richard J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Xenopoulos</foaf:surname>
+                        <foaf:givenName>Marguerite A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_190"/>
+        <link:link rdf:resource="#item_192"/>
+        <dc:title>Variation in particulate C : N : P stoichiometry across the Lake Erie watershed from tributaries to its outflow</dc:title>
+        <dcterms:abstract>Human activities can cause large alterations in biogeochemical cycles of key nutrients such as carbon (C), nitrogen (N), and phosphorus (P). However, relatively little is known about how these changes alter the proportional fluxes of these elements across ecosystem boundaries from rivers to lakes. Here, we examined environmental factors influencing spatial and temporal variation in particulate C : N : P ratios across the Lake Erie watershed from its tributaries to its outflow. Throughout the study, particulate nutrient ratios ranged widely (C : N 2.0–25.8, C : P 32–530, N : P 3.7–122.9), but mean values were generally lower than previous estimates from different aquatic environments. Particulate C : N ratios varied the least across all environments, but C : P and N : P ratios increased between tributaries and coastal areas and throughout the growing season in coastal environments. These ratios also differed temporally in offshore waters as particulate C : P and N : P were higher in the spring and summer and lower in the fall and winter. Particulate C : P ratios also increased between the western/central and eastern basins indicating differential nutrient processing across the lake. These stoichiometric changes were associated with unique environmental factors among ecosystems as tributary stoichiometry was related to terrestrial land use and land cover, coastal ratios were a product of mixing between riverine and offshore waters, and offshore patterns were influenced by differences in temperature and particulate nutrient loading among basins. Overall, by studying changes in particulate C : N : P ratios across the Lake Erie watershed, our study demonstrates the power of using mass balance principles to study nutrient transformations along the aquatic continuum.</dcterms:abstract>
+        <dc:date>2017</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Variation in particulate C</z:shortTitle>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1002/lno.10628</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:39:45</dcterms:dateSubmitted>
+        <dc:rights>© 2017 The Authors Limnology and Oceanography published by Wiley Periodicals, Inc.  on behalf of Association for the Sciences of Limnology and Oceanography</dc:rights>
+        <dc:description>_eprint: https://aslopubs.onlinelibrary.wiley.com/doi/pdf/10.1002/lno.10628</dc:description>
+        <bib:pages>S194-S206</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1939-5590">
+        <prism:volume>62</prism:volume>
+        <dc:title>Limnology and Oceanography</dc:title>
+        <dc:identifier>DOI 10.1002/lno.10628</dc:identifier>
+        <prism:number>S1</prism:number>
+        <dc:identifier>ISSN 1939-5590</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_190">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/190/Prater et al. - 2017 - Variation in particulate C  N  P stoichiometry a.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lno.10628</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:39:46</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_192">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/192/lno.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://aslopubs.onlinelibrary.wiley.com/doi/10.1002/lno.10628</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:39:56</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2015.00159/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1664-302X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Godwin</foaf:surname>
+                        <foaf:givenName>Casey M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cotner</foaf:surname>
+                        <foaf:givenName>James B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_194"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Aquatic heterotrophic bacteria</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cell morphometry</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Chemostats</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Ecological stoichiometry</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>element quotas</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lakes</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Phosphorus content</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Stoichiometric flexibility in diverse aquatic heterotrophic bacteria is coupled to differences in cellular phosphorus quotas</dc:title>
+        <dcterms:abstract>It is frequently presumed that heterotrophic bacteria from aquatic environments have low carbon (C) content, high phosphorus (P) content, and maintain homeostasis at low C:P in their biomass. Dissolved and particulate organic matter from primary producers in terrestrial and aquatic environments typically has high C:P ratios, suggesting that heterotrophic bacteria consuming this resource experience stoichiometric imbalance in C and P. The strength of elemental homeostasis is important for understanding how heterotrophic bacteria couple C and P cycles in response to environmental change, yet these generalizations are based upon data from only a few species that might not represent the physiology of bacteria in freshwaters. However, recent research has indicated that some strains of bacteria isolated from freshwaters have flexible C:P stoichiometry and can acclimate to changes in resource C:P. Although it is apparent that strains differ in their biomass C:P and flexibility, the basis for these characteristics has not been explained. We evaluated biomass C:P homeostasis in 24 strains of bacteria isolated from temperate lakes using a uniform relative growth rate in chemostats. Overall, the strains exhibited a range of homeostatic regulation from strong homeostasis to highly flexible biomass stoichiometry, but strains that were isolated using P-rich media formulations were more homeostatic than strains isolated using P-poor media. Strains exhibiting homeostatic biomass C:P had high cellular C and P content and showed little morphological change between C and P limitation. In contrast, stoichiometrically flexible strains had low P quotas and increased their C quotas and cell size under P limitation. Because stoichiometric flexibility is closely coupled to absolute P content in bacteria, anthropogenic inputs of P could lead to prevalence of more homeostatic bacteria, reducing the ability of natural assemblages to buffer changes in the availability of P and organic C.</dcterms:abstract>
+        <dc:date>2015-02-27</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2015.00159/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:40:58</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1664-302X">
+        <prism:volume>6</prism:volume>
+        <dc:title>Frontiers in Microbiology</dc:title>
+        <dc:identifier>DOI 10.3389/fmicb.2015.00159</dc:identifier>
+        <dcterms:alternative>Front. Microbiol.</dcterms:alternative>
+        <dc:identifier>ISSN 1664-302X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_194">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/194/Godwin and Cotner - 2015 - Stoichiometric flexibility in diverse aquatic hete.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2015.00159/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:41:13</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2010.00132/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>1</prism:volume>
+                <dc:title>Frontiers in Microbiology</dc:title>
+                <dc:identifier>DOI 10.3389/fmicb.2010.00132</dc:identifier>
+                <dcterms:alternative>Front. Microbiol.</dcterms:alternative>
+                <dc:identifier>ISSN 1664-302X</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cotner</foaf:surname>
+                        <foaf:givenName>James Bryan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hall</foaf:surname>
+                        <foaf:givenName>Edward K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scott</foaf:surname>
+                        <foaf:givenName>Thad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heldal</foaf:surname>
+                        <foaf:givenName>Mikal</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_196"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Carbon</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Nitrogen</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Phosphorus</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>heterotrophs</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Bacteria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>nutrient regeneration</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>stoichiometry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Freshwater Bacteria are Stoichiometrically Flexible with a Nutrient Composition Similar to Seston</dc:title>
+        <dcterms:abstract>Although aquatic bacteria are assumed to be nutrient-rich, they out-compete other foodweb osmotrophs for nitrogen (N) and phosphorus (P) an apparent contradiction to resource ratio theory. This paradox could be resolved if aquatic bacteria were demonstrated to be nutrient-poor relative other portions of the planktonic food web. In a survey of &amp;gt;120 lakes in the upper Midwest of the USA, the nutrient content of bacteria was lower than previously reported and very similar to the Redfield ratio, with a mean biomass composition of 102: 12:1 (C:N:P). Individual freshwater bacterial isolates grown under P-limiting and P-replete conditions had even higher C:P and N:P ratios with a mean community biomass composition ratio of 875C: 179N: 1P suggesting that individual strains can be extremely nutrient-poor, especially with respect to P. Cell-specific measurements of individual cells from one lake confirmed that low P content could be observed at the community level in natural systems with a mean biomass composition of 259C: 69N: 1P. Variability in bacterial stoichiometry is typically not recognized in the literature as most studies assume constant and nutrient-rich bacterial biomass composition. We present evidence that bacteria can be extremely P-poor in individual systems and in culture, suggesting that bacteria in freshwater ecosystems can either play a role as regenerators or consumers of inorganic nutrients and that this role could switch depending on the relationship between bacterial biomass stoichiometry and resource stoichiometry. This ability to switch roles between nutrient retention and regeneration likely facilitates processing of terrestrial organic matter in lakes and rivers and has important implications for a wide range of bacterially mediated biogeochemical processes.</dcterms:abstract>
+        <dc:date>2010-12-08</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2010.00132/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:41:34</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_196">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/196/Cotner et al. - 2010 - Freshwater Bacteria are Stoichiometrically Flexibl.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2010.00132/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-11 20:41:36</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://esajournals.onlinelibrary.wiley.com/doi/10.1890/14-1783.1">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_1175"/>
+        <dc:title>A test of the subsidy–stability hypothesis: the effects of terrestrial carbon in aquatic ecosystems - Jones - 2015 - Ecology - Wiley Online Library</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://esajournals.onlinelibrary.wiley.com/doi/10.1890/14-1783.1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 16:07:56</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_1175">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>A test of the subsidy–stability hypothesis: the effects of terrestrial carbon in aquatic ecosystems - Jones - 2015 - Ecology - Wiley Online Library</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://esajournals.onlinelibrary.wiley.com/doi/10.1890/14-1783.1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 16:08:09</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.00722/full">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_1176"/>
+        <dc:title>Frontiers | Ecological Stoichiometry beyond Redfield: An Ionomic Perspective on Elemental Homeostasis</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.00722/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:32:46</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_1176">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Frontiers | Ecological Stoichiometry beyond Redfield: An Ionomic Perspective on Elemental Homeostasis</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.00722/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:32:52</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3650318/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>4</prism:volume>
+                <dc:title>Frontiers in Microbiology</dc:title>
+                <dc:identifier>DOI 10.3389/fmicb.2013.00112</dc:identifier>
+                <dcterms:alternative>Front Microbiol</dcterms:alternative>
+                <dc:identifier>ISSN 1664-302X</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Comte</foaf:surname>
+                        <foaf:givenName>Jérôme</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fauteux</foaf:surname>
+                        <foaf:givenName>Lisa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>del Giorgio</foaf:surname>
+                        <foaf:givenName>Paul A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1177"/>
+        <link:link rdf:resource="#item_1178"/>
+        <dc:title>Links between metabolic plasticity and functional redundancy in freshwater bacterioplankton communities</dc:title>
+        <dcterms:abstract>Metabolic plasticity and functional redundancy are fundamental properties of microbial communities, which shape their response to environmental forcing, and also mediate the relationship between community composition and function. Yet, the actual quantification of these emergent community properties has been elusive, and we thus do not know how they vary across bacterial communities, and their relationship to environmental gradients and to each other. Here we present an experimental framework that allows us to simultaneously quantify metabolic plasticity and functional redundancy in freshwater bacterioplankton communities, and to explore connections that may exists between them. We define metabolic plasticity as the rate of change in single-cell properties (cell wall integrity, cell size, single-cell activity) relative to changes in community composition. Likewise, we define functional redundancy as the rate of change in carbon substrate uptake capacities relative to changes in community composition. We assessed these two key community attributes in transplant experiments where bacterioplankton from various aquatic habitats within the same watershed were transplanted from their original water to waters from other systems that differ in their main resources. Our results show that metabolic plasticity is an intrinsic property of bacterial communities, whereas the expression of functional redundancy appears to be more dependent on environmental factors. Furthermore, there was an overall strong positive relationship between the level of functional redundancy and of metabolic plasticity, suggesting no trade-offs between these community attributes but rather a possible co-selection. The apparent continuum in the expression of both functional redundancy and plasticity among bacterial communities and the link between them, in turn suggest that the link between community diversity and function may also vary along a continuum, from being very tight, to being weak, or absent.</dcterms:abstract>
+        <dc:date>2013-5-09</dc:date>
+        <z:libraryCatalog>PubMed Central</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3650318/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:31:42</dcterms:dateSubmitted>
+        <dc:description>PMID: 23675372
+PMCID: PMC3650318</dc:description>
+        <bib:pages>112</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_1177">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2013.00112/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:31:45</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_1178">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed Central Link</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3650318/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:31:42</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/s41559-016-0015">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2397-334X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Louca</foaf:surname>
+                        <foaf:givenName>Stilianos</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jacques</foaf:surname>
+                        <foaf:givenName>Saulo M. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pires</foaf:surname>
+                        <foaf:givenName>Aliny P. F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leal</foaf:surname>
+                        <foaf:givenName>Juliana S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Srivastava</foaf:surname>
+                        <foaf:givenName>Diane S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Parfrey</foaf:surname>
+                        <foaf:givenName>Laura Wegener</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Farjalla</foaf:surname>
+                        <foaf:givenName>Vinicius F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Doebeli</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1179"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial ecology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Metagenomics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Biogeography</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>High taxonomic variability despite stable functional structure across microbial communities</dc:title>
+        <dcterms:abstract>Understanding the processes that are driving variation of natural microbial communities across space or time is a major challenge for ecologists. Environmental conditions strongly shape the metabolic function of microbial communities; however, other processes such as biotic interactions, random demographic drift or dispersal limitation may also influence community dynamics. The relative importance of these processes and their effects on community function remain largely unknown. To address this uncertainty, here we examined bacterial and archaeal communities in replicate ‘miniature’ aquatic ecosystems contained within the foliage of wild bromeliads. We used marker gene sequencing to infer the taxonomic composition within nine metabolic functional groups, and shotgun environmental DNA sequencing to estimate the relative abundances of these groups. We found that all of the bromeliads exhibited remarkably similar functional community structures, but that the taxonomic composition within individual functional groups was highly variable. Furthermore, using statistical analyses, we found that non-neutral processes, including environmental filtering and potentially biotic interactions, at least partly shaped the composition within functional groups and were more important than spatial dispersal limitation and demographic drift. Hence both the functional structure and taxonomic composition within functional groups of natural microbial communities may be shaped by non-neutral and roughly separate processes.</dcterms:abstract>
+        <dc:date>2016-12-05</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41559-016-0015</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:29:37</dcterms:dateSubmitted>
+        <dc:rights>2016 Springer Nature Limited</dc:rights>
+        <dc:description>Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>0015</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2397-334X">
+        <prism:volume>1</prism:volume>
+        <dc:title>Nature Ecology &amp; Evolution</dc:title>
+        <dc:identifier>DOI 10.1038/s41559-016-0015</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Nat Ecol Evol</dcterms:alternative>
+        <dc:identifier>ISSN 2397-334X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_1179">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41559-016-0015.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:29:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.01692/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>8</prism:volume>
+                <dc:title>Frontiers in Microbiology</dc:title>
+                <dc:identifier>DOI 10.3389/fmicb.2017.01692</dc:identifier>
+                <dcterms:alternative>Front. Microbiol.</dcterms:alternative>
+                <dc:identifier>ISSN 1664-302X</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Phillips</foaf:surname>
+                        <foaf:givenName>Katherine N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Godwin</foaf:surname>
+                        <foaf:givenName>Casey M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cotner</foaf:surname>
+                        <foaf:givenName>James B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1180"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Carbon</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Nitrogen</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Phosphorus</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>stoichiometry</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>morphology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Nucleic Acids</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>temperature</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>The Effects of Nutrient Imbalances and Temperature on the Biomass Stoichiometry of Freshwater Bacteria</dc:title>
+        <dcterms:abstract>Two contemporary effects of humans on aquatic ecosystems are increasing temperatures and increasing nutrient concentrations from fertilizers. The response of organisms to these perturbations has important implications for ecosystem processes. We examined the effects of phosphorus (P) supply and temperature on organismal carbon, nitrogen and phosphorus (C, N and P) content, cell size and allocation into internal P pools in three strains of recently isolated bacteria (Agrobacterium sp., Flavobacterium sp., and Arthrobacter sp.). We manipulated resource C:P in chemostats and also manipulated temperatures from 10 to 30ºC. Dilution rates were maintained for all the strains at approximately 25% of their temperature-specific maximum growth rate to simulate low growth rates in natural systems. Under these conditions, there were large effects of resource stoichiometry and temperature on biomass stoichiometry, element quotas, and cell size. Each strain was smaller when C-limited and larger when P-limited. Temperature had weak effects on morphology, little effect on C quotas, no effect on N quotas, and biomass C:N, but had strong effects on P quotas, biomass N:P and C:P, and RNA. RNA content per cell increased with increasing temperature at most C:P supply ratios, but was more strongly affected by resource stoichiometry than temperature. Because we used a uniform relative growth rate across temperatures, these findings mean that there are important nutrient and temperature affects on biomass composition and stoichiometry that are independent of growth rate. Changes in biomass stoichiometry with temperature were greatest at low P availability, suggesting tighter coupling between temperature and biomass stoichiometry in oligotrophic ecosystems than in eutrophic systems. Because the C:P stoichiometry of biomass affects how bacteria assimilate and remineralize C, increased P availability could disrupt a negative feedback between biomass stoichiometry and C availability.</dcterms:abstract>
+        <dc:date>2017-09-08</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2017.01692/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:28:34</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_1180">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2017.01692/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:28:37</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://royalsocietypublishing.org/doi/10.1098/rspb.2015.0371">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>282</prism:volume>
+                <dc:title>Proceedings of the Royal Society B: Biological Sciences</dc:title>
+                <dc:identifier>DOI 10.1098/rspb.2015.0371</dc:identifier>
+                <prism:number>1810</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Morán</foaf:surname>
+                        <foaf:givenName>Xosé Anxelu G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Alonso-Sáez</foaf:surname>
+                        <foaf:givenName>Laura</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nogueira</foaf:surname>
+                        <foaf:givenName>Enrique</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ducklow</foaf:surname>
+                        <foaf:givenName>Hugh W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>González</foaf:surname>
+                        <foaf:givenName>Natalia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>López-Urrutia</foaf:surname>
+                        <foaf:givenName>Ángel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Díaz-Pérez</foaf:surname>
+                        <foaf:givenName>Laura</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Calvo-Díaz</foaf:surname>
+                        <foaf:givenName>Alejandra</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Arandia-Gorostidi</foaf:surname>
+                        <foaf:givenName>Nestor</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huete-Stauffer</foaf:surname>
+                        <foaf:givenName>Tamara M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1181"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>time series</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Atlantic Ocean</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>bacterioplankton</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>global warming</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>long-term trends</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>temperature–size relationships</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>More, smaller bacteria in response to ocean's warming?</dc:title>
+        <dcterms:abstract>Heterotrophic bacteria play a major role in organic matter cycling in the ocean. Although the high abundances and relatively fast growth rates of coastal surface bacterioplankton make them suitable sentinels of global change, past analyses have largely overlooked this functional group. Here, time series analysis of a decade of monthly observations in temperate Atlantic coastal waters revealed strong seasonal patterns in the abundance, size and biomass of the ubiquitous flow-cytometric groups of low (LNA) and high nucleic acid (HNA) content bacteria. Over this relatively short period, we also found that bacterioplankton cells were significantly smaller, a trend that is consistent with the hypothesized temperature-driven decrease in body size. Although decadal cell shrinking was observed for both groups, it was only LNA cells that were strongly coherent, with ecological theories linking temperature, abundance and individual size on both the seasonal and interannual scale. We explain this finding because, relative to their HNA counterparts, marine LNA bacteria are less diverse, dominated by members of the SAR11 clade. Temperature manipulation experiments in 2012 confirmed a direct effect of warming on bacterial size. Concurrent with rising temperatures in spring, significant decadal trends of increasing standing stocks (3% per year) accompanied by decreasing mean cell size (−1% per year) suggest a major shift in community structure, with a larger contribution of LNA bacteria to total biomass. The increasing prevalence of these typically oligotrophic taxa may severely impact marine food webs and carbon fluxes by an overall decrease in the efficiency of the biological pump.</dcterms:abstract>
+        <dc:date>2015-07-07</dc:date>
+        <z:libraryCatalog>royalsocietypublishing.org (Atypon)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://royalsocietypublishing.org/doi/10.1098/rspb.2015.0371</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:23:49</dcterms:dateSubmitted>
+        <dc:description>Publisher: Royal Society</dc:description>
+        <bib:pages>20150371</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_1181">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2015.0371</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:23:50</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.pnas.org/doi/10.1073/pnas.2114840118">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>118</prism:volume>
+                <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+                <dc:identifier>DOI 10.1073/pnas.2114840118</dc:identifier>
+                <prism:number>48</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hébert</foaf:surname>
+                        <foaf:givenName>Marie-Pier</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Beisner</foaf:surname>
+                        <foaf:givenName>Beatrix E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rautio</foaf:surname>
+                        <foaf:givenName>Milla</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fussmann</foaf:surname>
+                        <foaf:givenName>Gregor F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1182"/>
+        <dc:title>Warming winters in lakes: Later ice onset promotes consumer overwintering and shapes springtime planktonic food webs</dc:title>
+        <dcterms:abstract>Global climate warming is causing the loss of freshwater ice around the Northern Hemisphere. Although the timing and duration of ice covers are known to regulate ecological processes in seasonally ice-covered ecosystems, the consequences of shortening winters for freshwater biota are poorly understood owing to the scarcity of under-ice research. Here, we present one of the first in-lake experiments to postpone ice-cover onset (by ≤21 d), thereby extending light availability (by ≤40 d) in early winter, and explicitly demonstrate cascading effects on pelagic food web processes and phenologies. Delaying ice-on elicited a sequence of events from winter to spring: 1) relatively greater densities of algal resources and primary consumers in early winter; 2) an enhanced prevalence of winter-active (overwintering) consumers throughout the ice-covered period, associated with augmented storage of high-quality fats likely due to a longer access to algal resources in early winter; and 3) an altered trophic structure after ice-off, with greater initial springtime densities of overwintering consumers driving stronger, earlier top-down regulation, effectively reducing the spring algal bloom. Increasingly later ice onset may thus promote consumer overwintering, which can confer a competitive advantage on taxa capable of surviving winters upon ice-off; a process that may diminish spring food availability for other consumers, potentially disrupting trophic linkages and energy flow pathways over the subsequent open-water season. In considering a future with warmer winters, these results provide empirical evidence that may help anticipate phenological responses to freshwater ice loss and, more broadly, constitute a case of climate-induced cross-seasonal cascade on realized food web processes.</dcterms:abstract>
+        <dc:date>2021-11-30</dc:date>
+        <z:shortTitle>Warming winters in lakes</z:shortTitle>
+        <z:libraryCatalog>pnas.org (Atypon)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.pnas.org/doi/10.1073/pnas.2114840118</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:18:20</dcterms:dateSubmitted>
+        <dc:description>Publisher: Proceedings of the National Academy of Sciences</dc:description>
+        <bib:pages>e2114840118</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_1182">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.pnas.org/doi/pdf/10.1073/pnas.2114840118</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:18:21</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="#item_1169">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Warming winters in lakes: Later ice onset promotes consumer overwintering and shapes springtime planktonic food webs | PNAS</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.pnas.org/doi/10.1073/pnas.2114840118</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:18:17</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Article rdf:about="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2014.00082/full">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>5</prism:volume>
+                <dc:title>Frontiers in Microbiology</dc:title>
+                <dc:identifier>DOI 10.3389/fmicb.2014.00082</dc:identifier>
+                <dcterms:alternative>Front. Microbiol.</dcterms:alternative>
+                <dc:identifier>ISSN 1664-302X</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Adams</foaf:surname>
+                        <foaf:givenName>Heather E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Crump</foaf:surname>
+                        <foaf:givenName>Byron C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kling</foaf:surname>
+                        <foaf:givenName>George W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1183"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>aquatic microbiology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Arctic</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>bacterial production</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>mass effects</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>metacommunity theory</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>species sorting</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>transplant experiments</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Metacommunity dynamics of bacteria in an arctic lake: the impact of species sorting and mass effects on bacterial production and biogeography</dc:title>
+        <dcterms:abstract>To understand mechanisms linking ecosystem processes and microbial diversity in freshwater ecosystems, bacterial productivity and the metacommunity dynamics of species sorting and mass effects were investigated in an 18 ha headwater lake in northern Alaska. On most sampling dates, the phylogenetic composition of bacterial communities in inflowing streams (inlets) was strikingly different than that in the lake and the outflowing stream (outlet) (16S DGGE fingerprinting), demonstrating the shift in composition that occurs as these communities transit the lake. Outlet and downstream communities were also more productive than inlet and upstream communities (14C-leucine incorporation). Inlet bacteria transplanted to the outlet stream in dialysis bags were equally or less productive than control bacteria, suggesting that the inlet bacteria are capable of growing under lake conditions, but do not remain abundant because of species sorting in the lake. Outlet bacteria (representative of epilimnetic bacteria) transplanted to the inlet stream were less productive than control bacteria, suggesting that lake bacteria are not as well adapted to growing under inlet conditions. Based on water density, inlet stream water and bacteria generally entered the lake at the base of the epilimnion. However, during low to medium flow in the inlet stream the residence time of the epilimnion was too long relative to bacterial doubling times for these allochthonous bacteria to have a mass effect on the composition of outlet bacteria. The highest community similarity between inlet and outlet bacteria was detected after a large rain event in 2003, with over 61% similarity (average non-storm similarities were 39% ± 8%). While mass effects may be important during large storm events, species sorting appears to be the predominant mechanism structuring bacterial communities within the lake, leading to the assembly of a lake community that has lost some ability to function in stream habitats.</dcterms:abstract>
+        <dc:date>2014-03-04</dc:date>
+        <z:language>English</z:language>
+        <z:shortTitle>Metacommunity dynamics of bacteria in an arctic lake</z:shortTitle>
+        <z:libraryCatalog>Frontiers</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2014.00082/full</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:17:19</dcterms:dateSubmitted>
+        <dc:description>Publisher: Frontiers</dc:description>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_1183">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.frontiersin.org/articles/10.3389/fmicb.2014.00082/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:17:22</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/s41564-024-01874-9">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2058-5276"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Michoud</foaf:surname>
+                        <foaf:givenName>Grégoire</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Peter</foaf:surname>
+                        <foaf:givenName>Hannes</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Busi</foaf:surname>
+                        <foaf:givenName>Susheel Bhanu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bourquin</foaf:surname>
+                        <foaf:givenName>Massimo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kohler</foaf:surname>
+                        <foaf:givenName>Tyler J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Geers</foaf:surname>
+                        <foaf:givenName>Aileen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ezzat</foaf:surname>
+                        <foaf:givenName>Leila</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Battin</foaf:surname>
+                        <foaf:givenName>Tom J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1184"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial ecology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Water microbiology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Mapping the metagenomic diversity of the multi-kingdom glacier-fed stream microbiome</dc:title>
+        <dcterms:abstract>Glacier-fed streams (GFS) feature among Earth’s most extreme aquatic ecosystems marked by pronounced oligotrophy and environmental fluctuations. Microorganisms mainly organize in biofilms within them, but how they cope with such conditions is unknown. Here, leveraging 156 metagenomes from the Vanishing Glaciers project obtained from sediment samples in GFS from 9 mountains ranges, we report thousands of metagenome-assembled genomes (MAGs) encompassing prokaryotes, algae, fungi and viruses, that shed light on biotic interactions within glacier-fed stream biofilms. A total of 2,855 bacterial MAGs were characterized by diverse strategies to exploit inorganic and organic energy sources, in part via functional redundancy and mixotrophy. We show that biofilms probably become more complex and switch from chemoautotrophy to heterotrophy as algal biomass increases in GFS owing to glacier shrinkage. Our MAG compendium sheds light on the success of microbial life in GFS and provides a resource for future research on a microbiome potentially impacted by climate change.</dcterms:abstract>
+        <dc:date>2025-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41564-024-01874-9</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:16:21</dcterms:dateSubmitted>
+        <dc:rights>2024 The Author(s), under exclusive licence to Springer Nature Limited</dc:rights>
+        <dc:description>Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>217-230</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2058-5276">
+        <prism:volume>10</prism:volume>
+        <dc:title>Nature Microbiology</dc:title>
+        <dc:identifier>DOI 10.1038/s41564-024-01874-9</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Nat Microbiol</dcterms:alternative>
+        <dc:identifier>ISSN 2058-5276</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_1184">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41564-024-01874-9.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:16:23</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14129">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_1185"/>
+        <dc:title>Global Change Biology | Environmental Change Journal | Wiley Online Library</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14129</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:15:25</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_1185">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Global Change Biology | Environmental Change Journal | Wiley Online Library</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.14129</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:15:33</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0043135420311660">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0043-1354"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fillinger</foaf:surname>
+                        <foaf:givenName>Lucas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hug</foaf:surname>
+                        <foaf:givenName>Katrin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Griebler</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1186"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Aquifer sediment</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Dispersal</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial community coalescence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Microbial community resistance</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Perturbation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Selection</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Aquifer recharge viewed through the lens of microbial community ecology: Initial disturbance response, and impacts of species sorting versus mass effects on microbial community assembly in groundwater during riverbank filtration</dc:title>
+        <dcterms:abstract>Riverbank filtration has gained increasing importance for balancing rising groundwater demands and securing drinking water supplies. While microbial communities are the pillar of vital ecosystem functions in groundwater, the impact of riverbank filtration on these communities has been understudied so far. Here, we followed changes in microbial community composition based on 16S rRNA gene amplicon sequence variants (ASVs) in an initially pristine shallow porous aquifer in response to surface water intrusion during the early stages of induced riverbank filtration over a course of seven weeks. We further analyzed sediment cores for imprints of river-derived ASVs after seven weeks of riverbank filtration. The onset of the surface water intrusion caused loss of taxa and significant changes in community composition, revealing low disturbance resistance of the initial aquifer microbial communities. SourceTracker analysis revealed that proportions of river-derived ASVs in the groundwater were generally &lt;25%, but locally could reach up to 62% during a period of intense precipitation. However, variation partitioning showed that the impact of dispersal of river-derived ASVs on changes in aquifer microbial community composition was overall outweighed by species sorting due to changes in environmental conditions caused by the infiltrating river water. Proportions of river-derived ASVs on aquifer sediments were &lt;0.5%, showing that taxa transported from the river into the aquifer over the course of the study mainly resided as planktonic microorganisms in the groundwater. Our study demonstrates that groundwater microbial communities react sensitively to changes in environmental conditions caused by surface water intrusion, whereas mass effects resulting from the influx of river-derived taxa play a comparatively minor role.</dcterms:abstract>
+        <dc:date>2021-02-01</dc:date>
+        <z:shortTitle>Aquifer recharge viewed through the lens of microbial community ecology</z:shortTitle>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0043135420311660</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:14:32</dcterms:dateSubmitted>
+        <bib:pages>116631</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0043-1354">
+        <prism:volume>189</prism:volume>
+        <dc:title>Water Research</dc:title>
+        <dc:identifier>DOI 10.1016/j.watres.2020.116631</dc:identifier>
+        <dcterms:alternative>Water Research</dcterms:alternative>
+        <dc:identifier>ISSN 0043-1354</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_1186">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0043135420311660</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:14:40</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://www.nature.com/articles/s41561-024-01393-6">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Global emergent responses of stream microbial metabolism to glacier shrinkage | Nature Geoscience</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41561-024-01393-6</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-07-14 14:10:17</dcterms:dateSubmitted>
+    </bib:Document>
+</rdf:RDF>
